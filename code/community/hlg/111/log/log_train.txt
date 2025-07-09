@@ -1,0 +1,1097 @@
+[2024-05-23 10:48:13,189] id: hlg
+[2024-05-23 10:48:13,189] seed: 111
+[2024-05-23 10:48:13,189] objectives_plan: objectives_hlg
+[2024-05-23 10:48:13,189] init_plan: init_plan_hlg
+[2024-05-23 10:48:13,189] env_specs: {}
+[2024-05-23 10:48:13,189] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 4.0, 'greenness_weight': 1.0}
+[2024-05-23 10:48:13,189] obs_specs: {}
+[2024-05-23 10:48:13,189] agent_specs: {'batch_stage': False}
+[2024-05-23 10:48:13,189] skip_land_use: False
+[2024-05-23 10:48:13,189] skip_road: True
+[2024-05-23 10:48:13,189] road_ratio: 0.0
+[2024-05-23 10:48:13,189] gamma: 1.0
+[2024-05-23 10:48:13,190] tau: 0.0
+[2024-05-23 10:48:13,190] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 16, 'num_gcn_layers': 2, 'num_edge_fc_layers': 1, 'max_num_nodes': 1000, 'max_num_edges': 3000, 'num_attention_heads': 1}
+[2024-05-23 10:48:13,190] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-05-23 10:48:13,190] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-05-23 10:48:13,190] lr: 0.0004
+[2024-05-23 10:48:13,190] weightdecay: 0.0
+[2024-05-23 10:48:13,190] eps: 1e-05
+[2024-05-23 10:48:13,190] value_pred_coef: 0.5
+[2024-05-23 10:48:13,190] entropy_coef: 0.01
+[2024-05-23 10:48:13,190] clip_epsilon: 0.2
+[2024-05-23 10:48:13,190] max_num_iterations: 1000
+[2024-05-23 10:48:13,190] num_episodes_per_iteration: 500
+[2024-05-23 10:48:13,190] max_sequence_length: 50
+[2024-05-23 10:48:13,190] num_optim_epoch: 4
+[2024-05-23 10:48:13,190] mini_batch_size: 256
+[2024-05-23 10:48:13,190] save_model_interval: 10
+[2024-05-23 10:54:03,465] 0	T_sample 178.32	T_update 89.66	T_eval 81.35	ETA 4 days, 0:56:23	train_R_eps 3.02	eval_R_eps 2.28	hlg
+[2024-05-23 10:54:03,467] save best checkpoint with rewards 2.28!
+[2024-05-23 11:01:34,114] 1	T_sample 274.08	T_update 95.63	T_eval 80.69	ETA 5 days, 4:51:36	train_R_eps 3.01	eval_R_eps 2.16	hlg
+[2024-05-23 11:07:35,490] 2	T_sample 218.13	T_update 81.64	T_eval 61.40	ETA 4 days, 4:01:30	train_R_eps 3.02	eval_R_eps 2.76	hlg
+[2024-05-23 11:07:35,494] save best checkpoint with rewards 2.76!
+[2024-05-23 11:13:04,771] 3	T_sample 183.92	T_update 83.06	T_eval 62.08	ETA 3 days, 19:02:21	train_R_eps 3.03	eval_R_eps 2.90	hlg
+[2024-05-23 11:13:04,774] save best checkpoint with rewards 2.90!
+[2024-05-23 11:18:33,864] 4	T_sample 184.48	T_update 82.46	T_eval 61.94	ETA 3 days, 18:53:54	train_R_eps 3.04	eval_R_eps 3.12	hlg
+[2024-05-23 11:18:33,867] save best checkpoint with rewards 3.12!
+[2024-05-23 11:24:53,483] 5	T_sample 200.89	T_update 93.91	T_eval 84.57	ETA 4 days, 8:44:46	train_R_eps 3.05	eval_R_eps 3.05	hlg
+[2024-05-23 11:32:37,539] 6	T_sample 293.01	T_update 92.44	T_eval 78.40	ETA 5 days, 7:56:41	train_R_eps 3.06	eval_R_eps 3.19	hlg
+[2024-05-23 11:32:37,544] save best checkpoint with rewards 3.19!
+[2024-05-23 11:38:24,899] 7	T_sample 200.72	T_update 81.76	T_eval 64.66	ETA 3 days, 23:39:19	train_R_eps 3.06	eval_R_eps 3.17	hlg
+[2024-05-23 11:43:32,196] Remaining feasible.
+Update polygon: POLYGON ((1041.845992888235 1081.5396040799158, 1055.9583614579603 992.419029961513, 945.8755744619963 970.4024725623202, 926.9166672643972 1063.340383319525, 959.5 1068.5, 1041.845992888235 1081.5396040799158))
+Update polygon without building boundaries creates new points.
+[2024-05-23 11:43:32,197] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1037), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 957), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1100), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 992), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 940), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1056), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 866), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1055), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1029), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1051), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 937), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 948), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 937), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1438), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1304), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 974), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 885), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1220), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 804), ({'type': 7, 'x': 0.5, 'y': 0.5, 'area': 90000.0, 'length': 1200.0, 'width': 300.0, 'height': 300.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 810), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 971), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 859)]
+[2024-05-23 11:43:32,202] Plan fails during eval.
+[2024-05-23 11:44:13,400] 8	T_sample 202.06	T_update 83.19	T_eval 63.05	ETA 3 days, 23:52:49	train_R_eps 3.07	eval_R_eps 2.96	hlg
+[2024-05-23 11:49:47,760] 9	T_sample 191.01	T_update 80.89	T_eval 62.27	ETA 3 days, 19:53:44	train_R_eps 3.06	eval_R_eps 3.35	hlg
+[2024-05-23 11:49:47,773] save best checkpoint with rewards 3.35!
+[2024-05-23 11:56:33,634] 10	T_sample 227.33	T_update 95.59	T_eval 82.70	ETA 4 days, 15:26:00	train_R_eps 3.06	eval_R_eps 3.10	hlg
+[2024-05-23 12:04:29,707] 11	T_sample 298.82	T_update 94.67	T_eval 82.36	ETA 5 days, 10:35:49	train_R_eps 3.07	eval_R_eps 3.18	hlg
+[2024-05-23 12:12:19,739] 12	T_sample 292.48	T_update 94.49	T_eval 82.80	ETA 5 days, 8:47:46	train_R_eps 3.07	eval_R_eps 2.99	hlg
+[2024-05-23 12:18:30,862] 13	T_sample 226.11	T_update 82.65	T_eval 62.16	ETA 4 days, 5:35:29	train_R_eps 3.07	eval_R_eps 3.17	hlg
+[2024-05-23 12:24:06,886] 14	T_sample 190.87	T_update 81.42	T_eval 63.54	ETA 3 days, 19:53:08	train_R_eps 3.07	eval_R_eps 3.10	hlg
+[2024-05-23 12:29:44,758] 15	T_sample 193.11	T_update 81.52	T_eval 63.05	ETA 3 days, 20:17:54	train_R_eps 3.07	eval_R_eps 3.38	hlg
+[2024-05-23 12:29:44,763] save best checkpoint with rewards 3.38!
+[2024-05-23 12:35:22,916] 16	T_sample 194.41	T_update 81.38	T_eval 62.11	ETA 3 days, 20:15:53	train_R_eps 3.08	eval_R_eps 3.35	hlg
+[2024-05-23 12:41:00,834] 17	T_sample 193.55	T_update 81.50	T_eval 62.67	ETA 3 days, 20:07:27	train_R_eps 3.08	eval_R_eps 3.30	hlg
+[2024-05-23 12:46:40,045] 18	T_sample 194.53	T_update 83.06	T_eval 61.42	ETA 3 days, 20:22:50	train_R_eps 3.07	eval_R_eps 3.15	hlg
+[2024-05-23 12:52:19,883] 19	T_sample 192.01	T_update 85.22	T_eval 62.41	ETA 3 days, 20:27:24	train_R_eps 3.08	eval_R_eps 3.19	hlg
+[2024-05-23 12:57:57,293] 20	T_sample 194.62	T_update 81.86	T_eval 60.73	ETA 3 days, 19:42:02	train_R_eps 3.06	eval_R_eps 3.23	hlg
+[2024-05-23 13:03:36,701] 21	T_sample 190.97	T_update 84.45	T_eval 63.79	ETA 3 days, 20:09:07	train_R_eps 3.05	eval_R_eps 3.30	hlg
+[2024-05-23 13:09:10,227] 22	T_sample 190.49	T_update 80.94	T_eval 61.90	ETA 3 days, 18:27:43	train_R_eps 3.06	eval_R_eps 3.22	hlg
+[2024-05-23 13:14:48,532] 23	T_sample 191.85	T_update 82.34	T_eval 63.91	ETA 3 days, 19:39:48	train_R_eps 3.06	eval_R_eps 3.23	hlg
+[2024-05-23 13:20:33,172] 24	T_sample 200.22	T_update 81.69	T_eval 62.53	ETA 3 days, 21:17:12	train_R_eps 3.06	eval_R_eps 3.23	hlg
+[2024-05-23 13:26:16,040] 25	T_sample 198.58	T_update 81.26	T_eval 62.83	ETA 3 days, 20:42:42	train_R_eps 3.06	eval_R_eps 2.92	hlg
+[2024-05-23 13:31:56,186] 26	T_sample 197.10	T_update 79.61	T_eval 63.23	ETA 3 days, 19:52:49	train_R_eps 3.07	eval_R_eps 3.13	hlg
+[2024-05-23 13:37:33,554] 27	T_sample 195.26	T_update 80.93	T_eval 60.98	ETA 3 days, 19:02:13	train_R_eps 3.07	eval_R_eps 3.11	hlg
+[2024-05-23 13:43:16,119] 28	T_sample 198.19	T_update 81.80	T_eval 62.38	ETA 3 days, 20:20:38	train_R_eps 3.06	eval_R_eps 3.13	hlg
+[2024-05-23 13:48:52,220] 29	T_sample 195.24	T_update 80.14	T_eval 60.52	ETA 3 days, 18:30:29	train_R_eps 3.05	eval_R_eps 3.15	hlg
+[2024-05-23 13:54:27,716] 30	T_sample 191.16	T_update 82.32	T_eval 61.81	ETA 3 days, 18:14:53	train_R_eps 3.05	eval_R_eps 3.38	hlg
+[2024-05-23 14:00:03,553] 31	T_sample 193.89	T_update 81.56	T_eval 60.19	ETA 3 days, 18:14:58	train_R_eps 3.05	eval_R_eps 3.07	hlg
+[2024-05-23 14:05:40,971] 32	T_sample 192.82	T_update 82.04	T_eval 62.36	ETA 3 days, 18:34:56	train_R_eps 3.04	eval_R_eps 3.01	hlg
+[2024-05-23 14:11:17,463] 33	T_sample 194.11	T_update 81.95	T_eval 60.24	ETA 3 days, 18:14:21	train_R_eps 3.03	eval_R_eps 3.03	hlg
+[2024-05-23 14:16:56,500] 34	T_sample 192.59	T_update 83.82	T_eval 62.43	ETA 3 days, 18:49:37	train_R_eps 3.03	eval_R_eps 2.98	hlg
+[2024-05-23 14:22:34,519] 35	T_sample 195.71	T_update 81.18	T_eval 60.93	ETA 3 days, 18:27:40	train_R_eps 3.03	eval_R_eps 2.74	hlg
+[2024-05-23 14:28:12,392] 36	T_sample 194.39	T_update 82.83	T_eval 60.45	ETA 3 days, 18:19:35	train_R_eps 3.02	eval_R_eps 2.91	hlg
+[2024-05-23 14:33:54,152] 37	T_sample 199.06	T_update 81.93	T_eval 60.57	ETA 3 days, 19:16:21	train_R_eps 3.03	eval_R_eps 3.08	hlg
+[2024-05-23 14:39:35,017] 38	T_sample 196.40	T_update 81.63	T_eval 62.64	ETA 3 days, 18:56:24	train_R_eps 3.02	eval_R_eps 2.85	hlg
+[2024-05-23 14:45:15,103] 39	T_sample 197.87	T_update 81.49	T_eval 60.53	ETA 3 days, 18:38:13	train_R_eps 3.03	eval_R_eps 3.00	hlg
+[2024-05-23 14:50:57,938] 40	T_sample 198.57	T_update 82.35	T_eval 61.71	ETA 3 days, 19:16:22	train_R_eps 3.03	eval_R_eps 3.06	hlg
+[2024-05-23 14:56:48,075] 41	T_sample 205.31	T_update 82.04	T_eval 62.59	ETA 3 days, 21:07:21	train_R_eps 3.03	eval_R_eps 2.65	hlg
+[2024-05-23 15:02:39,556] 42	T_sample 207.63	T_update 82.31	T_eval 61.34	ETA 3 days, 21:22:59	train_R_eps 3.03	eval_R_eps 3.14	hlg
+[2024-05-23 15:08:27,133] 43	T_sample 205.53	T_update 81.73	T_eval 60.12	ETA 3 days, 20:14:55	train_R_eps 3.03	eval_R_eps 2.98	hlg
+[2024-05-23 15:14:11,477] 44	T_sample 202.69	T_update 80.61	T_eval 60.84	ETA 3 days, 19:17:37	train_R_eps 3.03	eval_R_eps 2.99	hlg
+[2024-05-23 15:20:06,844] 45	T_sample 209.86	T_update 82.54	T_eval 62.76	ETA 3 days, 22:07:12	train_R_eps 3.04	eval_R_eps 3.00	hlg
+[2024-05-23 15:26:06,778] 46	T_sample 216.32	T_update 80.22	T_eval 63.20	ETA 3 days, 23:13:50	train_R_eps 3.03	eval_R_eps 2.77	hlg
+[2024-05-23 15:32:07,767] 47	T_sample 215.12	T_update 81.94	T_eval 63.73	ETA 3 days, 23:24:31	train_R_eps 3.03	eval_R_eps 2.99	hlg
+[2024-05-23 15:38:14,870] 48	T_sample 224.14	T_update 81.26	T_eval 61.50	ETA 4 days, 0:55:27	train_R_eps 3.03	eval_R_eps 2.79	hlg
+[2024-05-23 15:44:28,577] 49	T_sample 229.58	T_update 82.87	T_eval 61.07	ETA 4 days, 2:33:55	train_R_eps 3.02	eval_R_eps 2.99	hlg
+[2024-05-23 15:50:45,138] 50	T_sample 228.86	T_update 83.96	T_eval 63.53	ETA 4 days, 3:12:35	train_R_eps 3.04	eval_R_eps 2.91	hlg
+[2024-05-23 15:56:53,902] 51	T_sample 224.13	T_update 82.33	T_eval 62.11	ETA 4 days, 1:03:21	train_R_eps 3.03	eval_R_eps 3.01	hlg
+[2024-05-23 16:03:02,539] 52	T_sample 222.87	T_update 83.72	T_eval 61.85	ETA 4 days, 0:55:11	train_R_eps 3.03	eval_R_eps 2.96	hlg
+[2024-05-23 16:09:12,633] 53	T_sample 225.00	T_update 82.01	T_eval 62.88	ETA 4 days, 1:11:57	train_R_eps 3.03	eval_R_eps 2.77	hlg
+[2024-05-23 16:15:16,494] 54	T_sample 219.17	T_update 83.49	T_eval 61.00	ETA 3 days, 23:27:41	train_R_eps 3.02	eval_R_eps 2.97	hlg
+[2024-05-23 16:21:46,354] 55	T_sample 244.17	T_update 82.89	T_eval 62.59	ETA 4 days, 6:10:35	train_R_eps 3.04	eval_R_eps 2.98	hlg
+[2024-05-23 16:27:48,975] 56	T_sample 216.38	T_update 84.34	T_eval 61.71	ETA 3 days, 22:56:00	train_R_eps 3.04	eval_R_eps 3.04	hlg
+[2024-05-23 16:33:42,937] 57	T_sample 209.41	T_update 82.16	T_eval 62.19	ETA 3 days, 20:33:58	train_R_eps 3.03	eval_R_eps 2.80	hlg
+[2024-05-23 16:39:43,051] 58	T_sample 217.16	T_update 81.69	T_eval 61.07	ETA 3 days, 22:04:34	train_R_eps 3.04	eval_R_eps 3.27	hlg
+[2024-05-23 16:45:45,111] 59	T_sample 215.87	T_update 83.75	T_eval 62.24	ETA 3 days, 22:29:06	train_R_eps 3.03	eval_R_eps 3.10	hlg
+[2024-05-23 16:52:11,816] 60	T_sample 242.35	T_update 81.91	T_eval 62.24	ETA 4 days, 4:48:41	train_R_eps 3.03	eval_R_eps 2.98	hlg
+[2024-05-23 16:58:25,500] 61	T_sample 226.18	T_update 84.41	T_eval 62.89	ETA 4 days, 1:18:49	train_R_eps 3.04	eval_R_eps 2.87	hlg
+[2024-05-23 17:04:46,244] 62	T_sample 234.70	T_update 83.80	T_eval 62.04	ETA 4 days, 3:02:45	train_R_eps 3.03	eval_R_eps 3.11	hlg
+[2024-05-23 17:10:53,165] 63	T_sample 222.05	T_update 83.08	T_eval 61.59	ETA 3 days, 23:20:51	train_R_eps 3.03	eval_R_eps 2.82	hlg
+[2024-05-23 17:17:07,118] 64	T_sample 225.71	T_update 85.46	T_eval 62.58	ETA 4 days, 1:04:14	train_R_eps 3.03	eval_R_eps 2.91	hlg
+[2024-05-23 17:23:19,124] 65	T_sample 224.88	T_update 83.63	T_eval 63.29	ETA 4 days, 0:27:42	train_R_eps 3.03	eval_R_eps 2.57	hlg
+[2024-05-23 17:29:33,738] 66	T_sample 228.35	T_update 84.31	T_eval 61.74	ETA 4 days, 1:02:06	train_R_eps 3.03	eval_R_eps 2.83	hlg
+[2024-05-23 17:35:59,989] 67	T_sample 240.77	T_update 84.23	T_eval 61.04	ETA 4 days, 3:56:36	train_R_eps 3.04	eval_R_eps 3.07	hlg
+[2024-05-23 17:42:19,767] 68	T_sample 234.34	T_update 82.74	T_eval 62.48	ETA 4 days, 2:09:27	train_R_eps 3.04	eval_R_eps 3.05	hlg
+[2024-05-23 17:48:24,833] 69	T_sample 218.98	T_update 83.77	T_eval 62.12	ETA 3 days, 22:15:19	train_R_eps 3.04	eval_R_eps 2.91	hlg
+[2024-05-23 17:54:39,919] 70	T_sample 228.03	T_update 85.07	T_eval 61.77	ETA 4 days, 0:44:19	train_R_eps 3.05	eval_R_eps 2.80	hlg
+[2024-05-23 18:00:39,965] 71	T_sample 217.57	T_update 82.33	T_eval 59.94	ETA 3 days, 20:45:31	train_R_eps 3.03	eval_R_eps 2.96	hlg
+[2024-05-23 18:06:38,374] 72	T_sample 213.39	T_update 83.63	T_eval 61.19	ETA 3 days, 20:14:19	train_R_eps 3.05	eval_R_eps 3.13	hlg
+[2024-05-23 18:12:40,419] 73	T_sample 217.20	T_update 82.00	T_eval 62.63	ETA 3 days, 21:04:23	train_R_eps 3.04	eval_R_eps 2.87	hlg
+[2024-05-23 18:18:44,035] 74	T_sample 217.74	T_update 83.84	T_eval 61.83	ETA 3 days, 21:22:33	train_R_eps 3.04	eval_R_eps 2.63	hlg
+[2024-05-23 18:24:35,695] 75	T_sample 206.37	T_update 83.21	T_eval 61.88	ETA 3 days, 18:12:26	train_R_eps 3.04	eval_R_eps 2.75	hlg
+[2024-05-23 18:30:28,252] 76	T_sample 208.21	T_update 82.48	T_eval 61.67	ETA 3 days, 18:20:25	train_R_eps 3.05	eval_R_eps 2.84	hlg
+[2024-05-23 18:36:28,741] 77	T_sample 213.36	T_update 84.23	T_eval 62.70	ETA 3 days, 20:16:25	train_R_eps 3.05	eval_R_eps 2.97	hlg
+[2024-05-23 18:42:32,596] 78	T_sample 218.21	T_update 82.04	T_eval 63.41	ETA 3 days, 21:02:06	train_R_eps 3.04	eval_R_eps 3.07	hlg
+[2024-05-23 18:50:04,446] 79	T_sample 263.98	T_update 99.54	T_eval 88.11	ETA 4 days, 19:24:53	train_R_eps 3.04	eval_R_eps 2.90	hlg
+[2024-05-23 18:57:53,818] 80	T_sample 283.66	T_update 98.81	T_eval 86.66	ETA 4 days, 23:45:30	train_R_eps 3.04	eval_R_eps 2.99	hlg
+[2024-05-23 19:05:45,194] 81	T_sample 282.89	T_update 99.21	T_eval 89.03	ETA 5 days, 0:08:16	train_R_eps 3.05	eval_R_eps 2.87	hlg
+[2024-05-23 19:13:47,542] 82	T_sample 296.25	T_update 97.61	T_eval 88.24	ETA 5 days, 2:48:07	train_R_eps 3.04	eval_R_eps 2.95	hlg
+[2024-05-23 19:21:35,306] 83	T_sample 281.38	T_update 99.51	T_eval 86.64	ETA 4 days, 22:57:30	train_R_eps 3.05	eval_R_eps 3.08	hlg
+[2024-05-23 19:28:38,482] 84	T_sample 273.64	T_update 86.57	T_eval 62.75	ETA 4 days, 11:30:09	train_R_eps 3.04	eval_R_eps 3.07	hlg
+[2024-05-23 19:34:38,335] 85	T_sample 213.07	T_update 83.97	T_eval 62.61	ETA 3 days, 19:18:40	train_R_eps 3.05	eval_R_eps 2.95	hlg
+[2024-05-23 19:40:21,749] 86	T_sample 197.79	T_update 82.90	T_eval 62.52	ETA 3 days, 15:02:32	train_R_eps 3.04	eval_R_eps 3.11	hlg
+[2024-05-23 19:46:02,367] 87	T_sample 198.13	T_update 81.18	T_eval 61.11	ETA 3 days, 14:14:27	train_R_eps 3.06	eval_R_eps 3.05	hlg
+[2024-05-23 19:51:53,076] 88	T_sample 196.82	T_update 82.31	T_eval 71.36	ETA 3 days, 16:41:37	train_R_eps 3.04	eval_R_eps 3.03	hlg
+[2024-05-23 19:59:36,024] 89	T_sample 289.90	T_update 93.80	T_eval 79.03	ETA 4 days, 20:58:07	train_R_eps 3.05	eval_R_eps 2.95	hlg
+[2024-05-23 20:07:26,191] 90	T_sample 292.71	T_update 94.41	T_eval 82.81	ETA 4 days, 22:39:35	train_R_eps 3.05	eval_R_eps 2.73	hlg
+[2024-05-23 20:15:12,730] 91	T_sample 290.36	T_update 94.89	T_eval 81.06	ETA 4 days, 21:36:48	train_R_eps 3.05	eval_R_eps 2.94	hlg
+[2024-05-23 20:23:10,896] 92	T_sample 298.30	T_update 95.79	T_eval 83.83	ETA 5 days, 0:24:38	train_R_eps 3.04	eval_R_eps 3.00	hlg
+[2024-05-23 20:29:06,386] 93	T_sample 208.89	T_update 86.02	T_eval 60.38	ETA 3 days, 17:24:49	train_R_eps 3.04	eval_R_eps 3.12	hlg
+[2024-05-23 20:34:42,433] 94	T_sample 193.33	T_update 81.39	T_eval 61.13	ETA 3 days, 12:25:46	train_R_eps 3.05	eval_R_eps 3.08	hlg
+[2024-05-23 20:40:15,795] 95	T_sample 191.38	T_update 81.56	T_eval 60.23	ETA 3 days, 11:39:38	train_R_eps 3.05	eval_R_eps 3.12	hlg
+[2024-05-23 20:47:13,902] 96	T_sample 239.36	T_update 96.58	T_eval 81.95	ETA 4 days, 8:49:07	train_R_eps 3.04	eval_R_eps 3.07	hlg
+[2024-05-23 20:54:59,041] 97	T_sample 288.68	T_update 95.79	T_eval 80.46	ETA 4 days, 20:29:17	train_R_eps 3.05	eval_R_eps 3.04	hlg
+[2024-05-23 21:02:35,947] 98	T_sample 277.93	T_update 95.07	T_eval 83.67	ETA 4 days, 18:17:37	train_R_eps 3.05	eval_R_eps 3.03	hlg
+[2024-05-23 21:10:27,067] 99	T_sample 290.51	T_update 97.04	T_eval 83.34	ETA 4 days, 21:43:15	train_R_eps 3.05	eval_R_eps 3.00	hlg
+[2024-05-23 21:17:42,766] 100	T_sample 292.38	T_update 81.44	T_eval 61.67	ETA 4 days, 12:45:05	train_R_eps 3.05	eval_R_eps 3.13	hlg
+[2024-05-23 21:23:56,039] 101	T_sample 228.42	T_update 83.22	T_eval 61.43	ETA 3 days, 21:03:37	train_R_eps 3.05	eval_R_eps 2.90	hlg
+[2024-05-23 21:29:31,575] 102	T_sample 192.52	T_update 81.66	T_eval 61.16	ETA 3 days, 11:33:19	train_R_eps 3.06	eval_R_eps 3.25	hlg
+[2024-05-23 21:35:09,272] 103	T_sample 194.07	T_update 82.14	T_eval 61.30	ETA 3 days, 12:00:01	train_R_eps 3.05	eval_R_eps 3.34	hlg
+[2024-05-23 21:40:43,116] 104	T_sample 191.22	T_update 81.07	T_eval 61.36	ETA 3 days, 10:56:55	train_R_eps 3.05	eval_R_eps 2.98	hlg
+[2024-05-23 21:46:16,556] 105	T_sample 190.74	T_update 82.12	T_eval 60.39	ETA 3 days, 10:45:20	train_R_eps 3.06	eval_R_eps 3.00	hlg
+[2024-05-23 21:51:51,834] 106	T_sample 192.01	T_update 81.61	T_eval 61.46	ETA 3 days, 11:07:07	train_R_eps 3.05	eval_R_eps 3.15	hlg
+[2024-05-23 21:57:32,745] 107	T_sample 197.10	T_update 82.88	T_eval 60.73	ETA 3 days, 12:25:12	train_R_eps 3.06	eval_R_eps 3.06	hlg
+[2024-05-23 22:04:40,232] 108	T_sample 207.57	T_update 116.11	T_eval 103.50	ETA 4 days, 9:43:30	train_R_eps 3.05	eval_R_eps 3.15	hlg
+[2024-05-23 22:13:19,609] 109	T_sample 300.27	T_update 118.88	T_eval 99.95	ETA 5 days, 8:20:00	train_R_eps 3.05	eval_R_eps 3.02	hlg
+[2024-05-23 22:22:09,254] 110	T_sample 303.76	T_update 118.46	T_eval 107.14	ETA 5 days, 10:43:19	train_R_eps 3.06	eval_R_eps 3.07	hlg
+[2024-05-23 22:30:40,670] 111	T_sample 293.01	T_update 116.96	T_eval 101.14	ETA 5 days, 6:04:27	train_R_eps 3.05	eval_R_eps 3.20	hlg
+[2024-05-23 22:39:15,666] 112	T_sample 296.82	T_update 115.67	T_eval 102.26	ETA 5 days, 6:49:36	train_R_eps 3.06	eval_R_eps 3.01	hlg
+[2024-05-23 22:47:54,720] 113	T_sample 301.25	T_update 115.19	T_eval 102.35	ETA 5 days, 7:40:40	train_R_eps 3.05	eval_R_eps 3.35	hlg
+[2024-05-23 22:56:40,393] 114	T_sample 307.46	T_update 118.19	T_eval 99.75	ETA 5 days, 9:09:39	train_R_eps 3.06	eval_R_eps 3.16	hlg
+[2024-05-23 23:05:07,505] 115	T_sample 292.93	T_update 113.06	T_eval 100.80	ETA 5 days, 4:26:36	train_R_eps 3.06	eval_R_eps 3.08	hlg
+[2024-05-23 23:13:40,069] 116	T_sample 301.39	T_update 111.34	T_eval 99.52	ETA 5 days, 5:38:29	train_R_eps 3.07	eval_R_eps 3.35	hlg
+[2024-05-23 23:22:06,428] 117	T_sample 298.47	T_update 112.94	T_eval 94.70	ETA 5 days, 3:59:42	train_R_eps 3.07	eval_R_eps 3.11	hlg
+[2024-05-23 23:30:33,380] 118	T_sample 297.51	T_update 111.35	T_eval 97.82	ETA 5 days, 3:59:56	train_R_eps 3.06	eval_R_eps 3.23	hlg
+[2024-05-23 23:39:13,096] 119	T_sample 309.29	T_update 114.58	T_eval 95.57	ETA 5 days, 6:58:32	train_R_eps 3.06	eval_R_eps 3.29	hlg
+[2024-05-23 23:47:34,355] 120	T_sample 290.59	T_update 111.94	T_eval 98.44	ETA 5 days, 2:19:10	train_R_eps 3.06	eval_R_eps 3.31	hlg
+[2024-05-23 23:56:09,152] 121	T_sample 301.76	T_update 112.47	T_eval 100.28	ETA 5 days, 5:28:53	train_R_eps 3.07	eval_R_eps 3.31	hlg
+[2024-05-24 00:03:07,190] 122	T_sample 275.88	T_update 80.56	T_eval 61.39	ETA 4 days, 5:47:23	train_R_eps 3.07	eval_R_eps 3.27	hlg
+[2024-05-24 00:08:44,757] 123	T_sample 194.27	T_update 81.09	T_eval 62.01	ETA 3 days, 10:05:38	train_R_eps 3.07	eval_R_eps 3.26	hlg
+[2024-05-24 00:14:26,835] 124	T_sample 199.06	T_update 81.64	T_eval 61.19	ETA 3 days, 11:05:45	train_R_eps 3.06	eval_R_eps 3.31	hlg
+[2024-05-24 00:20:04,192] 125	T_sample 193.90	T_update 81.19	T_eval 62.07	ETA 3 days, 9:51:18	train_R_eps 3.06	eval_R_eps 3.27	hlg
+[2024-05-24 00:25:43,425] 126	T_sample 196.69	T_update 81.22	T_eval 61.13	ETA 3 days, 10:12:56	train_R_eps 3.07	eval_R_eps 3.05	hlg
+[2024-05-24 00:31:22,842] 127	T_sample 195.80	T_update 82.23	T_eval 61.19	ETA 3 days, 10:10:00	train_R_eps 3.07	eval_R_eps 3.06	hlg
+[2024-05-24 00:36:58,653] 128	T_sample 193.73	T_update 81.41	T_eval 60.48	ETA 3 days, 9:12:02	train_R_eps 3.06	eval_R_eps 3.17	hlg
+[2024-05-24 00:42:35,922] 129	T_sample 194.17	T_update 81.21	T_eval 61.69	ETA 3 days, 9:27:31	train_R_eps 3.06	eval_R_eps 3.21	hlg
+[2024-05-24 00:47:53,029] Remaining feasible.
+Update polygon: POLYGON ((1041.845992888235 1081.5396040799158, 1055.9583614579603 992.419029961513, 945.8755744619963 970.4024725623202, 926.9166672643972 1063.340383319525, 959.5 1068.5, 1041.845992888235 1081.5396040799158))
+Update polygon without building boundaries creates new points.
+[2024-05-24 00:47:53,029] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 935), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1092), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 906), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1235), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 963), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1071), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 907), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 929), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1167), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 994), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 898), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 931), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1000), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1296), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 968), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1023), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 932), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1416), ({'type': 7, 'x': 0.5, 'y': 0.5, 'area': 90000.0, 'length': 1200.0, 'width': 300.0, 'height': 300.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 941), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 911), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1359), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 891), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 927), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 874)]
+[2024-05-24 00:47:53,034] Plan fails during eval.
+[2024-05-24 00:48:15,229] 130	T_sample 196.31	T_update 81.50	T_eval 61.29	ETA 3 days, 9:51:20	train_R_eps 3.07	eval_R_eps 3.23	hlg
+[2024-05-24 00:53:52,839] 131	T_sample 194.39	T_update 81.43	T_eval 61.59	ETA 3 days, 9:21:15	train_R_eps 3.07	eval_R_eps 3.07	hlg
+[2024-05-24 00:59:27,720] 132	T_sample 191.96	T_update 82.02	T_eval 60.70	ETA 3 days, 8:36:09	train_R_eps 3.06	eval_R_eps 3.10	hlg
+[2024-05-24 01:05:02,209] 133	T_sample 190.48	T_update 82.23	T_eval 61.58	ETA 3 days, 8:24:56	train_R_eps 3.07	eval_R_eps 3.27	hlg
+[2024-05-24 01:10:35,838] 134	T_sample 189.60	T_update 82.25	T_eval 61.57	ETA 3 days, 8:06:54	train_R_eps 3.07	eval_R_eps 3.30	hlg
+[2024-05-24 01:16:09,735] 135	T_sample 189.20	T_update 84.21	T_eval 60.28	ETA 3 days, 8:05:12	train_R_eps 3.08	eval_R_eps 3.07	hlg
+[2024-05-24 01:21:43,982] 136	T_sample 189.51	T_update 83.02	T_eval 61.51	ETA 3 days, 8:04:41	train_R_eps 3.07	eval_R_eps 3.07	hlg
+[2024-05-24 01:27:14,334] 137	T_sample 188.48	T_update 80.52	T_eval 61.16	ETA 3 days, 7:03:14	train_R_eps 3.07	eval_R_eps 3.07	hlg
+[2024-05-24 01:32:54,059] 138	T_sample 195.07	T_update 82.94	T_eval 61.52	ETA 3 days, 9:12:08	train_R_eps 3.07	eval_R_eps 3.18	hlg
+[2024-05-24 01:38:23,792] 139	T_sample 185.36	T_update 83.53	T_eval 60.64	ETA 3 days, 6:43:19	train_R_eps 3.07	eval_R_eps 3.08	hlg
+[2024-05-24 01:43:58,123] 140	T_sample 189.94	T_update 81.74	T_eval 62.44	ETA 3 days, 7:43:30	train_R_eps 3.08	eval_R_eps 3.06	hlg
+[2024-05-24 01:49:35,573] 141	T_sample 191.04	T_update 83.92	T_eval 62.29	ETA 3 days, 8:22:37	train_R_eps 3.07	eval_R_eps 3.11	hlg
+[2024-05-24 01:55:10,219] 142	T_sample 187.43	T_update 84.48	T_eval 62.54	ETA 3 days, 7:37:07	train_R_eps 3.07	eval_R_eps 3.06	hlg
+[2024-05-24 02:00:48,314] 143	T_sample 191.84	T_update 84.39	T_eval 61.67	ETA 3 days, 8:20:42	train_R_eps 3.08	eval_R_eps 3.18	hlg
+[2024-05-24 02:06:24,986] 144	T_sample 191.17	T_update 84.43	T_eval 60.88	ETA 3 days, 7:54:47	train_R_eps 3.07	eval_R_eps 3.02	hlg
+[2024-05-24 02:12:02,251] 145	T_sample 191.72	T_update 83.74	T_eval 61.61	ETA 3 days, 7:57:37	train_R_eps 3.09	eval_R_eps 3.19	hlg
+[2024-05-24 02:17:42,457] 146	T_sample 193.23	T_update 84.16	T_eval 62.62	ETA 3 days, 8:33:47	train_R_eps 3.08	eval_R_eps 3.02	hlg
+[2024-05-24 02:23:19,888] 147	T_sample 192.03	T_update 83.60	T_eval 61.61	ETA 3 days, 7:48:46	train_R_eps 3.07	eval_R_eps 3.06	hlg
+[2024-05-24 02:29:00,607] 148	T_sample 195.06	T_update 83.68	T_eval 61.78	ETA 3 days, 8:29:43	train_R_eps 3.07	eval_R_eps 3.06	hlg
+[2024-05-24 02:34:39,313] 149	T_sample 193.97	T_update 83.79	T_eval 60.75	ETA 3 days, 7:55:31	train_R_eps 3.08	eval_R_eps 3.15	hlg
+[2024-05-24 02:40:13,560] 150	T_sample 188.78	T_update 84.22	T_eval 61.04	ETA 3 days, 6:46:36	train_R_eps 3.07	eval_R_eps 3.02	hlg
+[2024-05-24 02:45:53,531] 151	T_sample 194.99	T_update 83.67	T_eval 61.11	ETA 3 days, 8:02:10	train_R_eps 3.06	eval_R_eps 3.16	hlg
+[2024-05-24 02:51:30,283] 152	T_sample 190.98	T_update 84.35	T_eval 61.22	ETA 3 days, 7:11:02	train_R_eps 3.08	eval_R_eps 3.04	hlg
+[2024-05-24 02:57:06,793] 153	T_sample 191.92	T_update 83.61	T_eval 60.78	ETA 3 days, 7:02:04	train_R_eps 3.07	eval_R_eps 2.94	hlg
+[2024-05-24 03:02:46,056] 154	T_sample 193.52	T_update 83.87	T_eval 61.67	ETA 3 days, 7:35:08	train_R_eps 3.08	eval_R_eps 3.02	hlg
+[2024-05-24 03:08:20,621] 155	T_sample 190.38	T_update 83.34	T_eval 60.65	ETA 3 days, 6:23:28	train_R_eps 3.08	eval_R_eps 2.98	hlg
+[2024-05-24 03:13:59,874] 156	T_sample 192.64	T_update 85.50	T_eval 60.92	ETA 3 days, 7:23:44	train_R_eps 3.07	eval_R_eps 2.98	hlg
+[2024-05-24 03:19:40,565] 157	T_sample 195.27	T_update 83.47	T_eval 61.76	ETA 3 days, 7:38:15	train_R_eps 3.07	eval_R_eps 2.95	hlg
+[2024-05-24 03:25:20,763] 158	T_sample 194.92	T_update 83.79	T_eval 61.29	ETA 3 days, 7:25:42	train_R_eps 3.07	eval_R_eps 3.06	hlg
+[2024-05-24 03:31:00,361] 159	T_sample 192.77	T_update 83.78	T_eval 62.84	ETA 3 days, 7:11:39	train_R_eps 3.09	eval_R_eps 2.97	hlg
+[2024-05-24 03:36:41,521] 160	T_sample 194.86	T_update 84.12	T_eval 61.97	ETA 3 days, 7:27:40	train_R_eps 3.08	eval_R_eps 3.10	hlg
+[2024-05-24 03:42:18,844] 161	T_sample 190.73	T_update 84.00	T_eval 62.40	ETA 3 days, 6:28:35	train_R_eps 3.08	eval_R_eps 3.16	hlg
+[2024-05-24 03:47:58,849] 162	T_sample 193.59	T_update 84.01	T_eval 62.21	ETA 3 days, 7:00:20	train_R_eps 3.08	eval_R_eps 3.15	hlg
+[2024-05-24 03:53:42,365] 163	T_sample 198.02	T_update 84.12	T_eval 61.17	ETA 3 days, 7:43:34	train_R_eps 3.09	eval_R_eps 2.87	hlg
+[2024-05-24 03:59:23,466] 164	T_sample 194.60	T_update 84.05	T_eval 62.25	ETA 3 days, 7:04:16	train_R_eps 3.08	eval_R_eps 2.94	hlg
+[2024-05-24 04:05:02,479] 165	T_sample 193.21	T_update 83.84	T_eval 61.76	ETA 3 days, 6:29:34	train_R_eps 3.07	eval_R_eps 2.94	hlg
+[2024-05-24 04:10:45,079] 166	T_sample 195.90	T_update 84.35	T_eval 62.15	ETA 3 days, 7:13:43	train_R_eps 3.08	eval_R_eps 3.10	hlg
+[2024-05-24 04:16:27,710] 167	T_sample 194.96	T_update 84.10	T_eval 63.38	ETA 3 days, 7:08:26	train_R_eps 3.07	eval_R_eps 3.10	hlg
+[2024-05-24 04:22:05,748] 168	T_sample 191.46	T_update 84.26	T_eval 62.12	ETA 3 days, 5:59:07	train_R_eps 3.09	eval_R_eps 3.06	hlg
+[2024-05-24 04:27:47,488] 169	T_sample 195.38	T_update 84.45	T_eval 61.72	ETA 3 days, 6:44:40	train_R_eps 3.09	eval_R_eps 2.87	hlg
+[2024-05-24 04:33:25,416] 170	T_sample 191.92	T_update 84.20	T_eval 61.60	ETA 3 days, 5:46:12	train_R_eps 3.10	eval_R_eps 3.09	hlg
+[2024-05-24 04:39:09,073] 171	T_sample 197.80	T_update 83.80	T_eval 61.86	ETA 3 days, 6:59:48	train_R_eps 3.08	eval_R_eps 3.03	hlg
+[2024-05-24 04:44:47,481] 172	T_sample 192.40	T_update 83.38	T_eval 62.44	ETA 3 days, 5:41:40	train_R_eps 3.08	eval_R_eps 3.01	hlg
+[2024-05-24 04:50:32,169] 173	T_sample 198.22	T_update 83.85	T_eval 62.43	ETA 3 days, 7:02:31	train_R_eps 3.09	eval_R_eps 3.04	hlg
+[2024-05-24 04:56:10,641] 174	T_sample 192.50	T_update 84.01	T_eval 61.77	ETA 3 days, 5:31:15	train_R_eps 3.08	eval_R_eps 2.92	hlg
+[2024-05-24 05:01:52,197] 175	T_sample 195.41	T_update 84.26	T_eval 61.69	ETA 3 days, 6:08:03	train_R_eps 3.08	eval_R_eps 2.92	hlg
+[2024-05-24 05:07:30,029] 176	T_sample 192.23	T_update 83.41	T_eval 61.99	ETA 3 days, 5:11:14	train_R_eps 3.08	eval_R_eps 3.00	hlg
+[2024-05-24 05:13:11,908] 177	T_sample 195.32	T_update 83.48	T_eval 62.89	ETA 3 days, 6:01:03	train_R_eps 3.09	eval_R_eps 3.03	hlg
+[2024-05-24 05:18:49,922] 178	T_sample 193.12	T_update 83.36	T_eval 61.33	ETA 3 days, 5:02:28	train_R_eps 3.08	eval_R_eps 2.96	hlg
+[2024-05-24 05:24:28,241] 179	T_sample 190.86	T_update 84.69	T_eval 62.57	ETA 3 days, 5:00:55	train_R_eps 3.08	eval_R_eps 3.00	hlg
+[2024-05-24 05:30:09,013] 180	T_sample 195.16	T_update 83.96	T_eval 61.44	ETA 3 days, 5:28:39	train_R_eps 3.08	eval_R_eps 2.96	hlg
+[2024-05-24 05:35:50,241] 181	T_sample 193.67	T_update 84.73	T_eval 62.63	ETA 3 days, 5:29:24	train_R_eps 3.08	eval_R_eps 3.00	hlg
+[2024-05-24 05:41:29,527] 182	T_sample 192.03	T_update 84.27	T_eval 62.79	ETA 3 days, 4:57:14	train_R_eps 3.08	eval_R_eps 2.93	hlg
+[2024-05-24 05:46:15,766] TopologyException: Input geom 1 is invalid: Self-intersection at 1006.1860914405821 982.75515603093834
+[2024-05-24 05:46:15,766] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1059), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1036), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 950), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 979), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 900), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1024), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1334), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 915), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 955), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 910), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1460), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1350), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 984), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1029), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1034), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1521)]
+[2024-05-24 05:46:15,771] Plan fails during eval.
+[2024-05-24 05:47:10,471] 183	T_sample 193.16	T_update 84.82	T_eval 62.77	ETA 3 days, 5:14:09	train_R_eps 3.08	eval_R_eps 3.02	hlg
+[2024-05-24 05:52:51,732] 184	T_sample 193.71	T_update 84.00	T_eval 63.36	ETA 3 days, 5:12:48	train_R_eps 3.09	eval_R_eps 3.01	hlg
+[2024-05-24 05:58:32,599] 185	T_sample 193.19	T_update 83.87	T_eval 63.61	ETA 3 days, 5:01:45	train_R_eps 3.08	eval_R_eps 3.01	hlg
+[2024-05-24 06:04:12,499] 186	T_sample 193.99	T_update 83.82	T_eval 61.90	ETA 3 days, 4:42:57	train_R_eps 3.10	eval_R_eps 3.16	hlg
+[2024-05-24 06:09:55,067] 187	T_sample 195.92	T_update 84.33	T_eval 62.12	ETA 3 days, 5:13:25	train_R_eps 3.09	eval_R_eps 3.06	hlg
+[2024-05-24 06:15:38,094] 188	T_sample 195.39	T_update 84.65	T_eval 62.79	ETA 3 days, 5:13:57	train_R_eps 3.08	eval_R_eps 3.12	hlg
+[2024-05-24 06:21:19,243] 189	T_sample 195.55	T_update 83.82	T_eval 61.59	ETA 3 days, 4:42:50	train_R_eps 3.09	eval_R_eps 3.16	hlg
+[2024-05-24 06:27:03,427] 190	T_sample 196.11	T_update 84.42	T_eval 63.44	ETA 3 days, 5:18:00	train_R_eps 3.08	eval_R_eps 3.12	hlg
+[2024-05-24 06:32:47,219] 191	T_sample 197.56	T_update 83.67	T_eval 62.36	ETA 3 days, 5:07:04	train_R_eps 3.09	eval_R_eps 3.00	hlg
+[2024-05-24 06:38:27,801] 192	T_sample 193.45	T_update 83.72	T_eval 63.22	ETA 3 days, 4:18:10	train_R_eps 3.08	eval_R_eps 3.08	hlg
+[2024-05-24 06:44:06,442] 193	T_sample 191.88	T_update 83.82	T_eval 62.75	ETA 3 days, 3:46:26	train_R_eps 3.08	eval_R_eps 2.93	hlg
+[2024-05-24 06:49:49,340] 194	T_sample 196.18	T_update 83.73	T_eval 62.79	ETA 3 days, 4:37:54	train_R_eps 3.07	eval_R_eps 2.97	hlg
+[2024-05-24 06:55:32,834] 195	T_sample 198.38	T_update 83.51	T_eval 61.41	ETA 3 days, 4:40:11	train_R_eps 3.10	eval_R_eps 2.80	hlg
+[2024-05-24 07:01:15,598] 196	T_sample 195.35	T_update 84.66	T_eval 62.56	ETA 3 days, 4:24:41	train_R_eps 3.09	eval_R_eps 2.84	hlg
+[2024-05-24 07:06:58,089] 197	T_sample 196.88	T_update 83.15	T_eval 62.26	ETA 3 days, 4:15:21	train_R_eps 3.09	eval_R_eps 3.07	hlg
+[2024-05-24 07:12:47,591] 198	T_sample 202.50	T_update 83.59	T_eval 63.22	ETA 3 days, 5:43:13	train_R_eps 3.09	eval_R_eps 3.02	hlg
+[2024-05-24 07:18:31,192] 199	T_sample 196.75	T_update 83.87	T_eval 62.78	ETA 3 days, 4:18:39	train_R_eps 3.09	eval_R_eps 2.82	hlg
+[2024-05-24 07:24:17,313] 200	T_sample 200.01	T_update 83.52	T_eval 62.39	ETA 3 days, 4:46:28	train_R_eps 3.09	eval_R_eps 2.79	hlg
+[2024-05-24 07:30:05,346] 201	T_sample 200.78	T_update 83.35	T_eval 63.70	ETA 3 days, 5:06:13	train_R_eps 3.10	eval_R_eps 2.94	hlg
+[2024-05-24 07:35:54,875] 202	T_sample 201.52	T_update 84.26	T_eval 63.56	ETA 3 days, 5:20:19	train_R_eps 3.08	eval_R_eps 2.96	hlg
+[2024-05-24 07:41:38,664] 203	T_sample 196.17	T_update 83.95	T_eval 63.48	ETA 3 days, 3:58:20	train_R_eps 3.09	eval_R_eps 2.88	hlg
+[2024-05-24 07:47:25,408] 204	T_sample 199.54	T_update 83.39	T_eval 63.61	ETA 3 days, 4:31:46	train_R_eps 3.10	eval_R_eps 2.88	hlg
+[2024-05-24 07:53:13,466] 205	T_sample 200.01	T_update 83.68	T_eval 64.17	ETA 3 days, 4:43:24	train_R_eps 3.09	eval_R_eps 2.74	hlg
+[2024-05-24 07:58:57,285] 206	T_sample 197.72	T_update 83.46	T_eval 62.44	ETA 3 days, 3:41:34	train_R_eps 3.10	eval_R_eps 2.88	hlg
+[2024-05-24 08:04:45,707] 207	T_sample 201.94	T_update 83.26	T_eval 63.02	ETA 3 days, 4:36:30	train_R_eps 3.10	eval_R_eps 3.16	hlg
+[2024-05-24 08:10:36,501] 208	T_sample 202.23	T_update 84.61	T_eval 63.76	ETA 3 days, 5:02:02	train_R_eps 3.10	eval_R_eps 2.94	hlg
+[2024-05-24 08:16:22,129] 209	T_sample 199.21	T_update 82.92	T_eval 63.31	ETA 3 days, 3:48:14	train_R_eps 3.09	eval_R_eps 2.84	hlg
+[2024-05-24 08:22:10,280] 210	T_sample 201.83	T_update 83.75	T_eval 62.37	ETA 3 days, 4:15:31	train_R_eps 3.08	eval_R_eps 2.70	hlg
+[2024-05-24 08:27:56,115] 211	T_sample 199.26	T_update 83.25	T_eval 63.13	ETA 3 days, 3:39:24	train_R_eps 3.08	eval_R_eps 2.78	hlg
+[2024-05-24 08:33:41,795] 212	T_sample 199.92	T_update 82.99	T_eval 62.58	ETA 3 days, 3:31:37	train_R_eps 3.09	eval_R_eps 3.10	hlg
+[2024-05-24 08:39:31,728] 213	T_sample 202.74	T_update 83.51	T_eval 63.49	ETA 3 days, 4:21:33	train_R_eps 3.09	eval_R_eps 2.98	hlg
+[2024-05-24 08:45:12,882] 214	T_sample 196.61	T_update 82.92	T_eval 61.43	ETA 3 days, 2:20:53	train_R_eps 3.09	eval_R_eps 3.06	hlg
+[2024-05-24 08:50:58,464] 215	T_sample 198.63	T_update 83.10	T_eval 63.66	ETA 3 days, 3:13:04	train_R_eps 3.09	eval_R_eps 2.98	hlg
+[2024-05-24 08:56:41,633] 216	T_sample 195.87	T_update 83.43	T_eval 63.67	ETA 3 days, 2:35:45	train_R_eps 3.09	eval_R_eps 3.05	hlg
+[2024-05-24 09:02:22,496] 217	T_sample 194.91	T_update 81.12	T_eval 64.63	ETA 3 days, 1:59:59	train_R_eps 3.10	eval_R_eps 2.81	hlg
+[2024-05-24 09:08:04,257] 218	T_sample 196.39	T_update 80.62	T_eval 64.55	ETA 3 days, 2:06:02	train_R_eps 3.09	eval_R_eps 3.10	hlg
+[2024-05-24 09:13:48,867] 219	T_sample 198.89	T_update 81.93	T_eval 63.60	ETA 3 days, 2:37:21	train_R_eps 3.09	eval_R_eps 3.15	hlg
+[2024-05-24 09:19:28,323] 220	T_sample 192.53	T_update 81.83	T_eval 64.89	ETA 3 days, 1:24:33	train_R_eps 3.10	eval_R_eps 2.92	hlg
+[2024-05-24 09:25:15,047] 221	T_sample 201.55	T_update 79.70	T_eval 65.27	ETA 3 days, 2:53:19	train_R_eps 3.09	eval_R_eps 2.92	hlg
+[2024-05-24 09:31:01,063] 222	T_sample 201.20	T_update 80.12	T_eval 64.50	ETA 3 days, 2:38:19	train_R_eps 3.10	eval_R_eps 3.32	hlg
+[2024-05-24 09:36:42,754] 223	T_sample 197.81	T_update 79.62	T_eval 64.05	ETA 3 days, 1:36:31	train_R_eps 3.09	eval_R_eps 3.02	hlg
+[2024-05-24 09:42:28,717] 224	T_sample 199.11	T_update 81.72	T_eval 64.93	ETA 3 days, 2:26:08	train_R_eps 3.10	eval_R_eps 3.14	hlg
+[2024-05-24 09:48:10,644] 225	T_sample 194.67	T_update 84.15	T_eval 62.91	ETA 3 days, 1:28:20	train_R_eps 3.10	eval_R_eps 2.87	hlg
+[2024-05-24 09:54:00,073] 226	T_sample 202.97	T_update 83.35	T_eval 62.91	ETA 3 days, 2:59:17	train_R_eps 3.09	eval_R_eps 2.90	hlg
+[2024-05-24 09:59:44,615] 227	T_sample 196.04	T_update 84.49	T_eval 63.82	ETA 3 days, 1:50:33	train_R_eps 3.09	eval_R_eps 2.82	hlg
+[2024-05-24 10:05:30,812] 228	T_sample 197.81	T_update 84.32	T_eval 63.87	ETA 3 days, 2:06:06	train_R_eps 3.11	eval_R_eps 2.84	hlg
+[2024-05-24 10:11:14,625] 229	T_sample 196.16	T_update 84.01	T_eval 63.45	ETA 3 days, 1:29:47	train_R_eps 3.10	eval_R_eps 2.92	hlg
+[2024-05-24 10:17:03,542] 230	T_sample 199.70	T_update 85.06	T_eval 63.95	ETA 3 days, 2:29:20	train_R_eps 3.10	eval_R_eps 2.89	hlg
+[2024-05-24 10:22:57,997] 231	T_sample 205.53	T_update 83.76	T_eval 64.96	ETA 3 days, 3:34:29	train_R_eps 3.10	eval_R_eps 2.87	hlg
+[2024-05-24 10:28:53,414] 232	T_sample 199.76	T_update 82.33	T_eval 73.09	ETA 3 days, 3:40:24	train_R_eps 3.09	eval_R_eps 2.93	hlg
+[2024-05-24 10:37:42,479] 233	T_sample 300.98	T_update 139.42	T_eval 88.43	ETA 4 days, 16:31:23	train_R_eps 3.10	eval_R_eps 3.07	hlg
+[2024-05-24 10:46:31,992] 234	T_sample 294.96	T_update 141.45	T_eval 92.83	ETA 4 days, 16:27:45	train_R_eps 3.09	eval_R_eps 3.02	hlg
+[2024-05-24 10:55:21,533] 235	T_sample 294.59	T_update 141.85	T_eval 92.83	ETA 4 days, 16:19:22	train_R_eps 3.10	eval_R_eps 2.95	hlg
+[2024-05-24 11:04:08,818] 236	T_sample 296.63	T_update 142.94	T_eval 87.46	ETA 4 days, 15:42:01	train_R_eps 3.09	eval_R_eps 2.64	hlg
+[2024-05-24 11:13:04,567] 237	T_sample 304.80	T_update 138.19	T_eval 92.49	ETA 4 days, 17:20:38	train_R_eps 3.10	eval_R_eps 2.69	hlg
+[2024-05-24 11:21:55,570] 238	T_sample 295.18	T_update 144.35	T_eval 91.22	ETA 4 days, 16:11:42	train_R_eps 3.10	eval_R_eps 2.90	hlg
+[2024-05-24 11:30:41,080] 239	T_sample 293.02	T_update 142.50	T_eval 89.72	ETA 4 days, 14:53:07	train_R_eps 3.10	eval_R_eps 2.88	hlg
+[2024-05-24 11:39:32,716] 240	T_sample 304.33	T_update 135.30	T_eval 91.73	ETA 4 days, 16:01:47	train_R_eps 3.11	eval_R_eps 2.88	hlg
+[2024-05-24 11:48:21,516] 241	T_sample 302.09	T_update 135.88	T_eval 90.60	ETA 4 days, 15:17:37	train_R_eps 3.10	eval_R_eps 2.74	hlg
+[2024-05-24 11:57:05,592] 242	T_sample 300.70	T_update 132.58	T_eval 90.55	ETA 4 days, 14:08:59	train_R_eps 3.09	eval_R_eps 2.71	hlg
+[2024-05-24 12:05:54,190] 243	T_sample 307.98	T_update 130.02	T_eval 90.36	ETA 4 days, 14:57:19	train_R_eps 3.11	eval_R_eps 3.02	hlg
+[2024-05-24 12:14:35,064] 244	T_sample 307.23	T_update 127.28	T_eval 86.13	ETA 4 days, 13:11:25	train_R_eps 3.10	eval_R_eps 2.90	hlg
+[2024-05-24 12:23:08,970] 245	T_sample 304.99	T_update 118.95	T_eval 89.74	ETA 4 days, 11:35:09	train_R_eps 3.10	eval_R_eps 2.87	hlg
+[2024-05-24 12:30:28,088] 246	T_sample 291.28	T_update 83.17	T_eval 64.46	ETA 3 days, 19:48:20	train_R_eps 3.10	eval_R_eps 2.80	hlg
+[2024-05-24 12:36:21,431] 247	T_sample 204.89	T_update 84.65	T_eval 63.61	ETA 3 days, 1:46:06	train_R_eps 3.10	eval_R_eps 2.81	hlg
+[2024-05-24 12:42:12,171] 248	T_sample 204.76	T_update 82.84	T_eval 62.95	ETA 3 days, 1:07:40	train_R_eps 3.10	eval_R_eps 2.64	hlg
+[2024-05-24 12:48:02,334] 249	T_sample 201.54	T_update 85.03	T_eval 63.41	ETA 3 days, 0:54:37	train_R_eps 3.11	eval_R_eps 2.94	hlg
+[2024-05-24 12:53:49,886] 250	T_sample 201.67	T_update 82.26	T_eval 63.42	ETA 3 days, 0:16:06	train_R_eps 3.11	eval_R_eps 2.97	hlg
+[2024-05-24 12:59:45,524] 251	T_sample 207.08	T_update 84.33	T_eval 64.02	ETA 3 days, 1:51:11	train_R_eps 3.11	eval_R_eps 3.02	hlg
+[2024-05-24 13:05:33,690] 252	T_sample 203.65	T_update 81.92	T_eval 62.41	ETA 3 days, 0:12:18	train_R_eps 3.10	eval_R_eps 2.82	hlg
+[2024-05-24 13:11:22,066] 253	T_sample 202.45	T_update 83.07	T_eval 62.66	ETA 3 days, 0:09:05	train_R_eps 3.11	eval_R_eps 2.93	hlg
+[2024-05-24 13:17:08,691] 254	T_sample 201.41	T_update 82.20	T_eval 62.82	ETA 2 days, 23:41:31	train_R_eps 3.11	eval_R_eps 2.81	hlg
+[2024-05-24 13:22:56,270] 255	T_sample 201.64	T_update 82.86	T_eval 62.88	ETA 2 days, 23:47:34	train_R_eps 3.11	eval_R_eps 3.07	hlg
+[2024-05-24 13:28:44,734] 256	T_sample 201.34	T_update 82.02	T_eval 64.91	ETA 2 days, 23:52:46	train_R_eps 3.10	eval_R_eps 2.77	hlg
+[2024-05-24 13:34:33,424] 257	T_sample 203.74	T_update 82.26	T_eval 62.49	ETA 2 days, 23:49:44	train_R_eps 3.10	eval_R_eps 2.79	hlg
+[2024-05-24 13:40:24,954] 258	T_sample 203.63	T_update 83.58	T_eval 64.13	ETA 3 days, 0:19:01	train_R_eps 3.11	eval_R_eps 2.90	hlg
+[2024-05-24 13:46:16,033] 259	T_sample 204.10	T_update 83.98	T_eval 62.80	ETA 3 days, 0:07:36	train_R_eps 3.10	eval_R_eps 2.74	hlg
+[2024-05-24 13:52:10,828] 260	T_sample 207.52	T_update 83.92	T_eval 63.15	ETA 3 days, 0:47:23	train_R_eps 3.10	eval_R_eps 3.06	hlg
+[2024-05-24 13:58:00,828] 261	T_sample 203.82	T_update 82.58	T_eval 63.41	ETA 2 days, 23:42:38	train_R_eps 3.10	eval_R_eps 3.17	hlg
+[2024-05-24 14:03:51,982] 262	T_sample 204.64	T_update 84.65	T_eval 61.67	ETA 2 days, 23:50:55	train_R_eps 3.10	eval_R_eps 2.73	hlg
+[2024-05-24 14:09:43,649] 263	T_sample 203.31	T_update 83.81	T_eval 64.36	ETA 2 days, 23:51:25	train_R_eps 3.10	eval_R_eps 2.84	hlg
+[2024-05-24 14:15:37,920] 264	T_sample 206.24	T_update 82.55	T_eval 65.28	ETA 3 days, 0:17:26	train_R_eps 3.11	eval_R_eps 3.00	hlg
+[2024-05-24 14:21:29,937] 265	T_sample 204.91	T_update 83.83	T_eval 63.09	ETA 2 days, 23:43:58	train_R_eps 3.12	eval_R_eps 2.84	hlg
+[2024-05-24 14:27:17,837] 266	T_sample 201.24	T_update 83.29	T_eval 63.18	ETA 2 days, 22:47:49	train_R_eps 3.11	eval_R_eps 2.91	hlg
+[2024-05-24 14:33:15,193] 267	T_sample 207.12	T_update 83.32	T_eval 66.71	ETA 3 days, 0:37:17	train_R_eps 3.12	eval_R_eps 3.00	hlg
+[2024-05-24 14:39:17,768] 268	T_sample 212.30	T_update 84.50	T_eval 65.58	ETA 3 days, 1:34:57	train_R_eps 3.11	eval_R_eps 2.96	hlg
+[2024-05-24 14:45:08,998] 269	T_sample 205.49	T_update 81.44	T_eval 64.11	ETA 2 days, 23:10:53	train_R_eps 3.11	eval_R_eps 2.85	hlg
+[2024-05-24 14:51:01,427] 270	T_sample 206.24	T_update 81.22	T_eval 64.77	ETA 2 days, 23:19:32	train_R_eps 3.12	eval_R_eps 2.61	hlg
+[2024-05-24 14:56:47,007] 271	T_sample 198.38	T_update 81.48	T_eval 65.52	ETA 2 days, 21:50:39	train_R_eps 3.10	eval_R_eps 2.86	hlg
+[2024-05-24 15:02:32,407] 272	T_sample 197.93	T_update 84.31	T_eval 62.97	ETA 2 days, 21:42:38	train_R_eps 3.11	eval_R_eps 2.99	hlg
+[2024-05-24 15:08:17,566] 273	T_sample 200.54	T_update 81.60	T_eval 62.83	ETA 2 days, 21:34:04	train_R_eps 3.11	eval_R_eps 3.05	hlg
+[2024-05-24 15:14:06,747] 274	T_sample 204.26	T_update 79.88	T_eval 64.84	ETA 2 days, 22:16:54	train_R_eps 3.11	eval_R_eps 2.98	hlg
+[2024-05-24 15:19:57,569] 275	T_sample 204.67	T_update 82.01	T_eval 63.94	ETA 2 days, 22:30:51	train_R_eps 3.11	eval_R_eps 3.18	hlg
+[2024-05-24 15:25:50,795] 276	T_sample 206.64	T_update 81.85	T_eval 64.55	ETA 2 days, 22:53:59	train_R_eps 3.10	eval_R_eps 2.92	hlg
+[2024-05-24 15:31:38,772] 277	T_sample 201.63	T_update 82.32	T_eval 63.83	ETA 2 days, 21:44:59	train_R_eps 3.11	eval_R_eps 3.00	hlg
+[2024-05-24 15:37:31,702] 278	T_sample 204.57	T_update 82.31	T_eval 65.82	ETA 2 days, 22:38:26	train_R_eps 3.11	eval_R_eps 3.06	hlg
+[2024-05-24 15:43:22,999] 279	T_sample 205.02	T_update 81.95	T_eval 64.12	ETA 2 days, 22:13:04	train_R_eps 3.11	eval_R_eps 3.09	hlg
+[2024-05-24 15:49:12,662] 280	T_sample 203.22	T_update 81.05	T_eval 65.18	ETA 2 days, 21:47:35	train_R_eps 3.11	eval_R_eps 3.21	hlg
+[2024-05-24 15:55:01,831] 281	T_sample 201.25	T_update 81.89	T_eval 65.83	ETA 2 days, 21:35:59	train_R_eps 3.11	eval_R_eps 2.87	hlg
+[2024-05-24 16:01:00,718] 282	T_sample 206.62	T_update 87.03	T_eval 65.03	ETA 2 days, 23:26:11	train_R_eps 3.11	eval_R_eps 2.96	hlg
+[2024-05-24 16:06:49,211] 283	T_sample 200.39	T_update 84.45	T_eval 63.45	ETA 2 days, 21:16:20	train_R_eps 3.10	eval_R_eps 3.05	hlg
+[2024-05-24 16:12:40,099] 284	T_sample 202.99	T_update 85.43	T_eval 62.27	ETA 2 days, 21:39:03	train_R_eps 3.10	eval_R_eps 3.07	hlg
+[2024-05-24 16:18:32,441] 285	T_sample 204.60	T_update 84.41	T_eval 63.14	ETA 2 days, 21:50:33	train_R_eps 3.11	eval_R_eps 3.21	hlg
+[2024-05-24 16:24:23,484] 286	T_sample 201.69	T_update 85.02	T_eval 64.13	ETA 2 days, 21:29:12	train_R_eps 3.10	eval_R_eps 2.99	hlg
+[2024-05-24 16:30:09,636] 287	T_sample 199.24	T_update 84.27	T_eval 62.44	ETA 2 days, 20:25:20	train_R_eps 3.11	eval_R_eps 3.22	hlg
+[2024-05-24 16:36:04,492] 288	T_sample 202.45	T_update 86.94	T_eval 65.27	ETA 2 days, 22:02:42	train_R_eps 3.11	eval_R_eps 3.34	hlg
+[2024-05-24 16:41:57,241] 289	T_sample 201.91	T_update 84.10	T_eval 66.54	ETA 2 days, 21:31:45	train_R_eps 3.10	eval_R_eps 3.08	hlg
+[2024-05-24 16:47:45,782] 290	T_sample 202.76	T_update 80.93	T_eval 64.64	ETA 2 days, 20:36:07	train_R_eps 3.11	eval_R_eps 3.20	hlg
+[2024-05-24 16:53:35,899] 291	T_sample 203.95	T_update 81.85	T_eval 64.12	ETA 2 days, 20:49:03	train_R_eps 3.10	eval_R_eps 3.15	hlg
+[2024-05-24 16:59:24,484] 292	T_sample 199.87	T_update 84.39	T_eval 64.12	ETA 2 days, 20:25:04	train_R_eps 3.10	eval_R_eps 3.20	hlg
+[2024-05-24 17:05:11,064] 293	T_sample 199.44	T_update 82.11	T_eval 64.83	ETA 2 days, 19:55:47	train_R_eps 3.10	eval_R_eps 3.21	hlg
+[2024-05-24 17:11:03,706] 294	T_sample 206.37	T_update 81.25	T_eval 64.82	ETA 2 days, 21:01:13	train_R_eps 3.11	eval_R_eps 3.37	hlg
+[2024-05-24 17:16:54,524] 295	T_sample 201.59	T_update 83.67	T_eval 65.35	ETA 2 days, 20:33:50	train_R_eps 3.11	eval_R_eps 3.20	hlg
+[2024-05-24 17:22:43,011] 296	T_sample 202.23	T_update 82.32	T_eval 63.75	ETA 2 days, 20:00:48	train_R_eps 3.11	eval_R_eps 3.34	hlg
+[2024-05-24 17:28:28,229] 297	T_sample 200.60	T_update 81.48	T_eval 62.95	ETA 2 days, 19:16:47	train_R_eps 3.11	eval_R_eps 2.80	hlg
+[2024-05-24 17:34:15,687] 298	T_sample 198.40	T_update 84.54	T_eval 64.31	ETA 2 days, 19:37:04	train_R_eps 3.12	eval_R_eps 3.11	hlg
+[2024-05-24 17:39:56,121] 299	T_sample 196.06	T_update 79.44	T_eval 64.74	ETA 2 days, 18:09:27	train_R_eps 3.11	eval_R_eps 3.09	hlg
+[2024-05-24 17:45:42,036] 300	T_sample 200.03	T_update 81.35	T_eval 64.32	ETA 2 days, 19:07:28	train_R_eps 3.11	eval_R_eps 3.27	hlg
+[2024-05-24 17:51:25,551] 301	T_sample 198.16	T_update 80.69	T_eval 64.46	ETA 2 days, 18:33:54	train_R_eps 3.12	eval_R_eps 3.36	hlg
+[2024-05-24 17:57:12,307] 302	T_sample 198.70	T_update 83.69	T_eval 64.17	ETA 2 days, 19:05:47	train_R_eps 3.11	eval_R_eps 2.99	hlg
+[2024-05-24 18:02:56,145] 303	T_sample 197.07	T_update 81.59	T_eval 64.98	ETA 2 days, 18:26:13	train_R_eps 3.11	eval_R_eps 2.92	hlg
+[2024-05-24 18:08:42,159] 304	T_sample 196.95	T_update 84.33	T_eval 64.53	ETA 2 days, 18:45:36	train_R_eps 3.11	eval_R_eps 3.12	hlg
+[2024-05-24 18:14:29,942] 305	T_sample 201.14	T_update 81.40	T_eval 65.05	ETA 2 days, 19:00:23	train_R_eps 3.11	eval_R_eps 3.17	hlg
+[2024-05-24 18:20:17,474] 306	T_sample 202.23	T_update 81.60	T_eval 63.50	ETA 2 days, 18:51:41	train_R_eps 3.12	eval_R_eps 2.96	hlg
+[2024-05-24 18:26:04,912] 307	T_sample 201.98	T_update 81.39	T_eval 63.87	ETA 2 days, 18:44:49	train_R_eps 3.11	eval_R_eps 2.89	hlg
+[2024-05-24 18:31:54,545] 308	T_sample 203.30	T_update 81.82	T_eval 64.31	ETA 2 days, 19:04:17	train_R_eps 3.11	eval_R_eps 3.24	hlg
+[2024-05-24 18:37:50,295] 309	T_sample 203.79	T_update 85.63	T_eval 66.12	ETA 2 days, 20:08:46	train_R_eps 3.11	eval_R_eps 3.13	hlg
+[2024-05-24 18:43:46,798] 310	T_sample 211.32	T_update 81.50	T_eval 63.48	ETA 2 days, 20:11:27	train_R_eps 3.11	eval_R_eps 3.25	hlg
+[2024-05-24 18:49:46,956] 311	T_sample 213.23	T_update 81.37	T_eval 65.36	ETA 2 days, 20:47:32	train_R_eps 3.12	eval_R_eps 3.03	hlg
+[2024-05-24 18:55:42,718] 312	T_sample 209.12	T_update 81.87	T_eval 64.56	ETA 2 days, 19:51:04	train_R_eps 3.11	eval_R_eps 2.89	hlg
+[2024-05-24 19:01:35,747] 313	T_sample 204.50	T_update 83.41	T_eval 64.91	ETA 2 days, 19:14:02	train_R_eps 3.13	eval_R_eps 3.03	hlg
+[2024-05-24 19:07:25,019] 314	T_sample 202.73	T_update 82.09	T_eval 64.25	ETA 2 days, 18:25:14	train_R_eps 3.11	eval_R_eps 2.93	hlg
+[2024-05-24 19:13:15,852] 315	T_sample 204.85	T_update 82.62	T_eval 63.16	ETA 2 days, 18:37:12	train_R_eps 3.11	eval_R_eps 3.33	hlg
+[2024-05-24 19:19:07,048] 316	T_sample 202.21	T_update 85.69	T_eval 63.10	ETA 2 days, 18:35:31	train_R_eps 3.11	eval_R_eps 3.05	hlg
+[2024-05-24 19:25:17,560] 317	T_sample 213.61	T_update 90.02	T_eval 66.63	ETA 2 days, 22:08:45	train_R_eps 3.11	eval_R_eps 3.27	hlg
+[2024-05-24 19:31:31,643] 318	T_sample 214.23	T_update 89.88	T_eval 69.73	ETA 2 days, 22:43:03	train_R_eps 3.12	eval_R_eps 3.17	hlg
+[2024-05-24 19:37:38,160] 319	T_sample 210.06	T_update 89.12	T_eval 67.10	ETA 2 days, 21:11:04	train_R_eps 3.11	eval_R_eps 3.17	hlg
+[2024-05-24 19:43:42,252] 320	T_sample 206.04	T_update 89.33	T_eval 68.47	ETA 2 days, 20:37:25	train_R_eps 3.12	eval_R_eps 2.97	hlg
+[2024-05-24 19:49:49,781] 321	T_sample 207.11	T_update 91.42	T_eval 68.79	ETA 2 days, 21:10:40	train_R_eps 3.13	eval_R_eps 3.22	hlg
+[2024-05-24 19:55:47,049] 322	T_sample 202.70	T_update 90.71	T_eval 63.54	ETA 2 days, 19:07:33	train_R_eps 3.11	eval_R_eps 3.10	hlg
+[2024-05-24 20:01:49,689] 323	T_sample 212.17	T_update 84.42	T_eval 65.86	ETA 2 days, 20:03:34	train_R_eps 3.11	eval_R_eps 3.34	hlg
+[2024-05-24 20:07:50,733] 324	T_sample 211.05	T_update 84.80	T_eval 65.00	ETA 2 days, 19:39:34	train_R_eps 3.11	eval_R_eps 3.12	hlg
+[2024-05-24 20:13:51,352] 325	T_sample 211.94	T_update 83.94	T_eval 64.53	ETA 2 days, 19:28:40	train_R_eps 3.12	eval_R_eps 3.11	hlg
+[2024-05-24 20:19:53,052] 326	T_sample 212.49	T_update 83.90	T_eval 65.10	ETA 2 days, 19:34:50	train_R_eps 3.11	eval_R_eps 3.02	hlg
+[2024-05-24 20:26:01,713] 327	T_sample 215.99	T_update 86.86	T_eval 65.58	ETA 2 days, 20:46:25	train_R_eps 3.12	eval_R_eps 3.21	hlg
+[2024-05-24 20:32:00,568] 328	T_sample 208.76	T_update 83.86	T_eval 66.03	ETA 2 days, 18:50:58	train_R_eps 3.12	eval_R_eps 2.85	hlg
+[2024-05-24 20:38:05,054] 329	T_sample 215.28	T_update 84.07	T_eval 64.94	ETA 2 days, 19:47:53	train_R_eps 3.13	eval_R_eps 3.20	hlg
+[2024-05-24 20:44:03,830] 330	T_sample 210.81	T_update 82.06	T_eval 65.70	ETA 2 days, 18:38:06	train_R_eps 3.12	eval_R_eps 3.18	hlg
+[2024-05-24 20:46:56,706] id: hlg
+[2024-05-24 20:46:56,707] seed: 111
+[2024-05-24 20:46:56,707] objectives_plan: objectives_hlg
+[2024-05-24 20:46:56,707] init_plan: init_plan_hlg
+[2024-05-24 20:46:56,707] env_specs: {}
+[2024-05-24 20:46:56,707] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 4.0, 'greenness_weight': 1.0}
+[2024-05-24 20:46:56,707] obs_specs: {}
+[2024-05-24 20:46:56,707] agent_specs: {'batch_stage': False}
+[2024-05-24 20:46:56,707] skip_land_use: False
+[2024-05-24 20:46:56,707] skip_road: True
+[2024-05-24 20:46:56,707] road_ratio: 0.0
+[2024-05-24 20:46:56,707] gamma: 1.0
+[2024-05-24 20:46:56,707] tau: 0.0
+[2024-05-24 20:46:56,708] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 16, 'num_gcn_layers': 2, 'num_edge_fc_layers': 1, 'max_num_nodes': 1000, 'max_num_edges': 3000, 'num_attention_heads': 1}
+[2024-05-24 20:46:56,708] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-05-24 20:46:56,708] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-05-24 20:46:56,708] lr: 0.0004
+[2024-05-24 20:46:56,708] weightdecay: 0.0
+[2024-05-24 20:46:56,708] eps: 1e-05
+[2024-05-24 20:46:56,708] value_pred_coef: 0.5
+[2024-05-24 20:46:56,708] entropy_coef: 0.01
+[2024-05-24 20:46:56,708] clip_epsilon: 0.2
+[2024-05-24 20:46:56,708] max_num_iterations: 1000
+[2024-05-24 20:46:56,708] num_episodes_per_iteration: 500
+[2024-05-24 20:46:56,708] max_sequence_length: 50
+[2024-05-24 20:46:56,708] num_optim_epoch: 4
+[2024-05-24 20:46:56,708] mini_batch_size: 256
+[2024-05-24 20:46:56,709] save_model_interval: 10
+[2024-05-24 20:50:11,173] 331	T_sample 215.65	T_update 84.66	T_eval 66.84	ETA 2 days, 20:07:35	train_R_eps 3.12	eval_R_eps 2.91	hlg
+[2024-05-24 20:56:13,000] 332	T_sample 212.02	T_update 84.86	T_eval 64.75	ETA 2 days, 19:00:10	train_R_eps 3.12	eval_R_eps 3.01	hlg
+[2024-05-24 21:02:19,299] 333	T_sample 207.37	T_update 88.75	T_eval 69.93	ETA 2 days, 19:43:11	train_R_eps 3.12	eval_R_eps 3.00	hlg
+[2024-05-24 21:08:21,557] 334	T_sample 205.90	T_update 88.90	T_eval 67.20	ETA 2 days, 18:52:09	train_R_eps 3.11	eval_R_eps 3.13	hlg
+[2024-05-24 21:14:22,593] 335	T_sample 210.32	T_update 83.80	T_eval 66.71	ETA 2 days, 18:33:13	train_R_eps 3.12	eval_R_eps 2.96	hlg
+[2024-05-24 21:20:28,215] 336	T_sample 211.30	T_update 86.99	T_eval 67.14	ETA 2 days, 19:17:59	train_R_eps 3.11	eval_R_eps 3.05	hlg
+[2024-05-24 21:26:31,255] 337	T_sample 213.94	T_update 85.08	T_eval 63.82	ETA 2 days, 18:43:18	train_R_eps 3.11	eval_R_eps 3.13	hlg
+[2024-05-24 21:32:32,266] 338	T_sample 210.51	T_update 85.25	T_eval 65.05	ETA 2 days, 18:14:58	train_R_eps 3.11	eval_R_eps 3.05	hlg
+[2024-05-24 21:38:24,071] 339	T_sample 204.16	T_update 82.91	T_eval 64.54	ETA 2 days, 16:27:44	train_R_eps 3.10	eval_R_eps 3.21	hlg
+[2024-05-24 21:44:18,894] 340	T_sample 206.03	T_update 82.52	T_eval 66.07	ETA 2 days, 16:54:51	train_R_eps 3.11	eval_R_eps 3.18	hlg
+[2024-05-24 21:50:02,618] 341	T_sample 197.99	T_update 81.45	T_eval 64.09	ETA 2 days, 14:47:20	train_R_eps 3.11	eval_R_eps 2.91	hlg
+[2024-05-24 21:55:46,524] 342	T_sample 196.40	T_update 83.35	T_eval 63.96	ETA 2 days, 14:43:35	train_R_eps 3.12	eval_R_eps 3.23	hlg
+[2024-05-24 22:01:30,919] 343	T_sample 197.88	T_update 80.65	T_eval 65.67	ETA 2 days, 14:43:09	train_R_eps 3.13	eval_R_eps 3.29	hlg
+[2024-05-24 22:07:27,712] 344	T_sample 205.95	T_update 82.56	T_eval 68.09	ETA 2 days, 16:52:48	train_R_eps 3.13	eval_R_eps 3.00	hlg
+[2024-05-24 22:13:27,845] 345	T_sample 210.90	T_update 82.24	T_eval 66.78	ETA 2 days, 17:23:13	train_R_eps 3.12	eval_R_eps 3.03	hlg
+[2024-05-24 22:19:26,808] 346	T_sample 205.70	T_update 85.10	T_eval 67.96	ETA 2 days, 17:04:29	train_R_eps 3.12	eval_R_eps 3.00	hlg
+[2024-05-24 22:25:25,513] 347	T_sample 207.63	T_update 83.72	T_eval 67.15	ETA 2 days, 16:55:43	train_R_eps 3.13	eval_R_eps 3.13	hlg
+[2024-05-24 22:31:31,278] 348	T_sample 208.50	T_update 87.63	T_eval 69.42	ETA 2 days, 18:06:17	train_R_eps 3.13	eval_R_eps 3.21	hlg
+[2024-05-24 22:37:39,307] 349	T_sample 210.34	T_update 88.73	T_eval 68.72	ETA 2 days, 18:24:22	train_R_eps 3.13	eval_R_eps 2.85	hlg
+[2024-05-24 22:43:46,086] 350	T_sample 214.10	T_update 85.31	T_eval 67.16	ETA 2 days, 18:05:04	train_R_eps 3.12	eval_R_eps 3.17	hlg
+[2024-05-24 22:49:55,880] 351	T_sample 219.46	T_update 83.21	T_eval 66.93	ETA 2 days, 18:31:37	train_R_eps 3.12	eval_R_eps 3.09	hlg
+[2024-05-24 22:55:57,877] 352	T_sample 211.13	T_update 83.59	T_eval 67.08	ETA 2 days, 17:01:22	train_R_eps 3.12	eval_R_eps 2.98	hlg
+[2024-05-24 23:02:02,483] 353	T_sample 215.80	T_update 82.34	T_eval 66.25	ETA 2 days, 17:23:16	train_R_eps 3.11	eval_R_eps 3.25	hlg
+[2024-05-24 23:08:11,002] 354	T_sample 219.30	T_update 81.91	T_eval 67.10	ETA 2 days, 17:59:24	train_R_eps 3.12	eval_R_eps 3.11	hlg
+[2024-05-24 23:14:12,295] 355	T_sample 213.27	T_update 81.85	T_eval 65.96	ETA 2 days, 16:35:37	train_R_eps 3.12	eval_R_eps 3.12	hlg
+[2024-05-24 23:20:11,372] 356	T_sample 208.88	T_update 83.34	T_eval 66.66	ETA 2 days, 16:05:59	train_R_eps 3.11	eval_R_eps 3.20	hlg
+[2024-05-24 23:26:12,455] 357	T_sample 211.19	T_update 83.48	T_eval 66.21	ETA 2 days, 16:21:26	train_R_eps 3.12	eval_R_eps 3.13	hlg
+[2024-05-24 23:32:10,703] 358	T_sample 209.39	T_update 83.08	T_eval 65.57	ETA 2 days, 15:45:04	train_R_eps 3.13	eval_R_eps 3.04	hlg
+[2024-05-24 23:38:12,058] 359	T_sample 212.57	T_update 82.40	T_eval 66.18	ETA 2 days, 16:12:16	train_R_eps 3.12	eval_R_eps 3.18	hlg
+[2024-05-24 23:44:13,079] 360	T_sample 212.62	T_update 82.55	T_eval 65.64	ETA 2 days, 16:02:36	train_R_eps 3.13	eval_R_eps 3.07	hlg
+[2024-05-24 23:50:16,655] 361	T_sample 214.38	T_update 82.41	T_eval 66.58	ETA 2 days, 16:23:50	train_R_eps 3.13	eval_R_eps 2.89	hlg
+[2024-05-24 23:56:19,413] 362	T_sample 213.54	T_update 82.25	T_eval 66.76	ETA 2 days, 16:09:06	train_R_eps 3.12	eval_R_eps 2.96	hlg
+[2024-05-25 00:02:24,071] 363	T_sample 216.16	T_update 82.11	T_eval 66.19	ETA 2 days, 16:23:15	train_R_eps 3.12	eval_R_eps 2.87	hlg
+[2024-05-25 00:08:32,373] 364	T_sample 218.82	T_update 83.09	T_eval 66.20	ETA 2 days, 16:55:45	train_R_eps 3.12	eval_R_eps 2.95	hlg
+[2024-05-25 00:14:43,017] 365	T_sample 220.04	T_update 83.64	T_eval 66.76	ETA 2 days, 17:14:21	train_R_eps 3.13	eval_R_eps 3.00	hlg
+[2024-05-25 00:20:45,651] 366	T_sample 212.69	T_update 83.35	T_eval 66.39	ETA 2 days, 15:43:36	train_R_eps 3.14	eval_R_eps 3.08	hlg
+[2024-05-25 00:26:57,083] 367	T_sample 221.57	T_update 82.76	T_eval 66.89	ETA 2 days, 17:10:16	train_R_eps 3.14	eval_R_eps 3.10	hlg
+[2024-05-25 00:32:59,631] 368	T_sample 213.72	T_update 84.70	T_eval 63.91	ETA 2 days, 15:30:35	train_R_eps 3.13	eval_R_eps 3.12	hlg
+[2024-05-25 00:38:59,981] 369	T_sample 211.91	T_update 81.99	T_eval 66.25	ETA 2 days, 15:01:36	train_R_eps 3.14	eval_R_eps 2.97	hlg
+[2024-05-25 00:44:47,357] 370	T_sample 198.76	T_update 84.08	T_eval 64.31	ETA 2 days, 12:39:23	train_R_eps 3.13	eval_R_eps 3.04	hlg
+[2024-05-25 00:50:35,960] 371	T_sample 200.98	T_update 82.32	T_eval 65.11	ETA 2 days, 12:46:37	train_R_eps 3.14	eval_R_eps 2.93	hlg
+[2024-05-25 00:56:23,616] 372	T_sample 200.23	T_update 81.78	T_eval 65.44	ETA 2 days, 12:30:56	train_R_eps 3.14	eval_R_eps 3.02	hlg
+[2024-05-25 01:02:11,688] 373	T_sample 201.20	T_update 81.82	T_eval 64.85	ETA 2 days, 12:29:28	train_R_eps 3.13	eval_R_eps 2.97	hlg
+[2024-05-25 01:08:00,171] 374	T_sample 199.46	T_update 82.94	T_eval 65.87	ETA 2 days, 12:27:44	train_R_eps 3.14	eval_R_eps 3.08	hlg
+[2024-05-25 01:13:55,271] 375	T_sample 205.29	T_update 84.64	T_eval 64.98	ETA 2 days, 13:30:57	train_R_eps 3.14	eval_R_eps 2.98	hlg
+[2024-05-25 01:19:46,130] 376	T_sample 203.17	T_update 81.15	T_eval 66.34	ETA 2 days, 12:40:58	train_R_eps 3.14	eval_R_eps 2.99	hlg
+[2024-05-25 01:25:37,554] 377	T_sample 202.66	T_update 83.09	T_eval 65.47	ETA 2 days, 12:41:01	train_R_eps 3.14	eval_R_eps 3.24	hlg
+[2024-05-25 01:31:31,397] 378	T_sample 203.82	T_update 84.05	T_eval 65.77	ETA 2 days, 13:00:12	train_R_eps 3.14	eval_R_eps 2.92	hlg
+[2024-05-25 01:37:19,066] 379	T_sample 198.71	T_update 83.49	T_eval 65.26	ETA 2 days, 11:50:30	train_R_eps 3.13	eval_R_eps 3.03	hlg
+[2024-05-25 01:43:05,244] 380	T_sample 200.35	T_update 81.11	T_eval 64.51	ETA 2 days, 11:29:15	train_R_eps 3.13	eval_R_eps 2.96	hlg
+[2024-05-25 01:48:50,145] 381	T_sample 199.74	T_update 80.55	T_eval 64.40	ETA 2 days, 11:10:24	train_R_eps 3.13	eval_R_eps 2.96	hlg
+[2024-05-25 01:54:39,086] 382	T_sample 200.08	T_update 83.82	T_eval 64.84	ETA 2 days, 11:46:12	train_R_eps 3.13	eval_R_eps 3.04	hlg
+[2024-05-25 02:00:28,007] 383	T_sample 200.68	T_update 82.93	T_eval 65.11	ETA 2 days, 11:40:11	train_R_eps 3.14	eval_R_eps 3.10	hlg
+[2024-05-25 02:06:17,208] 384	T_sample 202.09	T_update 82.08	T_eval 64.84	ETA 2 days, 11:37:16	train_R_eps 3.13	eval_R_eps 2.92	hlg
+[2024-05-25 02:12:06,029] 385	T_sample 200.31	T_update 83.27	T_eval 65.05	ETA 2 days, 11:27:31	train_R_eps 3.13	eval_R_eps 3.24	hlg
+[2024-05-25 02:17:53,096] 386	T_sample 199.76	T_update 82.10	T_eval 65.00	ETA 2 days, 11:03:47	train_R_eps 3.14	eval_R_eps 3.11	hlg
+[2024-05-25 02:23:39,745] 387	T_sample 200.02	T_update 81.68	T_eval 64.75	ETA 2 days, 10:53:49	train_R_eps 3.14	eval_R_eps 3.00	hlg
+[2024-05-25 02:29:26,200] 388	T_sample 196.64	T_update 83.68	T_eval 65.93	ETA 2 days, 10:46:04	train_R_eps 3.13	eval_R_eps 3.16	hlg
+[2024-05-25 02:35:15,282] 389	T_sample 200.65	T_update 82.74	T_eval 65.49	ETA 2 days, 11:07:00	train_R_eps 3.13	eval_R_eps 3.04	hlg
+[2024-05-25 02:41:03,443] 390	T_sample 200.39	T_update 82.45	T_eval 65.11	ETA 2 days, 10:51:41	train_R_eps 3.13	eval_R_eps 3.00	hlg
+[2024-05-25 02:46:46,860] 391	T_sample 197.55	T_update 81.22	T_eval 64.46	ETA 2 days, 9:57:58	train_R_eps 3.13	eval_R_eps 3.24	hlg
+[2024-05-25 02:52:35,581] 392	T_sample 200.36	T_update 82.23	T_eval 65.93	ETA 2 days, 10:45:54	train_R_eps 3.12	eval_R_eps 3.08	hlg
+[2024-05-25 02:58:20,667] 393	T_sample 198.08	T_update 81.36	T_eval 65.44	ETA 2 days, 10:03:16	train_R_eps 3.14	eval_R_eps 3.33	hlg
+[2024-05-25 03:04:12,934] 394	T_sample 203.05	T_update 83.45	T_eval 65.57	ETA 2 days, 11:10:00	train_R_eps 3.13	eval_R_eps 3.09	hlg
+[2024-05-25 03:10:01,165] 395	T_sample 199.85	T_update 83.02	T_eval 65.16	ETA 2 days, 10:23:30	train_R_eps 3.14	eval_R_eps 3.04	hlg
+[2024-05-25 03:15:48,981] 396	T_sample 199.01	T_update 83.89	T_eval 64.73	ETA 2 days, 10:13:35	train_R_eps 3.14	eval_R_eps 3.10	hlg
+[2024-05-25 03:21:34,926] 397	T_sample 201.31	T_update 81.81	T_eval 62.63	ETA 2 days, 9:49:02	train_R_eps 3.13	eval_R_eps 2.99	hlg
+[2024-05-25 03:27:23,862] 398	T_sample 200.28	T_update 83.57	T_eval 64.89	ETA 2 days, 10:13:10	train_R_eps 3.13	eval_R_eps 3.09	hlg
+[2024-05-25 03:33:11,694] 399	T_sample 198.90	T_update 83.99	T_eval 64.75	ETA 2 days, 9:56:23	train_R_eps 3.14	eval_R_eps 3.25	hlg
+[2024-05-25 03:39:01,314] Remaining feasible.
+Update polygon: POLYGON ((1041.845992888235 1081.5396040799158, 1055.9583614579603 992.419029961513, 945.8755744619963 970.4024725623202, 926.9166672643972 1063.340383319525, 959.5 1068.5, 1041.845992888235 1081.5396040799158))
+Update polygon without building boundaries creates new points.
+[2024-05-25 03:39:01,315] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 975), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1005), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 945), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 913), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1069), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 926), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 989), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 971), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 855), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 951), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 961), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1016), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1253), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 837), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 883), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 961), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1342), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 900), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 887), ({'type': 7, 'x': 0.5, 'y': 0.5, 'area': 90000.0, 'length': 1200.0, 'width': 300.0, 'height': 300.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 885), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1609), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 854)]
+[2024-05-25 03:39:01,320] Plan fails during eval.
+[2024-05-25 03:39:05,263] 400	T_sample 205.91	T_update 83.81	T_eval 63.64	ETA 2 days, 10:47:43	train_R_eps 3.12	eval_R_eps 3.35	hlg
+[2024-05-25 03:44:51,720] 401	T_sample 198.28	T_update 82.75	T_eval 65.23	ETA 2 days, 9:31:02	train_R_eps 3.13	eval_R_eps 3.16	hlg
+[2024-05-25 03:50:37,825] 402	T_sample 199.55	T_update 81.28	T_eval 65.08	ETA 2 days, 9:21:45	train_R_eps 3.14	eval_R_eps 3.24	hlg
+[2024-05-25 03:56:22,843] 403	T_sample 198.22	T_update 81.29	T_eval 65.30	ETA 2 days, 9:05:12	train_R_eps 3.13	eval_R_eps 2.91	hlg
+[2024-05-25 04:02:12,080] 404	T_sample 199.21	T_update 84.62	T_eval 65.21	ETA 2 days, 9:41:18	train_R_eps 3.13	eval_R_eps 3.17	hlg
+[2024-05-25 04:08:00,661] 405	T_sample 202.22	T_update 81.28	T_eval 64.88	ETA 2 days, 9:28:58	train_R_eps 3.13	eval_R_eps 3.26	hlg
+[2024-05-25 04:13:48,057] 406	T_sample 199.68	T_update 81.31	T_eval 66.20	ETA 2 days, 9:11:27	train_R_eps 3.12	eval_R_eps 3.25	hlg
+[2024-05-25 04:19:33,176] 407	T_sample 195.95	T_update 84.98	T_eval 63.98	ETA 2 days, 8:43:11	train_R_eps 3.12	eval_R_eps 3.23	hlg
+[2024-05-25 04:25:16,360] 408	T_sample 194.90	T_update 83.78	T_eval 64.31	ETA 2 days, 8:18:24	train_R_eps 3.13	eval_R_eps 3.00	hlg
+[2024-05-25 04:31:00,428] 409	T_sample 195.60	T_update 83.40	T_eval 64.87	ETA 2 days, 8:21:19	train_R_eps 3.12	eval_R_eps 3.08	hlg
+[2024-05-25 04:36:48,000] 410	T_sample 199.51	T_update 81.58	T_eval 66.27	ETA 2 days, 8:49:57	train_R_eps 3.13	eval_R_eps 3.05	hlg
+[2024-05-25 04:42:32,235] 411	T_sample 195.97	T_update 81.94	T_eval 66.12	ETA 2 days, 8:11:34	train_R_eps 3.13	eval_R_eps 3.22	hlg
+[2024-05-25 04:48:13,162] 412	T_sample 195.60	T_update 81.80	T_eval 63.33	ETA 2 days, 7:33:28	train_R_eps 3.13	eval_R_eps 3.18	hlg
+[2024-05-25 04:53:59,923] 413	T_sample 200.51	T_update 81.35	T_eval 64.70	ETA 2 days, 8:24:44	train_R_eps 3.13	eval_R_eps 2.95	hlg
+[2024-05-25 04:59:47,430] 414	T_sample 198.87	T_update 82.82	T_eval 65.62	ETA 2 days, 8:26:16	train_R_eps 3.13	eval_R_eps 3.05	hlg
+[2024-05-25 05:05:33,275] 415	T_sample 199.53	T_update 82.04	T_eval 64.08	ETA 2 days, 8:04:18	train_R_eps 3.13	eval_R_eps 3.23	hlg
+[2024-05-25 05:11:16,045] 416	T_sample 196.06	T_update 81.53	T_eval 64.98	ETA 2 days, 7:28:41	train_R_eps 3.13	eval_R_eps 2.96	hlg
+[2024-05-25 05:17:03,366] 417	T_sample 201.02	T_update 82.06	T_eval 64.03	ETA 2 days, 8:07:04	train_R_eps 3.14	eval_R_eps 2.96	hlg
+[2024-05-25 05:22:50,162] 418	T_sample 196.30	T_update 85.71	T_eval 64.58	ETA 2 days, 7:56:08	train_R_eps 3.14	eval_R_eps 2.94	hlg
+[2024-05-25 05:28:37,518] 419	T_sample 199.68	T_update 82.02	T_eval 65.46	ETA 2 days, 7:55:50	train_R_eps 3.15	eval_R_eps 3.02	hlg
+[2024-05-25 05:34:29,497] 420	T_sample 201.13	T_update 84.65	T_eval 65.98	ETA 2 days, 8:34:31	train_R_eps 3.15	eval_R_eps 3.22	hlg
+[2024-05-25 05:40:18,217] 421	T_sample 201.95	T_update 81.91	T_eval 64.66	ETA 2 days, 7:57:23	train_R_eps 3.14	eval_R_eps 3.12	hlg
+[2024-05-25 05:46:01,812] 422	T_sample 196.49	T_update 81.99	T_eval 64.92	ETA 2 days, 7:02:19	train_R_eps 3.15	eval_R_eps 3.17	hlg
+[2024-05-25 05:51:52,161] 423	T_sample 202.99	T_update 81.91	T_eval 65.25	ETA 2 days, 8:01:28	train_R_eps 3.14	eval_R_eps 3.19	hlg
+[2024-05-25 05:57:42,506] 424	T_sample 201.76	T_update 82.67	T_eval 65.71	ETA 2 days, 7:55:33	train_R_eps 3.14	eval_R_eps 3.20	hlg
+[2024-05-25 06:03:28,287] 425	T_sample 195.97	T_update 84.81	T_eval 64.80	ETA 2 days, 7:06:02	train_R_eps 3.14	eval_R_eps 2.97	hlg
+[2024-05-25 06:09:21,974] 426	T_sample 203.59	T_update 84.95	T_eval 64.95	ETA 2 days, 8:15:51	train_R_eps 3.15	eval_R_eps 3.00	hlg
+[2024-05-25 06:15:14,456] 427	T_sample 205.61	T_update 82.09	T_eval 64.59	ETA 2 days, 7:58:28	train_R_eps 3.14	eval_R_eps 3.13	hlg
+[2024-05-25 06:21:08,464] 428	T_sample 204.82	T_update 81.97	T_eval 67.02	ETA 2 days, 8:07:07	train_R_eps 3.15	eval_R_eps 2.92	hlg
+[2024-05-25 06:27:03,968] 429	T_sample 205.98	T_update 84.56	T_eval 64.76	ETA 2 days, 8:15:21	train_R_eps 3.15	eval_R_eps 3.12	hlg
+[2024-05-25 06:32:58,403] 430	T_sample 203.35	T_update 85.42	T_eval 65.47	ETA 2 days, 7:59:18	train_R_eps 3.14	eval_R_eps 3.05	hlg
+[2024-05-25 06:38:53,752] 431	T_sample 207.65	T_update 83.84	T_eval 63.66	ETA 2 days, 8:02:07	train_R_eps 3.14	eval_R_eps 3.13	hlg
+[2024-05-25 06:44:51,054] 432	T_sample 209.13	T_update 82.72	T_eval 65.26	ETA 2 days, 8:14:41	train_R_eps 3.14	eval_R_eps 3.14	hlg
+[2024-05-25 06:50:38,751] 433	T_sample 199.91	T_update 83.67	T_eval 63.92	ETA 2 days, 6:38:06	train_R_eps 3.15	eval_R_eps 3.09	hlg
+[2024-05-25 06:56:33,847] 434	T_sample 205.00	T_update 84.53	T_eval 65.37	ETA 2 days, 7:41:58	train_R_eps 3.14	eval_R_eps 3.13	hlg
+[2024-05-25 07:02:24,940] 435	T_sample 202.22	T_update 83.55	T_eval 65.13	ETA 2 days, 6:58:26	train_R_eps 3.14	eval_R_eps 3.17	hlg
+[2024-05-25 07:08:16,795] 436	T_sample 204.92	T_update 82.95	T_eval 63.79	ETA 2 days, 6:59:45	train_R_eps 3.15	eval_R_eps 3.17	hlg
+[2024-05-25 07:14:06,951] 437	T_sample 201.89	T_update 83.49	T_eval 64.58	ETA 2 days, 6:37:59	train_R_eps 3.14	eval_R_eps 3.33	hlg
+[2024-05-25 07:19:53,598] 438	T_sample 200.48	T_update 82.86	T_eval 63.12	ETA 2 days, 5:59:20	train_R_eps 3.14	eval_R_eps 3.14	hlg
+[2024-05-25 07:25:46,477] 439	T_sample 202.87	T_update 84.97	T_eval 64.83	ETA 2 days, 6:51:41	train_R_eps 3.14	eval_R_eps 3.10	hlg
+[2024-05-25 07:31:33,758] 440	T_sample 200.11	T_update 83.09	T_eval 63.88	ETA 2 days, 5:53:37	train_R_eps 3.14	eval_R_eps 3.10	hlg
+[2024-05-25 07:37:21,657] 441	T_sample 201.25	T_update 83.89	T_eval 62.56	ETA 2 days, 5:53:39	train_R_eps 3.14	eval_R_eps 3.12	hlg
+[2024-05-25 07:43:12,978] 442	T_sample 204.62	T_update 83.20	T_eval 63.31	ETA 2 days, 6:19:39	train_R_eps 3.14	eval_R_eps 3.20	hlg
+[2024-05-25 07:49:06,524] 443	T_sample 202.25	T_update 84.47	T_eval 66.63	ETA 2 days, 6:34:22	train_R_eps 3.13	eval_R_eps 3.18	hlg
+[2024-05-25 07:54:57,162] 444	T_sample 200.73	T_update 85.51	T_eval 64.19	ETA 2 days, 6:01:33	train_R_eps 3.14	eval_R_eps 3.26	hlg
+[2024-05-25 08:00:49,896] 445	T_sample 205.17	T_update 82.02	T_eval 65.35	ETA 2 days, 6:15:03	train_R_eps 3.15	eval_R_eps 3.16	hlg
+[2024-05-25 08:06:39,724] 446	T_sample 202.46	T_update 82.01	T_eval 65.16	ETA 2 days, 5:42:24	train_R_eps 3.15	eval_R_eps 3.05	hlg
+[2024-05-25 08:12:30,810] 447	T_sample 201.59	T_update 85.16	T_eval 64.14	ETA 2 days, 5:48:10	train_R_eps 3.14	eval_R_eps 3.46	hlg
+[2024-05-25 08:12:30,817] save best checkpoint with rewards 3.46!
+[2024-05-25 08:18:17,632] 448	T_sample 201.16	T_update 81.63	T_eval 63.79	ETA 2 days, 5:02:46	train_R_eps 3.13	eval_R_eps 3.16	hlg
+[2024-05-25 08:24:05,913] 449	T_sample 199.45	T_update 82.71	T_eval 65.93	ETA 2 days, 5:10:48	train_R_eps 3.13	eval_R_eps 3.14	hlg
+[2024-05-25 08:29:54,464] 450	T_sample 200.34	T_update 82.44	T_eval 65.56	ETA 2 days, 5:07:19	train_R_eps 3.14	eval_R_eps 3.24	hlg
+[2024-05-25 08:35:42,039] 451	T_sample 197.07	T_update 85.08	T_eval 65.21	ETA 2 days, 4:52:36	train_R_eps 3.14	eval_R_eps 3.08	hlg
+[2024-05-25 08:41:29,720] 452	T_sample 200.77	T_update 82.80	T_eval 63.90	ETA 2 days, 4:47:51	train_R_eps 3.14	eval_R_eps 3.36	hlg
+[2024-05-25 08:47:20,203] 453	T_sample 201.37	T_update 81.97	T_eval 66.95	ETA 2 days, 5:07:36	train_R_eps 3.13	eval_R_eps 3.17	hlg
+[2024-05-25 08:53:09,223] 454	T_sample 198.24	T_update 84.27	T_eval 66.31	ETA 2 days, 4:48:28	train_R_eps 3.15	eval_R_eps 3.29	hlg
+[2024-05-25 08:59:01,694] 455	T_sample 200.33	T_update 84.85	T_eval 66.95	ETA 2 days, 5:12:38	train_R_eps 3.14	eval_R_eps 3.21	hlg
+[2024-05-25 09:04:58,877] 456	T_sample 208.64	T_update 83.61	T_eval 64.72	ETA 2 days, 5:50:38	train_R_eps 3.14	eval_R_eps 3.12	hlg
+[2024-05-25 09:11:01,100] 457	T_sample 210.89	T_update 84.05	T_eval 67.08	ETA 2 days, 6:30:14	train_R_eps 3.14	eval_R_eps 3.26	hlg
+[2024-05-25 09:16:59,063] 458	T_sample 209.57	T_update 83.53	T_eval 64.67	ETA 2 days, 5:45:49	train_R_eps 3.14	eval_R_eps 3.23	hlg
+[2024-05-25 09:22:55,692] 459	T_sample 209.85	T_update 80.97	T_eval 65.61	ETA 2 days, 5:27:51	train_R_eps 3.13	eval_R_eps 3.01	hlg
+[2024-05-25 09:29:01,100] 460	T_sample 218.05	T_update 82.00	T_eval 65.14	ETA 2 days, 6:40:40	train_R_eps 3.14	eval_R_eps 3.13	hlg
+[2024-05-25 09:35:05,458] 461	T_sample 216.39	T_update 82.30	T_eval 65.46	ETA 2 days, 6:25:18	train_R_eps 3.14	eval_R_eps 3.00	hlg
+[2024-05-25 09:41:05,250] 462	T_sample 209.01	T_update 83.21	T_eval 67.36	ETA 2 days, 5:38:18	train_R_eps 3.15	eval_R_eps 3.09	hlg
+[2024-05-25 09:47:07,735] 463	T_sample 210.18	T_update 84.22	T_eval 67.88	ETA 2 days, 5:56:24	train_R_eps 3.14	eval_R_eps 2.95	hlg
+[2024-05-25 09:53:12,060] 464	T_sample 214.36	T_update 83.01	T_eval 66.75	ETA 2 days, 6:06:46	train_R_eps 3.16	eval_R_eps 3.41	hlg
+[2024-05-25 09:59:18,753] 465	T_sample 208.22	T_update 89.47	T_eval 68.80	ETA 2 days, 6:21:44	train_R_eps 3.14	eval_R_eps 3.23	hlg
+[2024-05-25 10:05:30,524] 466	T_sample 211.19	T_update 90.31	T_eval 70.03	ETA 2 days, 7:00:26	train_R_eps 3.16	eval_R_eps 3.34	hlg
+[2024-05-25 10:11:41,181] 467	T_sample 211.22	T_update 90.23	T_eval 68.96	ETA 2 days, 6:44:16	train_R_eps 3.14	eval_R_eps 3.14	hlg
+[2024-05-25 10:17:58,840] 468	T_sample 216.49	T_update 91.09	T_eval 69.84	ETA 2 days, 7:40:09	train_R_eps 3.14	eval_R_eps 3.07	hlg
+[2024-05-25 10:24:20,766] 469	T_sample 221.73	T_update 91.40	T_eval 68.55	ETA 2 days, 8:11:31	train_R_eps 3.15	eval_R_eps 3.10	hlg
+[2024-05-25 10:30:36,252] 470	T_sample 212.96	T_update 91.93	T_eval 70.33	ETA 2 days, 7:08:16	train_R_eps 3.15	eval_R_eps 3.25	hlg
+[2024-05-25 10:36:53,656] 471	T_sample 216.73	T_update 90.29	T_eval 70.13	ETA 2 days, 7:18:57	train_R_eps 3.14	eval_R_eps 3.09	hlg
+[2024-05-25 10:45:57,976] 472	T_sample 242.69	T_update 184.68	T_eval 116.70	ETA 3 days, 7:38:45	train_R_eps 3.15	eval_R_eps 3.13	hlg
+[2024-05-25 10:54:50,058] 473	T_sample 221.01	T_update 196.34	T_eval 114.40	ETA 3 days, 5:41:41	train_R_eps 3.16	eval_R_eps 3.21	hlg
+[2024-05-25 11:03:07,719] 474	T_sample 235.24	T_update 132.02	T_eval 130.18	ETA 3 days, 0:32:40	train_R_eps 3.15	eval_R_eps 3.22	hlg
+[2024-05-25 11:09:20,804] 475	T_sample 216.69	T_update 89.32	T_eval 66.88	ETA 2 days, 6:16:32	train_R_eps 3.16	eval_R_eps 3.29	hlg
+[2024-05-25 11:15:31,803] 476	T_sample 216.90	T_update 86.33	T_eval 67.57	ETA 2 days, 5:52:09	train_R_eps 3.15	eval_R_eps 3.13	hlg
+[2024-05-25 11:21:40,201] 477	T_sample 214.73	T_update 86.01	T_eval 67.45	ETA 2 days, 5:23:18	train_R_eps 3.16	eval_R_eps 3.04	hlg
+[2024-05-25 11:27:48,537] 478	T_sample 215.22	T_update 84.18	T_eval 68.74	ETA 2 days, 5:16:39	train_R_eps 3.16	eval_R_eps 3.16	hlg
+[2024-05-25 11:33:55,069] 479	T_sample 212.72	T_update 87.14	T_eval 66.47	ETA 2 days, 4:54:53	train_R_eps 3.16	eval_R_eps 3.23	hlg
+[2024-05-25 11:40:06,669] 480	T_sample 218.26	T_update 87.39	T_eval 65.74	ETA 2 days, 5:32:34	train_R_eps 3.14	eval_R_eps 3.00	hlg
+[2024-05-25 11:46:16,792] 481	T_sample 217.05	T_update 87.91	T_eval 64.97	ETA 2 days, 5:13:39	train_R_eps 3.15	eval_R_eps 3.26	hlg
+[2024-05-25 11:52:22,063] 482	T_sample 214.10	T_update 85.00	T_eval 65.98	ETA 2 days, 4:25:44	train_R_eps 3.17	eval_R_eps 3.22	hlg
+[2024-05-25 11:58:33,005] 483	T_sample 218.12	T_update 84.15	T_eval 68.48	ETA 2 days, 5:08:27	train_R_eps 3.15	eval_R_eps 3.11	hlg
+[2024-05-25 12:04:44,207] 484	T_sample 217.60	T_update 84.56	T_eval 68.84	ETA 2 days, 5:04:28	train_R_eps 3.16	eval_R_eps 3.20	hlg
+[2024-05-25 12:10:59,427] 485	T_sample 216.24	T_update 89.50	T_eval 69.23	ETA 2 days, 5:32:15	train_R_eps 3.15	eval_R_eps 3.06	hlg
+[2024-05-25 12:17:05,510] 486	T_sample 213.34	T_update 84.53	T_eval 68.00	ETA 2 days, 4:08:11	train_R_eps 3.15	eval_R_eps 3.41	hlg
+[2024-05-25 12:23:11,924] 487	T_sample 212.07	T_update 87.55	T_eval 66.60	ETA 2 days, 4:05:01	train_R_eps 3.15	eval_R_eps 3.22	hlg
+[2024-05-25 12:29:24,501] 488	T_sample 217.60	T_update 87.35	T_eval 67.42	ETA 2 days, 4:51:24	train_R_eps 3.14	eval_R_eps 3.27	hlg
+[2024-05-25 12:35:34,662] 489	T_sample 218.71	T_update 85.43	T_eval 65.83	ETA 2 days, 4:24:44	train_R_eps 3.15	eval_R_eps 3.15	hlg
+[2024-05-25 12:41:44,011] 490	T_sample 215.96	T_update 85.85	T_eval 67.34	ETA 2 days, 4:11:36	train_R_eps 3.15	eval_R_eps 3.15	hlg
+[2024-05-25 12:47:48,128] 491	T_sample 211.33	T_update 82.86	T_eval 69.71	ETA 2 days, 3:21:02	train_R_eps 3.15	eval_R_eps 3.34	hlg
+[2024-05-25 12:53:53,941] 492	T_sample 211.55	T_update 85.72	T_eval 68.34	ETA 2 days, 3:29:26	train_R_eps 3.16	eval_R_eps 3.14	hlg
+[2024-05-25 12:59:58,090] 493	T_sample 211.28	T_update 86.52	T_eval 66.14	ETA 2 days, 3:09:12	train_R_eps 3.16	eval_R_eps 3.06	hlg
+[2024-05-25 13:06:08,121] 494	T_sample 220.54	T_update 84.33	T_eval 64.96	ETA 2 days, 3:52:46	train_R_eps 3.16	eval_R_eps 3.37	hlg
+[2024-05-25 13:12:11,988] 495	T_sample 210.54	T_update 86.91	T_eval 66.22	ETA 2 days, 2:54:49	train_R_eps 3.16	eval_R_eps 3.22	hlg
+[2024-05-25 13:18:18,948] 496	T_sample 211.44	T_update 89.79	T_eval 65.52	ETA 2 days, 3:14:38	train_R_eps 3.15	eval_R_eps 3.45	hlg
+[2024-05-25 13:24:21,497] 497	T_sample 212.07	T_update 83.83	T_eval 66.46	ETA 2 days, 2:31:41	train_R_eps 3.14	eval_R_eps 3.21	hlg
+[2024-05-25 13:30:30,232] 498	T_sample 216.20	T_update 83.71	T_eval 68.63	ETA 2 days, 3:17:19	train_R_eps 3.16	eval_R_eps 3.30	hlg
+[2024-05-25 13:36:38,992] 499	T_sample 211.38	T_update 88.05	T_eval 69.10	ETA 2 days, 3:11:10	train_R_eps 3.14	eval_R_eps 3.13	hlg
+[2024-05-25 13:42:44,702] 500	T_sample 212.69	T_update 86.40	T_eval 66.40	ETA 2 days, 2:39:43	train_R_eps 3.15	eval_R_eps 3.08	hlg
+[2024-05-25 13:48:49,138] 501	T_sample 213.02	T_update 86.09	T_eval 65.11	ETA 2 days, 2:23:08	train_R_eps 3.15	eval_R_eps 3.13	hlg
+[2024-05-25 13:54:53,465] 502	T_sample 213.41	T_update 86.37	T_eval 64.35	ETA 2 days, 2:16:13	train_R_eps 3.16	eval_R_eps 3.08	hlg
+[2024-05-25 14:01:01,336] 503	T_sample 215.09	T_update 87.00	T_eval 65.59	ETA 2 days, 2:39:27	train_R_eps 3.15	eval_R_eps 3.18	hlg
+[2024-05-25 14:07:06,566] 504	T_sample 213.78	T_update 84.13	T_eval 67.12	ETA 2 days, 2:11:32	train_R_eps 3.16	eval_R_eps 3.21	hlg
+[2024-05-25 14:13:11,651] 505	T_sample 210.79	T_update 85.64	T_eval 68.46	ETA 2 days, 2:04:12	train_R_eps 3.15	eval_R_eps 3.26	hlg
+[2024-05-25 14:19:17,216] 506	T_sample 212.85	T_update 85.53	T_eval 66.98	ETA 2 days, 2:02:05	train_R_eps 3.15	eval_R_eps 3.26	hlg
+[2024-05-25 14:25:22,508] 507	T_sample 212.99	T_update 87.29	T_eval 64.81	ETA 2 days, 1:53:46	train_R_eps 3.15	eval_R_eps 3.22	hlg
+[2024-05-25 14:31:24,533] 508	T_sample 209.02	T_update 87.94	T_eval 64.86	ETA 2 days, 1:20:57	train_R_eps 3.16	eval_R_eps 3.20	hlg
+[2024-05-25 14:37:27,070] 509	T_sample 211.22	T_update 86.58	T_eval 64.55	ETA 2 days, 1:19:07	train_R_eps 3.15	eval_R_eps 3.12	hlg
+[2024-05-25 14:43:33,764] 510	T_sample 213.38	T_update 85.75	T_eval 67.36	ETA 2 days, 1:46:54	train_R_eps 3.14	eval_R_eps 3.03	hlg
+[2024-05-25 14:49:39,941] 511	T_sample 212.35	T_update 84.71	T_eval 68.92	ETA 2 days, 1:36:39	train_R_eps 3.15	eval_R_eps 3.27	hlg
+[2024-05-25 14:55:47,049] 512	T_sample 211.95	T_update 85.33	T_eval 69.62	ETA 2 days, 1:38:01	train_R_eps 3.15	eval_R_eps 3.18	hlg
+[2024-05-25 15:01:47,997] 513	T_sample 208.63	T_update 86.04	T_eval 66.08	ETA 2 days, 0:42:02	train_R_eps 3.15	eval_R_eps 3.37	hlg
+[2024-05-25 15:07:53,253] 514	T_sample 211.77	T_update 87.55	T_eval 65.73	ETA 2 days, 1:10:50	train_R_eps 3.16	eval_R_eps 3.34	hlg
+[2024-05-25 15:14:00,370] 515	T_sample 216.01	T_update 85.06	T_eval 65.84	ETA 2 days, 1:19:47	train_R_eps 3.16	eval_R_eps 2.95	hlg
+[2024-05-25 15:20:04,413] 516	T_sample 210.49	T_update 88.97	T_eval 64.39	ETA 2 days, 0:48:59	train_R_eps 3.16	eval_R_eps 3.14	hlg
+[2024-05-25 15:26:09,285] 517	T_sample 212.56	T_update 85.74	T_eval 66.37	ETA 2 days, 0:49:32	train_R_eps 3.15	eval_R_eps 3.34	hlg
+[2024-05-25 15:32:10,345] 518	T_sample 206.74	T_update 83.48	T_eval 70.65	ETA 2 days, 0:12:58	train_R_eps 3.14	eval_R_eps 3.33	hlg
+[2024-05-25 15:38:13,568] 519	T_sample 211.51	T_update 84.69	T_eval 66.82	ETA 2 days, 0:24:09	train_R_eps 3.15	eval_R_eps 3.20	hlg
+[2024-05-25 15:44:20,124] 520	T_sample 215.94	T_update 85.86	T_eval 64.55	ETA 2 days, 0:44:40	train_R_eps 3.15	eval_R_eps 3.36	hlg
+[2024-05-25 15:50:22,951] 521	T_sample 213.36	T_update 84.66	T_eval 64.61	ETA 2 days, 0:08:57	train_R_eps 3.16	eval_R_eps 3.31	hlg
+[2024-05-25 15:56:27,842] 522	T_sample 211.36	T_update 88.03	T_eval 65.31	ETA 2 days, 0:19:19	train_R_eps 3.17	eval_R_eps 3.32	hlg
+[2024-05-25 16:02:30,484] 523	T_sample 212.58	T_update 83.61	T_eval 66.26	ETA 1 day, 23:55:26	train_R_eps 3.16	eval_R_eps 3.26	hlg
+[2024-05-25 16:08:33,086] 524	T_sample 211.97	T_update 82.86	T_eval 67.58	ETA 1 day, 23:49:04	train_R_eps 3.15	eval_R_eps 3.32	hlg
+[2024-05-25 16:14:40,075] 525	T_sample 214.07	T_update 83.54	T_eval 69.17	ETA 2 days, 0:17:36	train_R_eps 3.16	eval_R_eps 3.38	hlg
+[2024-05-25 16:20:46,538] 526	T_sample 215.72	T_update 83.15	T_eval 67.40	ETA 2 days, 0:07:25	train_R_eps 3.15	eval_R_eps 3.28	hlg
+[2024-05-25 16:26:50,145] 527	T_sample 213.44	T_update 84.41	T_eval 65.56	ETA 1 day, 23:38:51	train_R_eps 3.17	eval_R_eps 3.28	hlg
+[2024-05-25 16:32:37,754] 528	T_sample 201.42	T_update 81.89	T_eval 64.11	ETA 1 day, 21:27:12	train_R_eps 3.16	eval_R_eps 3.39	hlg
+[2024-05-25 16:38:31,528] 529	T_sample 205.00	T_update 84.06	T_eval 64.51	ETA 1 day, 22:09:42	train_R_eps 3.16	eval_R_eps 3.31	hlg
+[2024-05-25 16:44:22,083] 530	T_sample 204.30	T_update 82.11	T_eval 63.95	ETA 1 day, 21:38:36	train_R_eps 3.16	eval_R_eps 3.24	hlg
+[2024-05-25 16:50:14,558] 531	T_sample 203.86	T_update 84.92	T_eval 63.50	ETA 1 day, 21:47:45	train_R_eps 3.15	eval_R_eps 3.12	hlg
+[2024-05-25 16:56:02,606] 532	T_sample 200.56	T_update 82.95	T_eval 64.35	ETA 1 day, 21:07:27	train_R_eps 3.15	eval_R_eps 3.25	hlg
+[2024-05-25 17:01:49,430] 533	T_sample 201.21	T_update 82.45	T_eval 62.98	ETA 1 day, 20:52:10	train_R_eps 3.15	eval_R_eps 3.02	hlg
+[2024-05-25 17:07:39,605] 534	T_sample 203.79	T_update 82.11	T_eval 64.09	ETA 1 day, 21:12:23	train_R_eps 3.14	eval_R_eps 3.08	hlg
+[2024-05-25 17:13:36,718] 535	T_sample 206.67	T_update 85.53	T_eval 64.71	ETA 1 day, 22:00:07	train_R_eps 3.16	eval_R_eps 3.26	hlg
+[2024-05-25 17:19:30,555] 536	T_sample 206.96	T_update 83.04	T_eval 63.64	ETA 1 day, 21:28:57	train_R_eps 3.14	eval_R_eps 3.15	hlg
+[2024-05-25 17:25:23,445] 537	T_sample 205.61	T_update 82.81	T_eval 64.28	ETA 1 day, 21:15:46	train_R_eps 3.13	eval_R_eps 3.18	hlg
+[2024-05-25 17:31:13,115] 538	T_sample 203.56	T_update 81.54	T_eval 64.38	ETA 1 day, 20:45:08	train_R_eps 3.14	eval_R_eps 3.17	hlg
+[2024-05-25 17:37:09,112] 539	T_sample 205.02	T_update 84.36	T_eval 66.42	ETA 1 day, 21:27:48	train_R_eps 3.15	eval_R_eps 3.17	hlg
+[2024-05-25 17:43:02,543] 540	T_sample 205.83	T_update 82.49	T_eval 64.91	ETA 1 day, 21:02:11	train_R_eps 3.14	eval_R_eps 3.41	hlg
+[2024-05-25 17:48:53,893] 541	T_sample 202.90	T_update 84.30	T_eval 63.96	ETA 1 day, 20:40:29	train_R_eps 3.15	eval_R_eps 3.23	hlg
+[2024-05-25 17:54:46,925] 542	T_sample 206.75	T_update 82.59	T_eval 63.50	ETA 1 day, 20:47:25	train_R_eps 3.15	eval_R_eps 3.22	hlg
+[2024-05-25 18:00:36,547] 543	T_sample 200.44	T_update 84.35	T_eval 64.63	ETA 1 day, 20:15:37	train_R_eps 3.14	eval_R_eps 3.33	hlg
+[2024-05-25 18:06:32,434] 544	T_sample 205.89	T_update 83.12	T_eval 66.68	ETA 1 day, 20:57:16	train_R_eps 3.14	eval_R_eps 3.27	hlg
+[2024-05-25 18:12:17,503] 545	T_sample 197.31	T_update 81.63	T_eval 65.93	ETA 1 day, 19:29:32	train_R_eps 3.14	eval_R_eps 3.14	hlg
+[2024-05-25 18:18:10,334] 546	T_sample 203.23	T_update 83.01	T_eval 66.40	ETA 1 day, 20:22:22	train_R_eps 3.15	eval_R_eps 3.21	hlg
+[2024-05-25 18:24:03,332] 547	T_sample 203.55	T_update 84.07	T_eval 65.17	ETA 1 day, 20:17:42	train_R_eps 3.16	eval_R_eps 3.18	hlg
+[2024-05-25 18:29:55,834] 548	T_sample 202.48	T_update 84.14	T_eval 65.68	ETA 1 day, 20:08:09	train_R_eps 3.15	eval_R_eps 3.09	hlg
+[2024-05-25 18:35:46,743] 549	T_sample 200.42	T_update 84.93	T_eval 65.36	ETA 1 day, 19:50:18	train_R_eps 3.14	eval_R_eps 3.17	hlg
+[2024-05-25 18:41:35,620] 550	T_sample 201.94	T_update 81.41	T_eval 65.31	ETA 1 day, 19:29:11	train_R_eps 3.14	eval_R_eps 3.13	hlg
+[2024-05-25 18:47:24,882] 551	T_sample 199.60	T_update 84.48	T_eval 64.97	ETA 1 day, 19:26:19	train_R_eps 3.14	eval_R_eps 3.26	hlg
+[2024-05-25 18:53:15,027] 552	T_sample 200.50	T_update 84.21	T_eval 65.24	ETA 1 day, 19:27:02	train_R_eps 3.14	eval_R_eps 3.32	hlg
+[2024-05-25 18:59:02,046] 553	T_sample 199.96	T_update 81.52	T_eval 65.34	ETA 1 day, 18:58:02	train_R_eps 3.16	eval_R_eps 3.21	hlg
+[2024-05-25 19:04:53,542] 554	T_sample 201.13	T_update 84.71	T_eval 65.45	ETA 1 day, 19:25:25	train_R_eps 3.16	eval_R_eps 3.30	hlg
+[2024-05-25 19:10:45,100] 555	T_sample 202.29	T_update 82.06	T_eval 67.00	ETA 1 day, 19:20:03	train_R_eps 3.15	eval_R_eps 3.12	hlg
+[2024-05-25 19:16:35,336] 556	T_sample 202.57	T_update 81.03	T_eval 66.44	ETA 1 day, 19:04:27	train_R_eps 3.17	eval_R_eps 3.38	hlg
+[2024-05-25 19:22:23,064] 557	T_sample 198.21	T_update 83.62	T_eval 65.69	ETA 1 day, 18:40:06	train_R_eps 3.16	eval_R_eps 3.45	hlg
+[2024-05-25 19:28:17,211] 558	T_sample 204.08	T_update 83.31	T_eval 66.54	ETA 1 day, 19:21:28	train_R_eps 3.17	eval_R_eps 3.45	hlg
+[2024-05-25 19:34:07,451] 559	T_sample 201.79	T_update 82.95	T_eval 65.31	ETA 1 day, 18:46:59	train_R_eps 3.17	eval_R_eps 3.36	hlg
+[2024-05-25 19:39:58,885] 560	T_sample 203.20	T_update 81.56	T_eval 66.46	ETA 1 day, 18:49:47	train_R_eps 3.17	eval_R_eps 3.27	hlg
+[2024-05-25 19:45:49,816] 561	T_sample 200.08	T_update 84.09	T_eval 66.57	ETA 1 day, 18:40:23	train_R_eps 3.16	eval_R_eps 3.25	hlg
+[2024-05-25 19:51:38,963] 562	T_sample 201.40	T_update 83.05	T_eval 64.50	ETA 1 day, 18:21:32	train_R_eps 3.16	eval_R_eps 3.37	hlg
+[2024-05-25 19:57:35,733] 563	T_sample 207.42	T_update 85.04	T_eval 64.12	ETA 1 day, 19:11:06	train_R_eps 3.16	eval_R_eps 3.22	hlg
+[2024-05-25 20:03:27,670] 564	T_sample 201.38	T_update 83.88	T_eval 66.47	ETA 1 day, 18:30:07	train_R_eps 3.16	eval_R_eps 3.35	hlg
+[2024-05-25 20:09:22,727] 565	T_sample 207.84	T_update 82.25	T_eval 64.78	ETA 1 day, 18:46:51	train_R_eps 3.15	eval_R_eps 3.52	hlg
+[2024-05-25 20:09:22,734] save best checkpoint with rewards 3.52!
+[2024-05-25 20:15:10,064] 566	T_sample 200.94	T_update 81.94	T_eval 64.24	ETA 1 day, 17:45:02	train_R_eps 3.16	eval_R_eps 3.32	hlg
+[2024-05-25 20:21:00,245] 567	T_sample 202.00	T_update 82.72	T_eval 65.27	ETA 1 day, 17:59:56	train_R_eps 3.15	eval_R_eps 3.23	hlg
+[2024-05-25 20:26:52,246] 568	T_sample 203.74	T_update 82.71	T_eval 65.35	ETA 1 day, 18:07:07	train_R_eps 3.16	eval_R_eps 3.30	hlg
+[2024-05-25 20:32:46,438] 569	T_sample 204.17	T_update 84.59	T_eval 65.24	ETA 1 day, 18:17:00	train_R_eps 3.16	eval_R_eps 3.23	hlg
+[2024-05-25 20:38:39,393] 570	T_sample 205.61	T_update 82.70	T_eval 64.44	ETA 1 day, 18:02:10	train_R_eps 3.17	eval_R_eps 3.31	hlg
+[2024-05-25 20:44:31,278] 571	T_sample 202.13	T_update 83.40	T_eval 66.15	ETA 1 day, 17:48:40	train_R_eps 3.17	eval_R_eps 3.35	hlg
+[2024-05-25 20:50:18,357] 572	T_sample 200.07	T_update 81.94	T_eval 64.86	ETA 1 day, 17:08:36	train_R_eps 3.18	eval_R_eps 3.22	hlg
+[2024-05-25 20:56:05,207] 573	T_sample 198.51	T_update 82.27	T_eval 65.87	ETA 1 day, 17:01:12	train_R_eps 3.19	eval_R_eps 3.52	hlg
+[2024-05-25 21:01:58,440] 574	T_sample 201.41	T_update 85.00	T_eval 66.62	ETA 1 day, 17:40:38	train_R_eps 3.17	eval_R_eps 3.60	hlg
+[2024-05-25 21:01:58,448] save best checkpoint with rewards 3.60!
+[2024-05-25 21:07:50,400] 575	T_sample 203.51	T_update 82.31	T_eval 65.92	ETA 1 day, 17:25:37	train_R_eps 3.17	eval_R_eps 3.51	hlg
+[2024-05-25 21:13:43,469] 576	T_sample 204.86	T_update 82.85	T_eval 65.17	ETA 1 day, 17:27:45	train_R_eps 3.17	eval_R_eps 3.55	hlg
+[2024-05-25 21:19:33,223] 577	T_sample 202.69	T_update 82.14	T_eval 64.73	ETA 1 day, 16:58:33	train_R_eps 3.17	eval_R_eps 3.29	hlg
+[2024-05-25 21:25:17,716] 578	T_sample 200.31	T_update 79.88	T_eval 64.10	ETA 1 day, 16:15:46	train_R_eps 3.17	eval_R_eps 3.19	hlg
+[2024-05-25 21:31:04,189] 579	T_sample 200.28	T_update 82.33	T_eval 63.66	ETA 1 day, 16:23:56	train_R_eps 3.16	eval_R_eps 3.29	hlg
+[2024-05-25 21:36:54,367] 580	T_sample 200.11	T_update 85.50	T_eval 64.36	ETA 1 day, 16:43:55	train_R_eps 3.15	eval_R_eps 3.38	hlg
+[2024-05-25 21:42:40,344] 581	T_sample 199.43	T_update 81.56	T_eval 64.78	ETA 1 day, 16:08:55	train_R_eps 3.15	eval_R_eps 3.46	hlg
+[2024-05-25 21:48:26,186] 582	T_sample 199.55	T_update 81.47	T_eval 64.62	ETA 1 day, 16:02:13	train_R_eps 3.17	eval_R_eps 3.24	hlg
+[2024-05-25 21:54:14,733] 583	T_sample 201.62	T_update 82.26	T_eval 64.47	ETA 1 day, 16:15:13	train_R_eps 3.15	eval_R_eps 3.36	hlg
+[2024-05-25 22:00:03,044] 584	T_sample 201.02	T_update 81.49	T_eval 65.60	ETA 1 day, 16:07:48	train_R_eps 3.15	eval_R_eps 3.36	hlg
+[2024-05-25 22:05:50,750] 585	T_sample 202.12	T_update 81.07	T_eval 64.32	ETA 1 day, 15:57:47	train_R_eps 3.16	eval_R_eps 3.32	hlg
+[2024-05-25 22:11:36,457] 586	T_sample 199.59	T_update 81.17	T_eval 64.74	ETA 1 day, 15:38:15	train_R_eps 3.15	eval_R_eps 3.40	hlg
+[2024-05-25 22:17:24,150] 587	T_sample 200.19	T_update 82.66	T_eval 64.64	ETA 1 day, 15:46:07	train_R_eps 3.15	eval_R_eps 3.16	hlg
+[2024-05-25 22:23:07,425] 588	T_sample 199.02	T_update 80.82	T_eval 63.24	ETA 1 day, 15:10:05	train_R_eps 3.15	eval_R_eps 3.27	hlg
+[2024-05-25 22:28:57,784] 589	T_sample 202.02	T_update 83.20	T_eval 64.94	ETA 1 day, 15:52:44	train_R_eps 3.15	eval_R_eps 3.18	hlg
+[2024-05-25 22:34:45,204] 590	T_sample 200.61	T_update 82.23	T_eval 64.38	ETA 1 day, 15:26:50	train_R_eps 3.14	eval_R_eps 3.24	hlg
+[2024-05-25 22:40:35,628] 591	T_sample 203.05	T_update 81.41	T_eval 65.76	ETA 1 day, 15:41:32	train_R_eps 3.16	eval_R_eps 3.24	hlg
+[2024-05-25 22:46:26,491] 592	T_sample 204.01	T_update 81.73	T_eval 64.92	ETA 1 day, 15:38:38	train_R_eps 3.15	eval_R_eps 3.24	hlg
+[2024-05-25 22:52:12,758] 593	T_sample 200.52	T_update 81.65	T_eval 63.90	ETA 1 day, 15:01:42	train_R_eps 3.16	eval_R_eps 3.17	hlg
+[2024-05-25 22:58:05,346] 594	T_sample 204.44	T_update 81.34	T_eval 66.61	ETA 1 day, 15:38:37	train_R_eps 3.15	eval_R_eps 3.46	hlg
+[2024-05-25 23:03:51,255] 595	T_sample 201.13	T_update 81.26	T_eval 63.32	ETA 1 day, 14:47:46	train_R_eps 3.15	eval_R_eps 3.13	hlg
+[2024-05-25 23:09:36,538] 596	T_sample 199.01	T_update 80.67	T_eval 65.41	ETA 1 day, 14:37:49	train_R_eps 3.16	eval_R_eps 3.23	hlg
+[2024-05-25 23:15:27,110] 597	T_sample 203.33	T_update 80.97	T_eval 66.07	ETA 1 day, 15:07:30	train_R_eps 3.17	eval_R_eps 3.20	hlg
+[2024-05-25 23:21:18,379] 598	T_sample 203.04	T_update 82.50	T_eval 65.54	ETA 1 day, 15:06:19	train_R_eps 3.16	eval_R_eps 3.16	hlg
+[2024-05-25 23:27:09,020] 599	T_sample 201.97	T_update 82.73	T_eval 65.74	ETA 1 day, 14:56:15	train_R_eps 3.17	eval_R_eps 3.23	hlg
+[2024-05-25 23:33:02,419] 600	T_sample 204.69	T_update 82.15	T_eval 66.35	ETA 1 day, 15:08:42	train_R_eps 3.17	eval_R_eps 3.11	hlg
+[2024-05-25 23:38:48,809] 601	T_sample 199.26	T_update 81.90	T_eval 65.03	ETA 1 day, 14:16:23	train_R_eps 3.17	eval_R_eps 3.30	hlg
+[2024-05-25 23:44:38,390] 602	T_sample 201.27	T_update 83.24	T_eval 64.86	ETA 1 day, 14:31:43	train_R_eps 3.18	eval_R_eps 3.17	hlg
+[2024-05-25 23:50:28,931] 603	T_sample 203.79	T_update 82.69	T_eval 63.86	ETA 1 day, 14:32:14	train_R_eps 3.18	eval_R_eps 3.34	hlg
+[2024-05-25 23:56:17,425] 604	T_sample 198.17	T_update 83.40	T_eval 66.72	ETA 1 day, 14:12:57	train_R_eps 3.18	eval_R_eps 3.29	hlg
+[2024-05-26 00:02:04,829] 605	T_sample 199.02	T_update 82.81	T_eval 65.38	ETA 1 day, 13:59:59	train_R_eps 3.19	eval_R_eps 3.15	hlg
+[2024-05-26 00:07:54,377] 606	T_sample 200.53	T_update 83.47	T_eval 65.35	ETA 1 day, 14:08:13	train_R_eps 3.19	eval_R_eps 3.17	hlg
+[2024-05-26 00:13:47,763] 607	T_sample 207.09	T_update 82.29	T_eval 63.81	ETA 1 day, 14:27:29	train_R_eps 3.19	eval_R_eps 3.21	hlg
+[2024-05-26 00:19:42,491] 608	T_sample 207.68	T_update 81.24	T_eval 65.61	ETA 1 day, 14:30:20	train_R_eps 3.18	eval_R_eps 3.14	hlg
+[2024-05-26 00:25:32,070] 609	T_sample 204.25	T_update 81.82	T_eval 63.31	ETA 1 day, 13:50:58	train_R_eps 3.20	eval_R_eps 2.85	hlg
+[2024-05-26 00:31:18,525] 610	T_sample 201.43	T_update 81.08	T_eval 63.73	ETA 1 day, 13:24:49	train_R_eps 3.18	eval_R_eps 3.48	hlg
+[2024-05-26 00:37:02,416] 611	T_sample 197.64	T_update 81.17	T_eval 64.89	ETA 1 day, 13:02:32	train_R_eps 3.20	eval_R_eps 3.42	hlg
+[2024-05-26 00:42:52,143] 612	T_sample 200.68	T_update 84.64	T_eval 64.20	ETA 1 day, 13:34:27	train_R_eps 3.20	eval_R_eps 3.59	hlg
+[2024-05-26 00:48:37,703] 613	T_sample 198.08	T_update 82.64	T_eval 64.64	ETA 1 day, 13:01:49	train_R_eps 3.20	eval_R_eps 3.41	hlg
+[2024-05-26 00:54:29,833] 614	T_sample 200.56	T_update 85.20	T_eval 66.17	ETA 1 day, 13:38:14	train_R_eps 3.20	eval_R_eps 3.60	hlg
+[2024-05-26 01:00:19,859] 615	T_sample 201.16	T_update 83.32	T_eval 65.35	ETA 1 day, 13:18:52	train_R_eps 3.19	eval_R_eps 3.56	hlg
+[2024-05-26 01:06:08,036] 616	T_sample 200.22	T_update 82.47	T_eval 65.28	ETA 1 day, 13:01:15	train_R_eps 3.21	eval_R_eps 3.45	hlg
+[2024-05-26 01:11:55,415] 617	T_sample 200.78	T_update 81.74	T_eval 64.66	ETA 1 day, 12:50:23	train_R_eps 3.21	eval_R_eps 3.55	hlg
+[2024-05-26 01:17:47,576] 618	T_sample 202.24	T_update 83.45	T_eval 66.27	ETA 1 day, 13:14:56	train_R_eps 3.20	eval_R_eps 3.29	hlg
+[2024-05-26 01:23:39,867] 619	T_sample 203.56	T_update 82.89	T_eval 65.65	ETA 1 day, 13:09:57	train_R_eps 3.20	eval_R_eps 3.44	hlg
+[2024-05-26 01:29:39,197] 620	T_sample 207.65	T_update 86.03	T_eval 65.45	ETA 1 day, 13:48:28	train_R_eps 3.21	eval_R_eps 3.33	hlg
+[2024-05-26 01:35:33,907] 621	T_sample 206.83	T_update 82.80	T_eval 64.88	ETA 1 day, 13:13:28	train_R_eps 3.22	eval_R_eps 3.25	hlg
+[2024-05-26 01:41:29,044] 622	T_sample 204.24	T_update 85.29	T_eval 65.41	ETA 1 day, 13:10:14	train_R_eps 3.20	eval_R_eps 3.41	hlg
+[2024-05-26 01:47:22,551] 623	T_sample 205.29	T_update 83.56	T_eval 64.47	ETA 1 day, 12:54:06	train_R_eps 3.22	eval_R_eps 3.35	hlg
+[2024-05-26 01:53:13,824] 624	T_sample 204.34	T_update 81.05	T_eval 65.68	ETA 1 day, 12:34:12	train_R_eps 3.22	eval_R_eps 3.43	hlg
+[2024-05-26 01:59:01,271] 625	T_sample 199.88	T_update 83.74	T_eval 63.63	ETA 1 day, 12:04:30	train_R_eps 3.20	eval_R_eps 3.31	hlg
+[2024-05-26 02:04:51,508] 626	T_sample 202.08	T_update 82.74	T_eval 65.21	ETA 1 day, 12:16:03	train_R_eps 3.22	eval_R_eps 3.30	hlg
+[2024-05-26 02:10:38,699] 627	T_sample 201.99	T_update 80.93	T_eval 64.07	ETA 1 day, 11:51:21	train_R_eps 3.22	eval_R_eps 3.33	hlg
+[2024-05-26 02:16:33,311] 628	T_sample 206.54	T_update 81.00	T_eval 66.88	ETA 1 day, 12:31:27	train_R_eps 3.22	eval_R_eps 3.42	hlg
+[2024-05-26 02:22:26,770] 629	T_sample 206.59	T_update 81.63	T_eval 65.04	ETA 1 day, 12:18:26	train_R_eps 3.23	eval_R_eps 3.39	hlg
+[2024-05-26 02:28:18,875] 630	T_sample 202.79	T_update 82.17	T_eval 66.93	ETA 1 day, 12:04:10	train_R_eps 3.24	eval_R_eps 3.43	hlg
+[2024-05-26 02:34:13,236] 631	T_sample 206.44	T_update 81.35	T_eval 66.37	ETA 1 day, 12:12:12	train_R_eps 3.23	eval_R_eps 3.39	hlg
+[2024-05-26 02:40:04,816] 632	T_sample 203.91	T_update 81.18	T_eval 66.29	ETA 1 day, 11:49:15	train_R_eps 3.23	eval_R_eps 3.41	hlg
+[2024-05-26 02:45:54,658] 633	T_sample 201.55	T_update 82.75	T_eval 65.34	ETA 1 day, 11:32:49	train_R_eps 3.24	eval_R_eps 3.34	hlg
+[2024-05-26 02:51:49,565] 634	T_sample 207.64	T_update 81.56	T_eval 65.50	ETA 1 day, 11:57:49	train_R_eps 3.23	eval_R_eps 3.33	hlg
+[2024-05-26 02:57:37,870] 635	T_sample 201.07	T_update 81.47	T_eval 65.56	ETA 1 day, 11:11:51	train_R_eps 3.22	eval_R_eps 3.48	hlg
+[2024-05-26 03:03:28,771] 636	T_sample 201.78	T_update 83.68	T_eval 65.24	ETA 1 day, 11:21:44	train_R_eps 3.23	eval_R_eps 3.40	hlg
+[2024-05-26 03:09:24,492] 637	T_sample 205.22	T_update 84.09	T_eval 66.19	ETA 1 day, 11:44:56	train_R_eps 3.24	eval_R_eps 3.51	hlg
+[2024-05-26 03:15:19,556] 638	T_sample 205.19	T_update 82.89	T_eval 66.78	ETA 1 day, 11:35:07	train_R_eps 3.23	eval_R_eps 3.35	hlg
+[2024-05-26 03:21:08,379] 639	T_sample 201.18	T_update 80.77	T_eval 66.68	ETA 1 day, 10:51:44	train_R_eps 3.23	eval_R_eps 3.51	hlg
+[2024-05-26 03:27:02,417] 640	T_sample 202.86	T_update 85.06	T_eval 65.91	ETA 1 day, 11:17:05	train_R_eps 3.22	eval_R_eps 3.50	hlg
+[2024-05-26 03:32:59,954] 641	T_sample 209.61	T_update 81.28	T_eval 66.45	ETA 1 day, 11:32:07	train_R_eps 3.22	eval_R_eps 3.36	hlg
+[2024-05-26 03:38:49,915] 642	T_sample 203.97	T_update 80.98	T_eval 64.81	ETA 1 day, 10:41:05	train_R_eps 3.23	eval_R_eps 3.38	hlg
+[2024-05-26 03:44:42,096] 643	T_sample 202.47	T_update 84.24	T_eval 65.26	ETA 1 day, 10:48:24	train_R_eps 3.21	eval_R_eps 3.37	hlg
+[2024-05-26 03:50:31,132] 644	T_sample 201.44	T_update 82.26	T_eval 65.14	ETA 1 day, 10:23:58	train_R_eps 3.21	eval_R_eps 3.24	hlg
+[2024-05-26 03:56:19,033] 645	T_sample 201.58	T_update 79.56	T_eval 66.56	ETA 1 day, 10:11:27	train_R_eps 3.21	eval_R_eps 3.45	hlg
+[2024-05-26 04:02:11,398] 646	T_sample 205.92	T_update 81.06	T_eval 65.20	ETA 1 day, 10:31:56	train_R_eps 3.23	eval_R_eps 3.48	hlg
+[2024-05-26 04:08:06,816] 647	T_sample 207.27	T_update 82.27	T_eval 65.68	ETA 1 day, 10:43:57	train_R_eps 3.23	eval_R_eps 3.44	hlg
+[2024-05-26 04:14:00,953] 648	T_sample 204.98	T_update 83.81	T_eval 65.15	ETA 1 day, 10:30:33	train_R_eps 3.23	eval_R_eps 3.51	hlg
+[2024-05-26 04:19:51,208] 649	T_sample 203.03	T_update 81.60	T_eval 65.42	ETA 1 day, 10:02:00	train_R_eps 3.24	eval_R_eps 3.46	hlg
+[2024-05-26 04:25:42,422] 650	T_sample 203.15	T_update 81.56	T_eval 66.29	ETA 1 day, 10:01:41	train_R_eps 3.23	eval_R_eps 3.47	hlg
+[2024-05-26 04:31:35,067] 651	T_sample 206.52	T_update 81.20	T_eval 64.72	ETA 1 day, 10:04:12	train_R_eps 3.23	eval_R_eps 3.49	hlg
+[2024-05-26 04:37:28,738] 652	T_sample 204.30	T_update 84.40	T_eval 64.77	ETA 1 day, 10:04:13	train_R_eps 3.21	eval_R_eps 3.50	hlg
+[2024-05-26 04:43:27,788] 653	T_sample 207.67	T_update 84.49	T_eval 66.68	ETA 1 day, 10:29:22	train_R_eps 3.23	eval_R_eps 3.50	hlg
+[2024-05-26 04:49:21,114] 654	T_sample 204.86	T_update 82.63	T_eval 65.63	ETA 1 day, 9:50:29	train_R_eps 3.22	eval_R_eps 3.35	hlg
+[2024-05-26 04:55:16,632] 655	T_sample 206.66	T_update 83.01	T_eval 65.65	ETA 1 day, 9:57:09	train_R_eps 3.22	eval_R_eps 3.51	hlg
+[2024-05-26 05:01:05,784] 656	T_sample 201.80	T_update 81.50	T_eval 65.66	ETA 1 day, 9:14:51	train_R_eps 3.23	eval_R_eps 3.45	hlg
+[2024-05-26 05:06:59,939] 657	T_sample 203.19	T_update 84.85	T_eval 65.90	ETA 1 day, 9:37:29	train_R_eps 3.23	eval_R_eps 3.33	hlg
+[2024-05-26 05:12:55,086] 658	T_sample 207.17	T_update 82.53	T_eval 65.24	ETA 1 day, 9:37:17	train_R_eps 3.23	eval_R_eps 3.29	hlg
+[2024-05-26 05:18:46,099] 659	T_sample 203.33	T_update 81.53	T_eval 65.95	ETA 1 day, 9:07:57	train_R_eps 3.20	eval_R_eps 3.44	hlg
+[2024-05-26 05:24:32,652] 660	T_sample 201.03	T_update 79.81	T_eval 65.51	ETA 1 day, 8:36:51	train_R_eps 3.21	eval_R_eps 3.48	hlg
+[2024-05-26 05:30:24,469] 661	T_sample 203.31	T_update 83.28	T_eval 65.03	ETA 1 day, 9:00:46	train_R_eps 3.23	eval_R_eps 3.43	hlg
+[2024-05-26 05:36:12,612] 662	T_sample 200.79	T_update 82.04	T_eval 65.11	ETA 1 day, 8:34:16	train_R_eps 3.23	eval_R_eps 3.52	hlg
+[2024-05-26 05:41:58,493] 663	T_sample 199.19	T_update 80.92	T_eval 65.58	ETA 1 day, 8:15:49	train_R_eps 3.20	eval_R_eps 3.48	hlg
+[2024-05-26 05:47:47,133] 664	T_sample 199.98	T_update 82.53	T_eval 65.93	ETA 1 day, 8:25:28	train_R_eps 3.20	eval_R_eps 3.55	hlg
+[2024-05-26 05:53:38,910] 665	T_sample 203.11	T_update 82.25	T_eval 66.21	ETA 1 day, 8:37:05	train_R_eps 3.23	eval_R_eps 3.49	hlg
+[2024-05-26 05:59:23,051] 666	T_sample 197.92	T_update 81.61	T_eval 64.40	ETA 1 day, 7:48:52	train_R_eps 3.23	eval_R_eps 3.51	hlg
+[2024-05-26 06:05:13,028] 667	T_sample 201.66	T_update 82.58	T_eval 65.53	ETA 1 day, 8:15:27	train_R_eps 3.24	eval_R_eps 3.51	hlg
+[2024-05-26 06:11:02,840] 668	T_sample 200.63	T_update 82.35	T_eval 66.63	ETA 1 day, 8:08:42	train_R_eps 3.21	eval_R_eps 3.38	hlg
+[2024-05-26 06:16:53,849] 669	T_sample 204.54	T_update 82.37	T_eval 63.90	ETA 1 day, 8:09:27	train_R_eps 3.22	eval_R_eps 3.41	hlg
+[2024-05-26 06:22:43,697] 670	T_sample 199.55	T_update 84.20	T_eval 65.88	ETA 1 day, 7:57:09	train_R_eps 3.23	eval_R_eps 3.49	hlg
+[2024-05-26 06:28:37,246] 671	T_sample 205.77	T_update 81.36	T_eval 66.22	ETA 1 day, 8:11:39	train_R_eps 3.22	eval_R_eps 3.33	hlg
+[2024-05-26 06:34:22,730] 672	T_sample 198.81	T_update 80.52	T_eval 65.96	ETA 1 day, 7:21:49	train_R_eps 3.23	eval_R_eps 3.59	hlg
+[2024-05-26 06:40:13,186] 673	T_sample 202.62	T_update 81.44	T_eval 66.20	ETA 1 day, 7:43:04	train_R_eps 3.23	eval_R_eps 3.47	hlg
+[2024-05-26 06:46:04,247] 674	T_sample 202.82	T_update 80.93	T_eval 67.11	ETA 1 day, 7:40:31	train_R_eps 3.23	eval_R_eps 3.51	hlg
+[2024-05-26 06:52:00,074] 675	T_sample 207.51	T_update 81.96	T_eval 66.15	ETA 1 day, 8:00:23	train_R_eps 3.23	eval_R_eps 3.56	hlg
+[2024-05-26 06:57:51,225] 676	T_sample 200.56	T_update 85.02	T_eval 65.37	ETA 1 day, 7:29:17	train_R_eps 3.25	eval_R_eps 3.54	hlg
+[2024-05-26 07:03:43,066] 677	T_sample 201.61	T_update 84.65	T_eval 65.38	ETA 1 day, 7:27:07	train_R_eps 3.24	eval_R_eps 3.34	hlg
+[2024-05-26 07:09:32,893] 678	T_sample 198.37	T_update 84.71	T_eval 66.54	ETA 1 day, 7:10:28	train_R_eps 3.24	eval_R_eps 3.56	hlg
+[2024-05-26 07:15:21,638] 679	T_sample 203.66	T_update 81.28	T_eval 63.61	ETA 1 day, 6:58:55	train_R_eps 3.23	eval_R_eps 3.55	hlg
+[2024-05-26 07:21:14,854] 680	T_sample 205.75	T_update 81.73	T_eval 65.53	ETA 1 day, 7:16:50	train_R_eps 3.20	eval_R_eps 3.54	hlg
+[2024-05-26 07:27:08,902] 681	T_sample 202.78	T_update 85.98	T_eval 65.10	ETA 1 day, 7:15:25	train_R_eps 3.23	eval_R_eps 3.55	hlg
+[2024-05-26 07:33:08,036] 682	T_sample 208.02	T_update 85.24	T_eval 65.68	ETA 1 day, 7:36:23	train_R_eps 3.22	eval_R_eps 3.47	hlg
+[2024-05-26 07:39:03,897] 683	T_sample 206.93	T_update 82.49	T_eval 66.23	ETA 1 day, 7:13:07	train_R_eps 3.23	eval_R_eps 3.46	hlg
+[2024-05-26 07:44:52,625] 684	T_sample 200.26	T_update 82.68	T_eval 65.58	ETA 1 day, 6:29:46	train_R_eps 3.25	eval_R_eps 3.33	hlg
+[2024-05-26 07:50:42,896] 685	T_sample 203.05	T_update 80.80	T_eval 66.21	ETA 1 day, 6:32:01	train_R_eps 3.24	eval_R_eps 3.34	hlg
+[2024-05-26 07:56:36,404] 686	T_sample 206.13	T_update 81.23	T_eval 65.94	ETA 1 day, 6:43:06	train_R_eps 3.24	eval_R_eps 3.58	hlg
+[2024-05-26 08:02:30,350] 687	T_sample 205.98	T_update 82.43	T_eval 65.33	ETA 1 day, 6:39:27	train_R_eps 3.24	eval_R_eps 3.62	hlg
+[2024-05-26 08:02:30,357] save best checkpoint with rewards 3.62!
+[2024-05-26 08:08:22,300] 688	T_sample 203.35	T_update 83.43	T_eval 64.95	ETA 1 day, 6:23:06	train_R_eps 3.25	eval_R_eps 3.57	hlg
+[2024-05-26 08:14:17,529] 689	T_sample 204.77	T_update 84.41	T_eval 65.87	ETA 1 day, 6:34:22	train_R_eps 3.24	eval_R_eps 3.32	hlg
+[2024-05-26 08:20:13,915] 690	T_sample 207.60	T_update 83.31	T_eval 65.28	ETA 1 day, 6:34:20	train_R_eps 3.25	eval_R_eps 3.30	hlg
+[2024-05-26 08:26:10,169] 691	T_sample 204.94	T_update 85.60	T_eval 65.52	ETA 1 day, 6:27:45	train_R_eps 3.25	eval_R_eps 3.41	hlg
+[2024-05-26 08:32:07,382] 692	T_sample 209.34	T_update 82.89	T_eval 64.79	ETA 1 day, 6:26:45	train_R_eps 3.21	eval_R_eps 3.27	hlg
+[2024-05-26 08:38:04,881] 693	T_sample 208.09	T_update 83.14	T_eval 66.07	ETA 1 day, 6:22:14	train_R_eps 3.21	eval_R_eps 3.51	hlg
+[2024-05-26 08:44:01,225] 694	T_sample 203.40	T_update 85.20	T_eval 67.54	ETA 1 day, 6:10:23	train_R_eps 3.24	eval_R_eps 3.47	hlg
+[2024-05-26 08:49:54,933] 695	T_sample 204.58	T_update 82.55	T_eval 66.38	ETA 1 day, 5:51:07	train_R_eps 3.24	eval_R_eps 3.47	hlg
+[2024-05-26 08:55:47,400] 696	T_sample 203.49	T_update 83.08	T_eval 65.70	ETA 1 day, 5:38:57	train_R_eps 3.26	eval_R_eps 3.45	hlg
+[2024-05-26 09:01:40,618] 697	T_sample 204.74	T_update 81.92	T_eval 66.36	ETA 1 day, 5:36:51	train_R_eps 3.26	eval_R_eps 3.17	hlg
+[2024-05-26 09:07:29,991] 698	T_sample 202.16	T_update 82.06	T_eval 64.95	ETA 1 day, 5:11:41	train_R_eps 3.25	eval_R_eps 3.53	hlg
+[2024-05-26 09:13:19,684] 699	T_sample 201.91	T_update 83.03	T_eval 64.56	ETA 1 day, 5:07:28	train_R_eps 3.24	eval_R_eps 3.47	hlg
+[2024-05-26 09:19:13,571] 700	T_sample 202.45	T_update 85.09	T_eval 66.13	ETA 1 day, 5:22:27	train_R_eps 3.24	eval_R_eps 3.54	hlg
+[2024-05-26 09:25:04,783] 701	T_sample 203.88	T_update 81.64	T_eval 65.50	ETA 1 day, 5:03:22	train_R_eps 3.26	eval_R_eps 3.46	hlg
+[2024-05-26 09:30:56,462] 702	T_sample 202.50	T_update 83.23	T_eval 65.75	ETA 1 day, 4:59:49	train_R_eps 3.25	eval_R_eps 3.49	hlg
+[2024-05-26 09:36:44,456] 703	T_sample 200.40	T_update 81.99	T_eval 65.41	ETA 1 day, 4:35:48	train_R_eps 3.24	eval_R_eps 3.55	hlg
+[2024-05-26 09:42:40,383] 704	T_sample 205.76	T_update 83.31	T_eval 66.66	ETA 1 day, 5:08:59	train_R_eps 3.24	eval_R_eps 3.66	hlg
+[2024-05-26 09:42:40,391] save best checkpoint with rewards 3.66!
+[2024-05-26 09:48:25,690] 705	T_sample 200.80	T_update 79.67	T_eval 64.61	ETA 1 day, 4:10:54	train_R_eps 3.24	eval_R_eps 3.42	hlg
+[2024-05-26 09:54:16,915] 706	T_sample 204.35	T_update 82.27	T_eval 64.41	ETA 1 day, 4:34:12	train_R_eps 3.24	eval_R_eps 3.62	hlg
+[2024-05-26 10:00:07,209] 707	T_sample 203.27	T_update 81.76	T_eval 65.07	ETA 1 day, 4:23:48	train_R_eps 3.24	eval_R_eps 3.34	hlg
+[2024-05-26 10:05:54,810] 708	T_sample 199.48	T_update 82.50	T_eval 65.42	ETA 1 day, 4:04:52	train_R_eps 3.23	eval_R_eps 3.53	hlg
+[2024-05-26 10:11:46,035] 709	T_sample 203.42	T_update 83.88	T_eval 63.71	ETA 1 day, 4:16:35	train_R_eps 3.23	eval_R_eps 3.24	hlg
+[2024-05-26 10:17:36,962] 710	T_sample 201.33	T_update 82.96	T_eval 66.43	ETA 1 day, 4:09:17	train_R_eps 3.24	eval_R_eps 3.38	hlg
+[2024-05-26 10:23:21,620] 711	T_sample 199.35	T_update 80.21	T_eval 64.90	ETA 1 day, 3:33:24	train_R_eps 3.24	eval_R_eps 3.41	hlg
+[2024-05-26 10:29:09,682] 712	T_sample 201.27	T_update 82.12	T_eval 64.47	ETA 1 day, 3:43:56	train_R_eps 3.24	eval_R_eps 3.29	hlg
+[2024-05-26 10:34:56,283] 713	T_sample 199.55	T_update 81.86	T_eval 64.99	ETA 1 day, 3:31:12	train_R_eps 3.23	eval_R_eps 3.41	hlg
+[2024-05-26 10:40:48,588] 714	T_sample 204.49	T_update 83.28	T_eval 64.33	ETA 1 day, 3:52:29	train_R_eps 3.21	eval_R_eps 3.56	hlg
+[2024-05-26 10:46:41,815] 715	T_sample 206.10	T_update 80.99	T_eval 65.93	ETA 1 day, 3:50:59	train_R_eps 3.22	eval_R_eps 3.46	hlg
+[2024-05-26 10:52:29,797] 716	T_sample 199.35	T_update 83.01	T_eval 65.42	ETA 1 day, 3:20:23	train_R_eps 3.21	eval_R_eps 3.46	hlg
+[2024-05-26 10:58:19,072] 717	T_sample 199.67	T_update 83.83	T_eval 65.58	ETA 1 day, 3:20:39	train_R_eps 3.21	eval_R_eps 3.54	hlg
+[2024-05-26 11:04:06,058] 718	T_sample 200.58	T_update 80.09	T_eval 66.11	ETA 1 day, 3:04:05	train_R_eps 3.22	eval_R_eps 3.42	hlg
+[2024-05-26 11:09:59,172] 719	T_sample 203.13	T_update 84.07	T_eval 65.70	ETA 1 day, 3:26:55	train_R_eps 3.24	eval_R_eps 3.38	hlg
+[2024-05-26 11:15:51,380] 720	T_sample 202.63	T_update 84.66	T_eval 64.72	ETA 1 day, 3:16:48	train_R_eps 3.23	eval_R_eps 3.33	hlg
+[2024-05-26 11:21:42,963] 721	T_sample 203.58	T_update 82.33	T_eval 65.48	ETA 1 day, 3:08:06	train_R_eps 3.22	eval_R_eps 3.40	hlg
+[2024-05-26 11:27:41,649] 722	T_sample 208.32	T_update 85.87	T_eval 64.30	ETA 1 day, 3:35:01	train_R_eps 3.22	eval_R_eps 3.24	hlg
+[2024-05-26 11:33:36,826] 723	T_sample 206.66	T_update 83.12	T_eval 65.21	ETA 1 day, 3:12:55	train_R_eps 3.21	eval_R_eps 3.37	hlg
+[2024-05-26 11:39:40,416] 724	T_sample 215.49	T_update 82.66	T_eval 65.24	ETA 1 day, 3:45:33	train_R_eps 3.22	eval_R_eps 3.45	hlg
+[2024-05-26 11:45:38,327] 725	T_sample 207.14	T_update 85.99	T_eval 64.59	ETA 1 day, 3:13:34	train_R_eps 3.23	eval_R_eps 3.43	hlg
+[2024-05-26 11:51:31,129] 726	T_sample 205.34	T_update 82.37	T_eval 64.90	ETA 1 day, 2:44:22	train_R_eps 3.25	eval_R_eps 3.57	hlg
+[2024-05-26 11:57:28,620] 727	T_sample 209.37	T_update 83.09	T_eval 64.84	ETA 1 day, 2:59:43	train_R_eps 3.21	eval_R_eps 3.37	hlg
+[2024-05-26 12:03:31,282] 728	T_sample 210.55	T_update 85.20	T_eval 66.71	ETA 1 day, 3:17:07	train_R_eps 3.21	eval_R_eps 3.36	hlg
+[2024-05-26 12:09:23,468] 729	T_sample 202.96	T_update 83.23	T_eval 65.79	ETA 1 day, 2:23:56	train_R_eps 3.23	eval_R_eps 3.46	hlg
+[2024-05-26 12:15:19,468] 730	T_sample 206.88	T_update 82.46	T_eval 66.45	ETA 1 day, 2:35:08	train_R_eps 3.24	eval_R_eps 3.44	hlg
+[2024-05-26 12:21:12,921] 731	T_sample 205.55	T_update 83.67	T_eval 64.03	ETA 1 day, 2:17:52	train_R_eps 3.24	eval_R_eps 3.50	hlg
+[2024-05-26 12:27:04,059] 732	T_sample 202.33	T_update 83.89	T_eval 64.71	ETA 1 day, 2:01:40	train_R_eps 3.26	eval_R_eps 3.53	hlg
+[2024-05-26 12:32:58,483] 733	T_sample 205.61	T_update 83.77	T_eval 64.84	ETA 1 day, 2:10:23	train_R_eps 3.25	eval_R_eps 3.40	hlg
+[2024-05-26 12:38:49,493] 734	T_sample 201.79	T_update 82.94	T_eval 66.07	ETA 1 day, 1:49:24	train_R_eps 3.25	eval_R_eps 3.42	hlg
+[2024-05-26 12:44:39,426] 735	T_sample 202.46	T_update 82.52	T_eval 64.76	ETA 1 day, 1:38:49	train_R_eps 3.24	eval_R_eps 3.46	hlg
+[2024-05-26 12:50:32,270] 736	T_sample 204.28	T_update 82.47	T_eval 65.90	ETA 1 day, 1:45:45	train_R_eps 3.25	eval_R_eps 3.44	hlg
+[2024-05-26 12:56:20,114] 737	T_sample 199.36	T_update 82.70	T_eval 65.58	ETA 1 day, 1:18:02	train_R_eps 3.25	eval_R_eps 3.67	hlg
+[2024-05-26 12:56:20,123] save best checkpoint with rewards 3.67!
+[2024-05-26 13:02:11,021] 738	T_sample 200.78	T_update 84.14	T_eval 65.75	ETA 1 day, 1:25:27	train_R_eps 3.24	eval_R_eps 3.29	hlg
+[2024-05-26 13:08:10,045] 739	T_sample 209.06	T_update 84.01	T_eval 65.76	ETA 1 day, 1:54:55	train_R_eps 3.22	eval_R_eps 3.36	hlg
+[2024-05-26 13:13:57,106] 740	T_sample 199.31	T_update 83.50	T_eval 64.04	ETA 1 day, 0:57:13	train_R_eps 3.22	eval_R_eps 3.35	hlg
+[2024-05-26 13:19:51,524] 741	T_sample 206.22	T_update 82.96	T_eval 65.03	ETA 1 day, 1:23:07	train_R_eps 3.24	eval_R_eps 3.23	hlg
+[2024-05-26 13:25:39,781] 742	T_sample 202.62	T_update 81.20	T_eval 64.24	ETA 1 day, 0:50:50	train_R_eps 3.25	eval_R_eps 3.49	hlg
+[2024-05-26 13:31:37,089] 743	T_sample 206.83	T_update 84.10	T_eval 66.18	ETA 1 day, 1:23:39	train_R_eps 3.24	eval_R_eps 3.38	hlg
+[2024-05-26 13:37:32,461] 744	T_sample 205.49	T_update 83.38	T_eval 66.30	ETA 1 day, 1:09:28	train_R_eps 3.24	eval_R_eps 3.39	hlg
+[2024-05-26 13:43:30,836] 745	T_sample 207.18	T_update 83.68	T_eval 67.31	ETA 1 day, 1:16:16	train_R_eps 3.26	eval_R_eps 3.37	hlg
+[2024-05-26 13:49:26,535] 746	T_sample 207.42	T_update 83.06	T_eval 65.02	ETA 1 day, 0:59:02	train_R_eps 3.23	eval_R_eps 3.35	hlg
+[2024-05-26 13:55:19,417] 747	T_sample 203.41	T_update 84.77	T_eval 64.50	ETA 1 day, 0:41:16	train_R_eps 3.22	eval_R_eps 3.47	hlg
+[2024-05-26 14:01:12,492] 748	T_sample 203.78	T_update 82.65	T_eval 66.44	ETA 1 day, 0:36:12	train_R_eps 3.23	eval_R_eps 3.40	hlg
+[2024-05-26 14:07:01,506] 749	T_sample 199.98	T_update 83.02	T_eval 65.82	ETA 1 day, 0:13:23	train_R_eps 3.23	eval_R_eps 3.29	hlg
+[2024-05-26 14:12:49,932] 750	T_sample 200.28	T_update 82.64	T_eval 65.29	ETA 1 day, 0:05:06	train_R_eps 3.24	eval_R_eps 3.53	hlg
+[2024-05-26 14:18:40,737] 751	T_sample 201.45	T_update 83.90	T_eval 65.24	ETA 1 day, 0:09:09	train_R_eps 3.25	eval_R_eps 3.38	hlg
+[2024-05-26 14:24:35,203] 752	T_sample 206.18	T_update 82.75	T_eval 65.34	ETA 1 day, 0:18:24	train_R_eps 3.25	eval_R_eps 3.37	hlg
+[2024-05-26 14:30:24,587] 753	T_sample 200.66	T_update 82.96	T_eval 65.55	ETA 23:51:38	train_R_eps 3.26	eval_R_eps 3.46	hlg
+[2024-05-26 14:36:18,294] 754	T_sample 204.78	T_update 82.86	T_eval 65.86	ETA 1 day, 0:03:29	train_R_eps 3.23	eval_R_eps 3.33	hlg
+[2024-05-26 14:42:19,244] 755	T_sample 210.59	T_update 84.02	T_eval 66.13	ETA 1 day, 0:27:02	train_R_eps 3.23	eval_R_eps 3.51	hlg
+[2024-05-26 14:48:12,520] 756	T_sample 202.28	T_update 83.79	T_eval 67.01	ETA 23:49:57	train_R_eps 3.25	eval_R_eps 3.43	hlg
+[2024-05-26 14:54:02,436] 757	T_sample 200.40	T_update 83.62	T_eval 65.69	ETA 23:30:31	train_R_eps 3.26	eval_R_eps 3.39	hlg
+[2024-05-26 14:59:56,055] 758	T_sample 203.60	T_update 83.76	T_eval 66.06	ETA 23:39:33	train_R_eps 3.24	eval_R_eps 3.25	hlg
+[2024-05-26 15:05:49,191] 759	T_sample 204.40	T_update 82.68	T_eval 65.86	ETA 23:31:44	train_R_eps 3.24	eval_R_eps 3.43	hlg
+[2024-05-26 15:11:42,154] 760	T_sample 205.52	T_update 83.26	T_eval 63.97	ETA 23:25:08	train_R_eps 3.25	eval_R_eps 3.30	hlg
+[2024-05-26 15:17:33,305] 761	T_sample 203.00	T_update 82.30	T_eval 65.64	ETA 23:12:06	train_R_eps 3.26	eval_R_eps 3.38	hlg
+[2024-05-26 15:23:29,255] 762	T_sample 206.18	T_update 84.74	T_eval 64.83	ETA 23:25:11	train_R_eps 3.25	eval_R_eps 3.46	hlg
+[2024-05-26 15:29:23,247] 763	T_sample 205.39	T_update 83.01	T_eval 65.38	ETA 23:11:35	train_R_eps 3.23	eval_R_eps 3.27	hlg
+[2024-05-26 15:35:23,629] 764	T_sample 208.69	T_update 82.96	T_eval 68.53	ETA 23:30:42	train_R_eps 3.24	eval_R_eps 3.31	hlg
+[2024-05-26 15:41:17,009] 765	T_sample 204.04	T_update 82.32	T_eval 66.81	ETA 22:57:24	train_R_eps 3.24	eval_R_eps 3.34	hlg
+[2024-05-26 15:47:12,992] 766	T_sample 205.09	T_update 83.50	T_eval 67.18	ETA 23:01:36	train_R_eps 3.23	eval_R_eps 3.42	hlg
+[2024-05-26 15:53:09,774] 767	T_sample 207.54	T_update 82.63	T_eval 66.41	ETA 22:58:47	train_R_eps 3.23	eval_R_eps 3.18	hlg
+[2024-05-26 15:59:10,081] 768	T_sample 208.90	T_update 83.06	T_eval 68.14	ETA 23:06:24	train_R_eps 3.25	eval_R_eps 3.45	hlg
+[2024-05-26 16:05:06,120] 769	T_sample 206.69	T_update 82.97	T_eval 66.18	ETA 22:44:02	train_R_eps 3.28	eval_R_eps 3.49	hlg
+[2024-05-26 16:11:00,965] 770	T_sample 203.83	T_update 84.33	T_eval 66.47	ETA 22:33:31	train_R_eps 3.27	eval_R_eps 3.50	hlg
+[2024-05-26 16:16:57,580] 771	T_sample 205.03	T_update 84.10	T_eval 67.29	ETA 22:34:23	train_R_eps 3.24	eval_R_eps 3.36	hlg
+[2024-05-26 16:22:55,009] 772	T_sample 206.72	T_update 82.22	T_eval 68.28	ETA 22:31:30	train_R_eps 3.25	eval_R_eps 3.37	hlg
+[2024-05-26 16:28:51,235] 773	T_sample 207.41	T_update 83.12	T_eval 65.49	ETA 22:21:02	train_R_eps 3.24	eval_R_eps 3.53	hlg
+[2024-05-26 16:34:43,387] 774	T_sample 204.74	T_update 83.33	T_eval 63.88	ETA 21:59:48	train_R_eps 3.24	eval_R_eps 3.28	hlg
+[2024-05-26 16:40:39,293] 775	T_sample 206.23	T_update 83.87	T_eval 65.60	ETA 22:07:58	train_R_eps 3.26	eval_R_eps 3.44	hlg
+[2024-05-26 16:46:28,991] 776	T_sample 201.37	T_update 82.79	T_eval 65.34	ETA 21:38:58	train_R_eps 3.25	eval_R_eps 3.43	hlg
+[2024-05-26 16:52:25,106] 777	T_sample 205.94	T_update 84.03	T_eval 65.94	ETA 21:56:52	train_R_eps 3.23	eval_R_eps 3.35	hlg
+[2024-05-26 16:58:19,225] 778	T_sample 203.45	T_update 84.55	T_eval 65.91	ETA 21:43:36	train_R_eps 3.24	eval_R_eps 3.43	hlg
+[2024-05-26 17:04:09,217] 779	T_sample 202.01	T_update 81.42	T_eval 66.36	ETA 21:22:33	train_R_eps 3.24	eval_R_eps 3.38	hlg
+[2024-05-26 17:10:00,439] 780	T_sample 202.60	T_update 82.63	T_eval 65.78	ETA 21:21:12	train_R_eps 3.24	eval_R_eps 3.43	hlg
+[2024-05-26 17:15:55,160] 781	T_sample 206.46	T_update 83.51	T_eval 64.55	ETA 21:28:05	train_R_eps 3.25	eval_R_eps 3.36	hlg
+[2024-05-26 17:21:54,788] 782	T_sample 210.40	T_update 83.01	T_eval 66.02	ETA 21:39:55	train_R_eps 3.25	eval_R_eps 3.30	hlg
+[2024-05-26 17:27:45,012] 783	T_sample 201.50	T_update 82.36	T_eval 66.17	ETA 21:00:06	train_R_eps 3.26	eval_R_eps 3.55	hlg
+[2024-05-26 17:33:35,235] 784	T_sample 201.87	T_update 83.03	T_eval 65.12	ETA 20:54:14	train_R_eps 3.25	eval_R_eps 3.40	hlg
+[2024-05-26 17:39:28,040] 785	T_sample 203.31	T_update 83.52	T_eval 65.78	ETA 20:57:38	train_R_eps 3.24	eval_R_eps 3.63	hlg
+[2024-05-26 17:45:22,319] 786	T_sample 204.95	T_update 83.91	T_eval 65.22	ETA 20:56:58	train_R_eps 3.26	eval_R_eps 3.39	hlg
+[2024-05-26 17:51:15,704] 787	T_sample 201.03	T_update 85.01	T_eval 67.14	ETA 20:47:53	train_R_eps 3.25	eval_R_eps 3.41	hlg
+[2024-05-26 17:57:10,068] 788	T_sample 204.96	T_update 83.57	T_eval 65.63	ETA 20:45:29	train_R_eps 3.24	eval_R_eps 3.49	hlg
+[2024-05-26 18:03:05,022] 789	T_sample 204.89	T_update 84.23	T_eval 65.64	ETA 20:41:40	train_R_eps 3.24	eval_R_eps 3.55	hlg
+[2024-05-26 18:08:59,478] 790	T_sample 206.57	T_update 83.08	T_eval 64.60	ETA 20:33:59	train_R_eps 3.26	eval_R_eps 3.53	hlg
+[2024-05-26 18:14:49,109] 791	T_sample 203.29	T_update 82.29	T_eval 63.86	ETA 20:11:24	train_R_eps 3.26	eval_R_eps 3.38	hlg
+[2024-05-26 18:20:48,064] 792	T_sample 208.11	T_update 83.71	T_eval 66.93	ETA 20:37:43	train_R_eps 3.27	eval_R_eps 3.25	hlg
+[2024-05-26 18:26:37,736] 793	T_sample 202.00	T_update 83.64	T_eval 63.83	ETA 19:59:50	train_R_eps 3.26	eval_R_eps 3.31	hlg
+[2024-05-26 18:32:27,937] 794	T_sample 201.55	T_update 82.82	T_eval 65.63	ETA 19:55:50	train_R_eps 3.25	eval_R_eps 3.43	hlg
+[2024-05-26 18:38:18,990] 795	T_sample 200.19	T_update 84.30	T_eval 66.36	ETA 19:52:53	train_R_eps 3.22	eval_R_eps 3.51	hlg
+[2024-05-26 18:44:14,645] 796	T_sample 206.00	T_update 83.32	T_eval 66.13	ETA 20:02:37	train_R_eps 3.23	eval_R_eps 3.50	hlg
+[2024-05-26 18:50:07,339] 797	T_sample 203.49	T_update 83.32	T_eval 65.69	ETA 19:46:44	train_R_eps 3.24	eval_R_eps 3.46	hlg
+[2024-05-26 18:56:00,967] 798	T_sample 204.96	T_update 82.68	T_eval 65.79	ETA 19:43:59	train_R_eps 3.24	eval_R_eps 3.40	hlg
+[2024-05-26 19:01:54,238] 799	T_sample 205.14	T_update 82.86	T_eval 65.07	ETA 19:36:53	train_R_eps 3.25	eval_R_eps 3.52	hlg
+[2024-05-26 19:07:52,239] 800	T_sample 208.39	T_update 83.57	T_eval 65.83	ETA 19:46:40	train_R_eps 3.25	eval_R_eps 3.33	hlg
+[2024-05-26 19:13:47,046] 801	T_sample 205.69	T_update 83.12	T_eval 65.79	ETA 19:30:12	train_R_eps 3.25	eval_R_eps 3.35	hlg
+[2024-05-26 19:19:44,537] 802	T_sample 207.43	T_update 83.64	T_eval 66.22	ETA 19:33:06	train_R_eps 3.26	eval_R_eps 3.44	hlg
+[2024-05-26 19:25:38,388] 803	T_sample 205.72	T_update 82.87	T_eval 65.06	ETA 19:15:15	train_R_eps 3.26	eval_R_eps 3.42	hlg
+[2024-05-26 19:31:30,595] 804	T_sample 203.25	T_update 82.53	T_eval 66.21	ETA 19:03:58	train_R_eps 3.26	eval_R_eps 3.31	hlg
+[2024-05-26 19:37:20,580] 805	T_sample 199.16	T_update 84.58	T_eval 66.04	ETA 18:50:58	train_R_eps 3.11	eval_R_eps 3.14	hlg
+[2024-05-26 19:43:12,535] 806	T_sample 203.46	T_update 83.55	T_eval 64.75	ETA 18:51:30	train_R_eps 3.16	eval_R_eps 3.17	hlg
+[2024-05-26 19:49:07,937] 807	T_sample 206.85	T_update 83.08	T_eval 65.28	ETA 18:56:39	train_R_eps 3.20	eval_R_eps 3.46	hlg
+[2024-05-26 19:55:00,074] 808	T_sample 203.86	T_update 83.73	T_eval 64.35	ETA 18:40:21	train_R_eps 3.21	eval_R_eps 3.42	hlg
+[2024-05-26 20:00:58,879] 809	T_sample 208.43	T_update 83.98	T_eval 66.20	ETA 18:55:36	train_R_eps 3.21	eval_R_eps 3.33	hlg
+[2024-05-26 20:06:56,147] 810	T_sample 206.04	T_update 84.35	T_eval 66.67	ETA 18:44:45	train_R_eps 3.23	eval_R_eps 3.63	hlg
+[2024-05-26 20:12:52,786] 811	T_sample 205.65	T_update 84.86	T_eval 65.92	ETA 18:36:50	train_R_eps 3.25	eval_R_eps 3.54	hlg
+[2024-05-26 20:18:46,554] 812	T_sample 205.06	T_update 82.13	T_eval 66.38	ETA 18:21:58	train_R_eps 3.25	eval_R_eps 3.41	hlg
+[2024-05-26 20:24:43,991] 813	T_sample 205.85	T_update 83.64	T_eval 67.72	ETA 18:27:22	train_R_eps 3.25	eval_R_eps 3.44	hlg
+[2024-05-26 20:30:36,336] 814	T_sample 202.00	T_update 83.66	T_eval 66.47	ETA 18:05:45	train_R_eps 3.26	eval_R_eps 3.35	hlg
+[2024-05-26 20:36:31,588] 815	T_sample 204.78	T_update 83.63	T_eval 66.64	ETA 18:08:50	train_R_eps 3.25	eval_R_eps 3.48	hlg
+[2024-05-26 20:42:24,294] 816	T_sample 202.48	T_update 84.14	T_eval 65.89	ETA 17:55:09	train_R_eps 3.25	eval_R_eps 3.50	hlg
+[2024-05-26 20:48:18,792] 817	T_sample 205.33	T_update 83.63	T_eval 65.33	ETA 17:54:41	train_R_eps 3.26	eval_R_eps 3.44	hlg
+[2024-05-26 20:54:13,362] 818	T_sample 204.91	T_update 82.90	T_eval 66.56	ETA 17:49:01	train_R_eps 3.25	eval_R_eps 3.36	hlg
+[2024-05-26 21:00:03,004] 819	T_sample 200.81	T_update 83.43	T_eval 65.20	ETA 17:28:19	train_R_eps 3.26	eval_R_eps 3.40	hlg
+[2024-05-26 21:05:56,304] 820	T_sample 204.27	T_update 83.48	T_eval 65.33	ETA 17:33:22	train_R_eps 3.25	eval_R_eps 3.23	hlg
+[2024-05-26 21:11:50,158] 821	T_sample 205.05	T_update 82.93	T_eval 65.68	ETA 17:29:10	train_R_eps 3.26	eval_R_eps 3.57	hlg
+[2024-05-26 21:17:47,114] 822	T_sample 208.85	T_update 82.46	T_eval 65.44	ETA 17:32:26	train_R_eps 3.26	eval_R_eps 3.28	hlg
+[2024-05-26 21:23:38,300] 823	T_sample 201.49	T_update 83.21	T_eval 66.29	ETA 17:09:33	train_R_eps 3.27	eval_R_eps 3.25	hlg
+[2024-05-26 21:29:32,286] 824	T_sample 204.17	T_update 83.76	T_eval 65.86	ETA 17:11:52	train_R_eps 3.25	eval_R_eps 3.34	hlg
+[2024-05-26 21:35:27,729] 825	T_sample 206.66	T_update 83.13	T_eval 65.44	ETA 17:10:11	train_R_eps 3.25	eval_R_eps 3.32	hlg
+[2024-05-26 21:41:24,575] 826	T_sample 206.86	T_update 83.00	T_eval 66.79	ETA 17:08:20	train_R_eps 3.24	eval_R_eps 3.60	hlg
+[2024-05-26 21:47:19,129] 827	T_sample 205.18	T_update 82.54	T_eval 66.63	ETA 16:55:48	train_R_eps 3.24	eval_R_eps 3.59	hlg
+[2024-05-26 21:53:08,552] 828	T_sample 199.42	T_update 83.17	T_eval 66.62	ETA 16:35:16	train_R_eps 3.24	eval_R_eps 3.72	hlg
+[2024-05-26 21:53:08,560] save best checkpoint with rewards 3.72!
+[2024-05-26 21:59:03,116] 829	T_sample 203.95	T_update 84.54	T_eval 65.85	ETA 16:43:58	train_R_eps 3.24	eval_R_eps 3.47	hlg
+[2024-05-26 22:04:58,513] 830	T_sample 204.71	T_update 84.07	T_eval 66.41	ETA 16:40:27	train_R_eps 3.24	eval_R_eps 3.53	hlg
+[2024-05-26 22:10:48,680] 831	T_sample 200.89	T_update 82.95	T_eval 66.12	ETA 16:19:53	train_R_eps 3.26	eval_R_eps 3.65	hlg
+[2024-05-26 22:16:40,805] 832	T_sample 202.41	T_update 83.24	T_eval 66.27	ETA 16:19:31	train_R_eps 3.26	eval_R_eps 3.35	hlg
+[2024-05-26 22:22:37,747] 833	T_sample 205.16	T_update 83.65	T_eval 67.93	ETA 16:26:59	train_R_eps 3.27	eval_R_eps 3.42	hlg
+[2024-05-26 22:28:32,668] 834	T_sample 203.40	T_update 83.50	T_eval 67.82	ETA 16:15:29	train_R_eps 3.25	eval_R_eps 3.51	hlg
+[2024-05-26 22:34:31,026] 835	T_sample 207.74	T_update 83.53	T_eval 66.88	ETA 16:18:57	train_R_eps 3.25	eval_R_eps 3.56	hlg
+[2024-05-26 22:40:25,948] 836	T_sample 204.76	T_update 83.39	T_eval 66.57	ETA 16:03:39	train_R_eps 3.25	eval_R_eps 3.38	hlg
+[2024-05-26 22:46:23,433] 837	T_sample 207.94	T_update 83.38	T_eval 65.96	ETA 16:04:40	train_R_eps 3.25	eval_R_eps 3.46	hlg
+[2024-05-26 22:52:13,457] 838	T_sample 202.38	T_update 81.98	T_eval 65.46	ETA 15:38:41	train_R_eps 3.26	eval_R_eps 3.52	hlg
+[2024-05-26 22:58:07,104] 839	T_sample 204.04	T_update 83.10	T_eval 66.31	ETA 15:42:31	train_R_eps 3.25	eval_R_eps 3.53	hlg
+[2024-05-26 23:04:02,852] 840	T_sample 204.93	T_update 83.88	T_eval 66.72	ETA 15:42:09	train_R_eps 3.26	eval_R_eps 3.53	hlg
+[2024-05-26 23:09:53,408] 841	T_sample 200.95	T_update 83.65	T_eval 65.76	ETA 15:22:37	train_R_eps 3.26	eval_R_eps 3.41	hlg
+[2024-05-26 23:15:52,038] 842	T_sample 206.45	T_update 84.08	T_eval 67.90	ETA 15:37:54	train_R_eps 3.25	eval_R_eps 3.70	hlg
+[2024-05-26 23:21:38,777] 843	T_sample 200.94	T_update 82.81	T_eval 62.78	ETA 15:00:59	train_R_eps 3.26	eval_R_eps 3.26	hlg
+[2024-05-26 23:27:25,279] 844	T_sample 198.55	T_update 82.62	T_eval 65.13	ETA 14:54:36	train_R_eps 3.11	eval_R_eps 3.42	hlg
+[2024-05-26 23:33:17,015] 845	T_sample 201.48	T_update 83.97	T_eval 66.08	ETA 15:02:16	train_R_eps 3.11	eval_R_eps 3.39	hlg
+[2024-05-26 23:39:08,996] 846	T_sample 202.79	T_update 83.48	T_eval 65.51	ETA 14:57:02	train_R_eps 3.14	eval_R_eps 3.44	hlg
+[2024-05-26 23:45:01,961] 847	T_sample 203.58	T_update 82.06	T_eval 67.12	ETA 14:53:40	train_R_eps 3.14	eval_R_eps 3.44	hlg
+[2024-05-26 23:50:53,167] 848	T_sample 201.40	T_update 83.03	T_eval 66.57	ETA 14:43:21	train_R_eps 3.15	eval_R_eps 3.61	hlg
+[2024-05-26 23:56:48,014] 849	T_sample 205.28	T_update 83.74	T_eval 65.62	ETA 14:46:37	train_R_eps 3.17	eval_R_eps 3.37	hlg
+[2024-05-27 00:02:41,783] 850	T_sample 203.00	T_update 84.03	T_eval 66.53	ETA 14:38:00	train_R_eps 3.18	eval_R_eps 3.26	hlg
+[2024-05-27 00:08:39,038] 851	T_sample 207.46	T_update 83.26	T_eval 66.33	ETA 14:40:44	train_R_eps 3.18	eval_R_eps 3.33	hlg
+[2024-05-27 00:14:32,246] 852	T_sample 204.86	T_update 82.15	T_eval 66.00	ETA 14:24:52	train_R_eps 3.17	eval_R_eps 3.14	hlg
+[2024-05-27 00:20:26,925] 853	T_sample 203.70	T_update 83.75	T_eval 67.02	ETA 14:22:33	train_R_eps 3.19	eval_R_eps 3.55	hlg
+[2024-05-27 00:26:18,638] 854	T_sample 202.82	T_update 82.72	T_eval 65.97	ETA 14:09:29	train_R_eps 3.17	eval_R_eps 3.14	hlg
+[2024-05-27 00:32:07,901] 855	T_sample 197.16	T_update 85.49	T_eval 66.42	ETA 13:57:46	train_R_eps 3.19	eval_R_eps 3.44	hlg
+[2024-05-27 00:37:57,489] 856	T_sample 201.48	T_update 82.51	T_eval 65.40	ETA 13:52:43	train_R_eps 3.19	eval_R_eps 3.62	hlg
+[2024-05-27 00:43:55,117] 857	T_sample 208.60	T_update 83.82	T_eval 65.01	ETA 14:05:56	train_R_eps 3.20	eval_R_eps 3.43	hlg
+[2024-05-27 00:49:50,682] 858	T_sample 207.92	T_update 82.41	T_eval 65.03	ETA 13:55:07	train_R_eps 3.21	eval_R_eps 3.28	hlg
+[2024-05-27 00:55:42,074] 859	T_sample 201.76	T_update 83.19	T_eval 66.24	ETA 13:39:26	train_R_eps 3.20	eval_R_eps 3.05	hlg
+[2024-05-27 01:01:32,652] 860	T_sample 203.85	T_update 82.07	T_eval 64.44	ETA 13:31:41	train_R_eps 3.21	eval_R_eps 2.92	hlg
+[2024-05-27 01:07:21,205] 861	T_sample 200.36	T_update 82.10	T_eval 65.90	ETA 13:21:13	train_R_eps 3.23	eval_R_eps 3.12	hlg
+[2024-05-27 01:13:08,613] 862	T_sample 200.35	T_update 81.84	T_eval 65.01	ETA 13:12:47	train_R_eps 3.23	eval_R_eps 3.07	hlg
+[2024-05-27 01:19:01,921] 863	T_sample 205.15	T_update 82.05	T_eval 65.91	ETA 13:20:22	train_R_eps 3.24	eval_R_eps 3.09	hlg
+[2024-05-27 01:24:59,119] 864	T_sample 207.65	T_update 84.19	T_eval 65.16	ETA 13:23:14	train_R_eps 3.24	eval_R_eps 3.13	hlg
+[2024-05-27 01:30:49,864] 865	T_sample 202.16	T_update 82.53	T_eval 65.86	ETA 13:02:53	train_R_eps 3.25	eval_R_eps 3.16	hlg
+[2024-05-27 01:36:43,399] 866	T_sample 205.28	T_update 82.32	T_eval 65.73	ETA 13:03:13	train_R_eps 3.24	eval_R_eps 3.22	hlg
+[2024-05-27 01:42:38,393] 867	T_sample 205.57	T_update 83.08	T_eval 66.15	ETA 13:00:33	train_R_eps 3.23	eval_R_eps 3.18	hlg
+[2024-05-27 01:48:35,016] 868	T_sample 208.89	T_update 81.89	T_eval 65.65	ETA 12:58:11	train_R_eps 3.24	eval_R_eps 3.29	hlg
+[2024-05-27 01:54:27,679] 869	T_sample 204.15	T_update 81.88	T_eval 66.43	ETA 12:43:40	train_R_eps 3.24	eval_R_eps 3.48	hlg
+[2024-05-27 02:00:25,616] 870	T_sample 208.74	T_update 82.47	T_eval 66.52	ETA 12:49:07	train_R_eps 3.22	eval_R_eps 3.31	hlg
+[2024-05-27 02:06:17,220] 871	T_sample 203.40	T_update 82.63	T_eval 65.37	ETA 12:29:39	train_R_eps 3.23	eval_R_eps 3.43	hlg
+[2024-05-27 02:12:14,051] 872	T_sample 208.05	T_update 82.21	T_eval 66.37	ETA 12:34:52	train_R_eps 3.24	eval_R_eps 3.20	hlg
+[2024-05-27 02:18:09,643] 873	T_sample 205.11	T_update 82.83	T_eval 67.44	ETA 12:26:19	train_R_eps 3.25	eval_R_eps 3.20	hlg
+[2024-05-27 02:24:04,010] 874	T_sample 204.90	T_update 82.48	T_eval 66.78	ETA 12:17:51	train_R_eps 3.26	eval_R_eps 3.47	hlg
+[2024-05-27 02:30:00,217] 875	T_sample 206.42	T_update 82.83	T_eval 66.75	ETA 12:15:45	train_R_eps 3.27	eval_R_eps 3.22	hlg
+[2024-05-27 02:35:54,132] 876	T_sample 204.37	T_update 82.89	T_eval 66.45	ETA 12:05:07	train_R_eps 3.27	eval_R_eps 3.21	hlg
+[2024-05-27 02:41:45,798] 877	T_sample 202.87	T_update 82.19	T_eval 66.41	ETA 11:54:39	train_R_eps 3.25	eval_R_eps 3.57	hlg
+[2024-05-27 02:47:32,991] 878	T_sample 200.18	T_update 82.61	T_eval 64.20	ETA 11:39:45	train_R_eps 3.25	eval_R_eps 3.54	hlg
+[2024-05-27 02:53:23,687] 879	T_sample 202.72	T_update 82.01	T_eval 65.75	ETA 11:40:59	train_R_eps 3.25	eval_R_eps 3.59	hlg
+[2024-05-27 02:59:16,629] 880	T_sample 203.65	T_update 83.09	T_eval 66.00	ETA 11:39:35	train_R_eps 3.25	eval_R_eps 3.40	hlg
+[2024-05-27 03:05:14,620] 881	T_sample 208.71	T_update 82.58	T_eval 66.49	ETA 11:43:39	train_R_eps 3.25	eval_R_eps 3.61	hlg
+[2024-05-27 03:11:09,346] 882	T_sample 204.94	T_update 84.05	T_eval 65.53	ETA 11:31:18	train_R_eps 3.26	eval_R_eps 3.49	hlg
+[2024-05-27 03:17:04,144] 883	T_sample 205.33	T_update 83.14	T_eval 66.13	ETA 11:25:33	train_R_eps 3.25	eval_R_eps 3.40	hlg
+[2024-05-27 03:22:59,658] 884	T_sample 205.32	T_update 84.96	T_eval 65.03	ETA 11:21:01	train_R_eps 3.26	eval_R_eps 3.40	hlg
+[2024-05-27 03:28:59,049] 885	T_sample 209.32	T_update 85.23	T_eval 64.63	ETA 11:22:28	train_R_eps 3.27	eval_R_eps 3.35	hlg
+[2024-05-27 03:34:52,916] 886	T_sample 204.64	T_update 83.01	T_eval 66.02	ETA 11:06:05	train_R_eps 3.24	eval_R_eps 3.28	hlg
+[2024-05-27 03:40:41,555] 887	T_sample 201.42	T_update 81.56	T_eval 65.46	ETA 10:50:25	train_R_eps 3.24	eval_R_eps 3.52	hlg
+[2024-05-27 03:46:32,724] 888	T_sample 201.38	T_update 83.44	T_eval 66.15	ETA 10:49:18	train_R_eps 3.24	eval_R_eps 3.42	hlg
+[2024-05-27 03:52:29,927] 889	T_sample 210.21	T_update 82.17	T_eval 64.63	ETA 10:54:31	train_R_eps 3.25	eval_R_eps 3.29	hlg
+[2024-05-27 03:58:25,073] 890	T_sample 205.17	T_update 83.69	T_eval 66.08	ETA 10:44:49	train_R_eps 3.25	eval_R_eps 3.49	hlg
+[2024-05-27 04:04:23,553] 891	T_sample 206.99	T_update 84.94	T_eval 66.35	ETA 10:44:54	train_R_eps 3.26	eval_R_eps 3.58	hlg
+[2024-05-27 04:10:22,725] 892	T_sample 210.07	T_update 83.44	T_eval 65.47	ETA 10:40:11	train_R_eps 3.26	eval_R_eps 3.44	hlg
+[2024-05-27 04:16:20,105] 893	T_sample 208.79	T_update 82.79	T_eval 65.60	ETA 10:31:01	train_R_eps 3.24	eval_R_eps 3.34	hlg
+[2024-05-27 04:22:19,376] 894	T_sample 208.15	T_update 85.01	T_eval 65.91	ETA 10:28:23	train_R_eps 3.23	eval_R_eps 3.32	hlg
+[2024-05-27 04:28:16,354] 895	T_sample 206.46	T_update 84.95	T_eval 65.37	ETA 10:18:25	train_R_eps 3.20	eval_R_eps 3.17	hlg
+[2024-05-27 04:34:11,714] 896	T_sample 206.87	T_update 82.42	T_eval 65.87	ETA 10:09:41	train_R_eps 3.22	eval_R_eps 3.69	hlg
+[2024-05-27 04:40:04,351] 897	T_sample 205.16	T_update 82.22	T_eval 65.06	ETA 9:59:09	train_R_eps 3.22	eval_R_eps 3.59	hlg
+[2024-05-27 04:46:07,790] 898	T_sample 211.21	T_update 85.95	T_eval 66.08	ETA 10:11:27	train_R_eps 3.21	eval_R_eps 3.38	hlg
+[2024-05-27 04:52:08,210] 899	T_sample 209.14	T_update 85.21	T_eval 65.88	ETA 10:00:22	train_R_eps 3.22	eval_R_eps 3.64	hlg
+[2024-05-27 04:58:05,893] 900	T_sample 207.16	T_update 84.01	T_eval 66.31	ETA 9:49:50	train_R_eps 3.21	eval_R_eps 3.38	hlg
+[2024-05-27 05:04:02,462] 901	T_sample 209.65	T_update 80.71	T_eval 66.01	ETA 9:42:05	train_R_eps 3.23	eval_R_eps 3.52	hlg
+[2024-05-27 05:10:02,992] 902	T_sample 211.24	T_update 84.17	T_eval 64.93	ETA 9:42:32	train_R_eps 3.21	eval_R_eps 3.60	hlg
+[2024-05-27 05:15:56,393] 903	T_sample 205.40	T_update 81.99	T_eval 65.81	ETA 9:25:08	train_R_eps 3.23	eval_R_eps 3.56	hlg
+[2024-05-27 05:21:51,460] 904	T_sample 205.18	T_update 82.69	T_eval 66.99	ETA 9:21:52	train_R_eps 3.24	eval_R_eps 3.57	hlg
+[2024-05-27 05:27:43,873] 905	T_sample 203.28	T_update 82.80	T_eval 66.13	ETA 9:11:47	train_R_eps 3.25	eval_R_eps 3.43	hlg
+[2024-05-27 05:33:35,331] 906	T_sample 204.57	T_update 80.94	T_eval 65.75	ETA 9:04:27	train_R_eps 3.26	eval_R_eps 3.41	hlg
+[2024-05-27 05:39:25,608] 907	T_sample 202.92	T_update 81.20	T_eval 65.96	ETA 8:56:47	train_R_eps 3.27	eval_R_eps 3.51	hlg
+[2024-05-27 05:45:20,787] 908	T_sample 206.51	T_update 81.96	T_eval 66.51	ETA 8:58:23	train_R_eps 3.26	eval_R_eps 3.54	hlg
+[2024-05-27 05:51:14,358] 909	T_sample 204.82	T_update 82.71	T_eval 65.83	ETA 8:50:03	train_R_eps 3.25	eval_R_eps 3.50	hlg
+[2024-05-27 05:57:06,429] 910	T_sample 200.65	T_update 85.19	T_eval 66.02	ETA 8:41:56	train_R_eps 3.27	eval_R_eps 3.39	hlg
+[2024-05-27 06:03:03,362] 911	T_sample 206.05	T_update 83.94	T_eval 66.74	ETA 8:43:13	train_R_eps 3.26	eval_R_eps 3.57	hlg
+[2024-05-27 06:09:00,852] 912	T_sample 208.31	T_update 83.12	T_eval 65.86	ETA 8:38:04	train_R_eps 3.26	eval_R_eps 3.39	hlg
+[2024-05-27 06:14:54,159] 913	T_sample 203.78	T_update 83.08	T_eval 66.25	ETA 8:26:07	train_R_eps 3.27	eval_R_eps 3.36	hlg
+[2024-05-27 06:20:48,151] 914	T_sample 204.14	T_update 83.21	T_eval 66.44	ETA 8:21:12	train_R_eps 3.28	eval_R_eps 3.42	hlg
+[2024-05-27 06:26:42,208] 915	T_sample 205.07	T_update 83.14	T_eval 65.64	ETA 8:15:24	train_R_eps 3.27	eval_R_eps 3.62	hlg
+[2024-05-27 06:32:36,875] 916	T_sample 205.66	T_update 83.75	T_eval 65.05	ETA 8:10:20	train_R_eps 3.27	eval_R_eps 3.56	hlg
+[2024-05-27 06:38:35,800] 917	T_sample 209.49	T_update 82.97	T_eval 66.26	ETA 8:10:15	train_R_eps 3.25	eval_R_eps 3.63	hlg
+[2024-05-27 06:44:30,891] 918	T_sample 204.15	T_update 83.91	T_eval 66.84	ETA 7:59:06	train_R_eps 3.28	eval_R_eps 3.38	hlg
+[2024-05-27 06:50:21,688] 919	T_sample 202.08	T_update 83.23	T_eval 65.27	ETA 7:47:27	train_R_eps 3.26	eval_R_eps 3.46	hlg
+[2024-05-27 06:56:19,692] 920	T_sample 208.48	T_update 82.44	T_eval 66.88	ETA 7:51:06	train_R_eps 3.27	eval_R_eps 3.32	hlg
+[2024-05-27 07:02:10,933] 921	T_sample 201.29	T_update 83.56	T_eval 66.18	ETA 7:36:21	train_R_eps 3.22	eval_R_eps 3.42	hlg
+[2024-05-27 07:08:02,367] 922	T_sample 202.42	T_update 83.24	T_eval 65.57	ETA 7:30:45	train_R_eps 3.20	eval_R_eps 3.48	hlg
+[2024-05-27 07:13:57,313] 923	T_sample 206.68	T_update 82.40	T_eval 65.66	ETA 7:29:20	train_R_eps 3.22	eval_R_eps 3.51	hlg
+[2024-05-27 07:19:48,896] 924	T_sample 200.45	T_update 84.81	T_eval 66.13	ETA 7:19:14	train_R_eps 3.22	eval_R_eps 3.73	hlg
+[2024-05-27 07:19:48,904] save best checkpoint with rewards 3.73!
+[2024-05-27 07:25:43,063] 925	T_sample 204.54	T_update 84.34	T_eval 65.06	ETA 7:16:31	train_R_eps 3.24	eval_R_eps 3.50	hlg
+[2024-05-27 07:31:35,236] 926	T_sample 204.02	T_update 82.54	T_eval 65.41	ETA 7:08:14	train_R_eps 3.25	eval_R_eps 3.33	hlg
+[2024-05-27 07:37:27,097] 927	T_sample 202.39	T_update 83.75	T_eval 65.52	ETA 7:01:59	train_R_eps 3.25	eval_R_eps 3.43	hlg
+[2024-05-27 07:43:23,282] 928	T_sample 207.33	T_update 81.40	T_eval 67.24	ETA 7:01:14	train_R_eps 3.25	eval_R_eps 3.47	hlg
+[2024-05-27 07:49:19,350] 929	T_sample 208.12	T_update 82.24	T_eval 65.51	ETA 6:55:11	train_R_eps 3.26	eval_R_eps 3.49	hlg
+[2024-05-27 07:55:17,100] 930	T_sample 209.08	T_update 82.89	T_eval 65.57	ETA 6:51:10	train_R_eps 3.24	eval_R_eps 3.39	hlg
+[2024-05-27 08:01:15,700] 931	T_sample 207.20	T_update 82.45	T_eval 68.74	ETA 6:46:11	train_R_eps 3.26	eval_R_eps 3.50	hlg
+[2024-05-27 08:07:09,741] 932	T_sample 207.12	T_update 81.23	T_eval 65.50	ETA 6:35:07	train_R_eps 3.27	eval_R_eps 3.38	hlg
+[2024-05-27 08:13:01,828] 933	T_sample 203.94	T_update 81.67	T_eval 66.27	ETA 6:27:04	train_R_eps 3.26	eval_R_eps 3.24	hlg
+[2024-05-27 08:18:51,696] 934	T_sample 201.18	T_update 83.88	T_eval 64.60	ETA 6:18:48	train_R_eps 3.25	eval_R_eps 3.36	hlg
+[2024-05-27 08:24:45,289] 935	T_sample 203.49	T_update 83.01	T_eval 66.89	ETA 6:16:57	train_R_eps 3.23	eval_R_eps 3.36	hlg
+[2024-05-27 08:30:35,864] 936	T_sample 198.24	T_update 86.12	T_eval 66.01	ETA 6:07:54	train_R_eps 3.24	eval_R_eps 3.28	hlg
+[2024-05-27 08:36:33,431] 937	T_sample 205.04	T_update 85.28	T_eval 67.05	ETA 6:09:17	train_R_eps 3.26	eval_R_eps 3.40	hlg
+[2024-05-27 08:42:28,971] 938	T_sample 203.48	T_update 85.62	T_eval 66.25	ETA 6:01:16	train_R_eps 3.26	eval_R_eps 3.45	hlg
+[2024-05-27 08:48:27,522] 939	T_sample 210.30	T_update 82.63	T_eval 65.43	ETA 5:58:21	train_R_eps 3.25	eval_R_eps 3.39	hlg
+[2024-05-27 08:54:22,684] 940	T_sample 205.89	T_update 83.66	T_eval 65.40	ETA 5:49:02	train_R_eps 3.25	eval_R_eps 3.60	hlg
+[2024-05-27 09:00:27,064] 941	T_sample 212.57	T_update 85.97	T_eval 65.65	ETA 5:52:03	train_R_eps 3.23	eval_R_eps 3.63	hlg
+[2024-05-27 09:06:27,566] 942	T_sample 208.67	T_update 84.56	T_eval 67.08	ETA 5:42:17	train_R_eps 3.25	eval_R_eps 3.45	hlg
+[2024-05-27 09:12:20,482] 943	T_sample 204.18	T_update 83.70	T_eval 64.83	ETA 5:29:12	train_R_eps 3.25	eval_R_eps 3.51	hlg
+[2024-05-27 09:18:13,508] 944	T_sample 203.52	T_update 84.48	T_eval 64.82	ETA 5:23:25	train_R_eps 3.27	eval_R_eps 3.45	hlg
+[2024-05-27 09:24:02,837] 945	T_sample 200.55	T_update 82.86	T_eval 65.72	ETA 5:14:13	train_R_eps 3.26	eval_R_eps 3.33	hlg
+[2024-05-27 09:29:54,916] 946	T_sample 202.64	T_update 83.72	T_eval 65.51	ETA 5:10:49	train_R_eps 3.25	eval_R_eps 3.51	hlg
+[2024-05-27 09:35:50,385] 947	T_sample 206.56	T_update 81.98	T_eval 66.73	ETA 5:07:54	train_R_eps 3.26	eval_R_eps 3.51	hlg
+[2024-05-27 09:41:45,912] 948	T_sample 206.27	T_update 82.52	T_eval 66.53	ETA 5:02:01	train_R_eps 3.26	eval_R_eps 3.35	hlg
+[2024-05-27 09:47:42,286] 949	T_sample 205.58	T_update 82.79	T_eval 67.81	ETA 4:56:49	train_R_eps 3.27	eval_R_eps 3.43	hlg
+[2024-05-27 09:53:41,796] 950	T_sample 209.64	T_update 82.80	T_eval 66.87	ETA 4:53:26	train_R_eps 3.26	eval_R_eps 3.33	hlg
+[2024-05-27 09:59:37,978] 951	T_sample 204.39	T_update 83.52	T_eval 68.06	ETA 4:44:47	train_R_eps 3.26	eval_R_eps 3.22	hlg
+[2024-05-27 10:05:32,173] 952	T_sample 204.22	T_update 83.75	T_eval 66.03	ETA 4:37:18	train_R_eps 3.25	eval_R_eps 3.16	hlg
+[2024-05-27 10:11:26,930] 953	T_sample 207.14	T_update 82.15	T_eval 65.27	ETA 4:31:50	train_R_eps 3.27	eval_R_eps 3.32	hlg
+[2024-05-27 10:17:21,440] 954	T_sample 204.76	T_update 83.11	T_eval 66.44	ETA 4:25:44	train_R_eps 3.28	eval_R_eps 3.22	hlg
+[2024-05-27 10:23:16,255] 955	T_sample 205.79	T_update 82.56	T_eval 66.26	ETA 4:20:03	train_R_eps 3.27	eval_R_eps 3.55	hlg
+[2024-05-27 10:29:11,678] 956	T_sample 205.50	T_update 83.15	T_eval 66.57	ETA 4:14:35	train_R_eps 3.28	eval_R_eps 3.26	hlg
+[2024-05-27 10:35:05,346] 957	T_sample 204.13	T_update 82.75	T_eval 66.58	ETA 4:07:26	train_R_eps 3.26	eval_R_eps 3.59	hlg
+[2024-05-27 10:41:01,038] 958	T_sample 204.99	T_update 83.75	T_eval 66.75	ETA 4:02:55	train_R_eps 3.27	eval_R_eps 3.33	hlg
+[2024-05-27 10:47:00,821] 959	T_sample 209.62	T_update 83.01	T_eval 66.95	ETA 3:59:43	train_R_eps 3.27	eval_R_eps 3.37	hlg
+[2024-05-27 10:52:57,515] 960	T_sample 206.73	T_update 83.64	T_eval 66.10	ETA 3:51:43	train_R_eps 3.26	eval_R_eps 3.47	hlg
+[2024-05-27 10:58:56,477] 961	T_sample 209.17	T_update 83.72	T_eval 65.87	ETA 3:47:13	train_R_eps 3.27	eval_R_eps 3.27	hlg
+[2024-05-27 11:04:54,591] 962	T_sample 205.71	T_update 83.67	T_eval 68.53	ETA 3:40:43	train_R_eps 3.27	eval_R_eps 3.16	hlg
+[2024-05-27 11:10:52,927] 963	T_sample 208.19	T_update 83.35	T_eval 66.59	ETA 3:34:53	train_R_eps 3.28	eval_R_eps 3.24	hlg
+[2024-05-27 11:16:53,910] 964	T_sample 211.74	T_update 83.60	T_eval 65.44	ETA 3:30:27	train_R_eps 3.28	eval_R_eps 3.51	hlg
+[2024-05-27 11:22:49,906] 965	T_sample 205.06	T_update 83.69	T_eval 67.04	ETA 3:21:37	train_R_eps 3.28	eval_R_eps 3.35	hlg
+[2024-05-27 11:28:51,772] 966	T_sample 208.91	T_update 83.78	T_eval 68.98	ETA 3:18:55	train_R_eps 3.29	eval_R_eps 3.53	hlg
+[2024-05-27 11:34:45,863] 967	T_sample 202.53	T_update 84.60	T_eval 66.75	ETA 3:08:44	train_R_eps 3.28	eval_R_eps 3.52	hlg
+[2024-05-27 11:40:44,658] 968	T_sample 208.54	T_update 83.21	T_eval 66.85	ETA 3:05:16	train_R_eps 3.28	eval_R_eps 3.32	hlg
+[2024-05-27 11:45:40,792] Original polygon: POLYGON ((1041.845992888235 1081.5396040799158, 1055.9583614579603 992.419029961513, 977.3884435681654 977.3745291270384, 977.5119074026869 976.7297391504584, 879.3524704510361 957.639349223706, 879.4538398335949 957.1181256366398, 879.6855220006083 955.9371044001217, 750 930, 729 1032, 959.5 1068.5, 1041.845992888235 1081.5396040799158))
+Simplified polygon: POLYGON ((1041.845992888235 1081.5396040799158, 1055.9583614579603 992.419029961513, 977.3884435681654 977.3745291270384, 977.5119074026869 976.7297391504584, 879.3524704510361 957.639349223706, 879.6855220006083 955.9371044001217, 750 930, 729 1032, 1041.845992888235 1081.5396040799158))
+Intersection: POINT (879.2271400465538 958.2837761832448)
+Intersection within edge is near two edges.
+[2024-05-27 11:45:40,792] Actions took before failing to place land use: [({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1050), ({'type': 10, 'x': 0.5, 'y': 0.5, 'area': 30000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 993), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 920), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1068), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1027), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1038), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1026), ({'type': 9, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 887), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 969), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1032), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 997), ({'type': 11, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1301), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 842), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 930), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 918), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 894), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1584), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1036), ({'type': 12, 'x': 0.5, 'y': 0.5, 'area': 10000.0, 'length': 600.0, 'width': 150.0, 'height': 150.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 893), ({'type': 7, 'x': 0.5, 'y': 0.5, 'area': 90000.0, 'length': 1200.0, 'width': 300.0, 'height': 300.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 869), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1411), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1633), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1696), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1713), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1519), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1757), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1572), ({'type': 6, 'x': 0.5, 'y': 0.5, 'area': 20000.0, 'length': 800.0, 'width': 200.0, 'height': 200.0, 'rect': 1.0, 'eqi': 1.0, 'sc': 1.0}, 1832)]
+[2024-05-27 11:45:40,797] Plan fails during eval.
+[2024-05-27 11:46:40,063] 969	T_sample 207.30	T_update 82.77	T_eval 65.13	ETA 2:57:36	train_R_eps 3.27	eval_R_eps 3.20	hlg
+[2024-05-27 11:52:37,988] 970	T_sample 208.00	T_update 83.62	T_eval 66.09	ETA 2:52:54	train_R_eps 3.27	eval_R_eps 3.18	hlg
+[2024-05-27 11:58:37,303] 971	T_sample 208.19	T_update 83.78	T_eval 67.14	ETA 2:47:35	train_R_eps 3.27	eval_R_eps 3.12	hlg
+[2024-05-27 12:04:37,941] 972	T_sample 211.73	T_update 82.28	T_eval 66.43	ETA 2:42:12	train_R_eps 3.28	eval_R_eps 3.28	hlg
+[2024-05-27 12:10:34,780] 973	T_sample 205.89	T_update 84.00	T_eval 66.75	ETA 2:34:33	train_R_eps 3.27	eval_R_eps 3.46	hlg
+[2024-05-27 12:16:32,398] 974	T_sample 206.07	T_update 83.37	T_eval 67.98	ETA 2:28:55	train_R_eps 3.27	eval_R_eps 3.17	hlg
+[2024-05-27 12:22:31,076] 975	T_sample 208.34	T_update 83.58	T_eval 66.55	ETA 2:23:23	train_R_eps 3.29	eval_R_eps 3.36	hlg
+[2024-05-27 12:28:30,213] 976	T_sample 206.77	T_update 84.89	T_eval 67.27	ETA 2:17:35	train_R_eps 3.27	eval_R_eps 3.43	hlg
+[2024-05-27 12:34:29,068] 977	T_sample 208.95	T_update 83.73	T_eval 65.97	ETA 2:11:30	train_R_eps 3.28	eval_R_eps 3.45	hlg
+[2024-05-27 12:40:28,209] 978	T_sample 209.27	T_update 83.30	T_eval 66.36	ETA 2:05:38	train_R_eps 3.28	eval_R_eps 3.33	hlg
+[2024-05-27 12:46:21,490] 979	T_sample 204.44	T_update 83.10	T_eval 65.54	ETA 1:57:42	train_R_eps 3.28	eval_R_eps 3.81	hlg
+[2024-05-27 12:46:21,510] save best checkpoint with rewards 3.81!
+[2024-05-27 12:52:17,181] 980	T_sample 204.53	T_update 84.31	T_eval 66.62	ETA 1:52:34	train_R_eps 3.26	eval_R_eps 3.47	hlg
+[2024-05-27 12:58:15,268] 981	T_sample 207.67	T_update 82.58	T_eval 67.64	ETA 1:47:22	train_R_eps 3.26	eval_R_eps 3.57	hlg
+[2024-05-27 13:04:11,231] 982	T_sample 206.51	T_update 83.85	T_eval 65.40	ETA 1:40:48	train_R_eps 3.25	eval_R_eps 3.69	hlg
+[2024-05-27 13:10:07,787] 983	T_sample 207.04	T_update 83.51	T_eval 65.81	ETA 1:35:02	train_R_eps 3.25	eval_R_eps 3.53	hlg
+[2024-05-27 13:16:04,665] 984	T_sample 206.53	T_update 83.13	T_eval 67.02	ETA 1:29:10	train_R_eps 3.27	eval_R_eps 3.47	hlg
+[2024-05-27 13:22:05,980] 985	T_sample 211.51	T_update 83.90	T_eval 65.70	ETA 1:24:16	train_R_eps 3.27	eval_R_eps 3.51	hlg
+[2024-05-27 13:28:00,370] 986	T_sample 205.58	T_update 82.53	T_eval 66.08	ETA 1:16:44	train_R_eps 3.20	eval_R_eps 3.28	hlg
+[2024-05-27 13:33:56,570] 987	T_sample 206.89	T_update 83.48	T_eval 65.63	ETA 1:11:12	train_R_eps 3.20	eval_R_eps 3.44	hlg
+[2024-05-27 13:39:49,081] 988	T_sample 203.58	T_update 84.60	T_eval 64.13	ETA 1:04:35	train_R_eps 3.21	eval_R_eps 3.32	hlg
+[2024-05-27 13:45:43,352] 989	T_sample 205.74	T_update 82.41	T_eval 65.93	ETA 0:59:01	train_R_eps 3.20	eval_R_eps 3.36	hlg
+[2024-05-27 13:51:37,915] 990	T_sample 204.35	T_update 82.96	T_eval 67.05	ETA 0:53:09	train_R_eps 3.20	eval_R_eps 3.42	hlg
+[2024-05-27 13:57:28,324] 991	T_sample 200.18	T_update 85.34	T_eval 64.68	ETA 0:46:42	train_R_eps 3.21	eval_R_eps 3.45	hlg
+[2024-05-27 14:03:19,790] 992	T_sample 202.66	T_update 83.71	T_eval 64.89	ETA 0:40:59	train_R_eps 3.21	eval_R_eps 3.33	hlg
+[2024-05-27 14:09:12,521] 993	T_sample 204.60	T_update 81.93	T_eval 65.99	ETA 0:35:15	train_R_eps 3.21	eval_R_eps 3.39	hlg
+[2024-05-27 14:15:05,826] 994	T_sample 203.30	T_update 82.84	T_eval 66.96	ETA 0:29:25	train_R_eps 3.22	eval_R_eps 3.45	hlg
+[2024-05-27 14:21:02,694] 995	T_sample 207.35	T_update 82.92	T_eval 66.41	ETA 0:23:47	train_R_eps 3.23	eval_R_eps 3.48	hlg
+[2024-05-27 14:26:57,209] 996	T_sample 205.93	T_update 82.91	T_eval 65.47	ETA 0:17:43	train_R_eps 3.23	eval_R_eps 3.42	hlg
+[2024-05-27 14:33:00,820] 997	T_sample 212.15	T_update 83.99	T_eval 67.27	ETA 0:12:07	train_R_eps 3.23	eval_R_eps 3.48	hlg
+[2024-05-27 14:38:59,656] 998	T_sample 208.80	T_update 83.77	T_eval 66.06	ETA 0:05:59	train_R_eps 3.24	eval_R_eps 3.39	hlg
+[2024-05-27 14:44:58,433] 999	T_sample 208.23	T_update 82.85	T_eval 67.50	ETA 0:00:00	train_R_eps 3.24	eval_R_eps 3.44	hlg
+[2024-05-27 14:44:58,529] training done!

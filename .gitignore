@@ -1,0 +1,11 @@
+*.pyc
+*.svg
+*.ipynb
+.idea
+.ipynb_checkpoints
+/planning-simulation/code/community/assets
+/planning-simulation/code/community/demo
+/planning-simulation/code/community/extra
+/planning-simulation/code/community/hlg
+/planning-simulation/code/community/test
+/planning-simulation/code/pandemic/data

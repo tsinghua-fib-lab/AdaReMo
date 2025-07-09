@@ -1,0 +1,385 @@
+[2024-05-23 00:11:04,738] id: hlg
+[2024-05-23 00:11:04,738] seed: 111
+[2024-05-23 00:11:04,738] objectives_plan: objectives_hlg
+[2024-05-23 00:11:04,738] init_plan: init_plan_hlg
+[2024-05-23 00:11:04,738] env_specs: {}
+[2024-05-23 00:11:04,738] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 4.0, 'greenness_weight': 1.0}
+[2024-05-23 00:11:04,738] obs_specs: {}
+[2024-05-23 00:11:04,738] agent_specs: {'batch_stage': False}
+[2024-05-23 00:11:04,738] skip_land_use: False
+[2024-05-23 00:11:04,738] skip_road: True
+[2024-05-23 00:11:04,738] road_ratio: 0.0
+[2024-05-23 00:11:04,739] gamma: 1.0
+[2024-05-23 00:11:04,739] tau: 0.0
+[2024-05-23 00:11:04,739] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 16, 'num_gcn_layers': 2, 'num_edge_fc_layers': 1, 'max_num_nodes': 1000, 'max_num_edges': 3000, 'num_attention_heads': 1}
+[2024-05-23 00:11:04,739] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-05-23 00:11:04,739] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-05-23 00:11:04,739] lr: 0.0004
+[2024-05-23 00:11:04,739] weightdecay: 0.0
+[2024-05-23 00:11:04,739] eps: 1e-05
+[2024-05-23 00:11:04,739] value_pred_coef: 0.5
+[2024-05-23 00:11:04,739] entropy_coef: 0.01
+[2024-05-23 00:11:04,739] clip_epsilon: 0.2
+[2024-05-23 00:11:04,739] max_num_iterations: 1000
+[2024-05-23 00:11:04,739] num_episodes_per_iteration: 500
+[2024-05-23 00:11:04,739] max_sequence_length: 50
+[2024-05-23 00:11:04,739] num_optim_epoch: 4
+[2024-05-23 00:11:04,740] mini_batch_size: 256
+[2024-05-23 00:11:04,740] save_model_interval: 10
+[2024-05-23 00:22:28,987] id: hlg
+[2024-05-23 00:22:28,987] seed: 111
+[2024-05-23 00:22:28,987] objectives_plan: objectives_hlg
+[2024-05-23 00:22:28,987] init_plan: init_plan_hlg
+[2024-05-23 00:22:28,987] env_specs: {}
+[2024-05-23 00:22:28,987] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 4.0, 'greenness_weight': 1.0}
+[2024-05-23 00:22:28,987] obs_specs: {}
+[2024-05-23 00:22:28,987] agent_specs: {'batch_stage': False}
+[2024-05-23 00:22:28,987] skip_land_use: False
+[2024-05-23 00:22:28,987] skip_road: True
+[2024-05-23 00:22:28,987] road_ratio: 0.0
+[2024-05-23 00:22:28,987] gamma: 1.0
+[2024-05-23 00:22:28,987] tau: 0.0
+[2024-05-23 00:22:28,988] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 16, 'num_gcn_layers': 2, 'num_edge_fc_layers': 1, 'max_num_nodes': 1000, 'max_num_edges': 3000, 'num_attention_heads': 1}
+[2024-05-23 00:22:28,988] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-05-23 00:22:28,988] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-05-23 00:22:28,988] lr: 0.0004
+[2024-05-23 00:22:28,988] weightdecay: 0.0
+[2024-05-23 00:22:28,988] eps: 1e-05
+[2024-05-23 00:22:28,988] value_pred_coef: 0.5
+[2024-05-23 00:22:28,988] entropy_coef: 0.01
+[2024-05-23 00:22:28,988] clip_epsilon: 0.2
+[2024-05-23 00:22:28,988] max_num_iterations: 1000
+[2024-05-23 00:22:28,988] num_episodes_per_iteration: 500
+[2024-05-23 00:22:28,988] max_sequence_length: 50
+[2024-05-23 00:22:28,988] num_optim_epoch: 4
+[2024-05-23 00:22:28,988] mini_batch_size: 256
+[2024-05-23 00:22:28,988] save_model_interval: 10
+[2024-05-23 00:23:13,836] id: hlg
+[2024-05-23 00:23:13,836] seed: 111
+[2024-05-23 00:23:13,836] objectives_plan: objectives_hlg
+[2024-05-23 00:23:13,836] init_plan: init_plan_hlg
+[2024-05-23 00:23:13,836] env_specs: {}
+[2024-05-23 00:23:13,836] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 4.0, 'greenness_weight': 1.0}
+[2024-05-23 00:23:13,836] obs_specs: {}
+[2024-05-23 00:23:13,836] agent_specs: {'batch_stage': False}
+[2024-05-23 00:23:13,836] skip_land_use: False
+[2024-05-23 00:23:13,837] skip_road: True
+[2024-05-23 00:23:13,837] road_ratio: 0.0
+[2024-05-23 00:23:13,837] gamma: 1.0
+[2024-05-23 00:23:13,837] tau: 0.0
+[2024-05-23 00:23:13,837] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 16, 'num_gcn_layers': 2, 'num_edge_fc_layers': 1, 'max_num_nodes': 1000, 'max_num_edges': 3000, 'num_attention_heads': 1}
+[2024-05-23 00:23:13,837] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-05-23 00:23:13,837] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-05-23 00:23:13,837] lr: 0.0004
+[2024-05-23 00:23:13,837] weightdecay: 0.0
+[2024-05-23 00:23:13,837] eps: 1e-05
+[2024-05-23 00:23:13,837] value_pred_coef: 0.5
+[2024-05-23 00:23:13,837] entropy_coef: 0.01
+[2024-05-23 00:23:13,837] clip_epsilon: 0.2
+[2024-05-23 00:23:13,837] max_num_iterations: 1000
+[2024-05-23 00:23:13,837] num_episodes_per_iteration: 500
+[2024-05-23 00:23:13,837] max_sequence_length: 50
+[2024-05-23 00:23:13,838] num_optim_epoch: 4
+[2024-05-23 00:23:13,838] mini_batch_size: 256
+[2024-05-23 00:23:13,838] save_model_interval: 10
+[2024-05-23 00:25:24,008] id: hlg
+[2024-05-23 00:25:24,008] seed: 111
+[2024-05-23 00:25:24,008] objectives_plan: objectives_hlg
+[2024-05-23 00:25:24,008] init_plan: init_plan_hlg
+[2024-05-23 00:25:24,008] env_specs: {}
+[2024-05-23 00:25:24,008] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 4.0, 'greenness_weight': 1.0}
+[2024-05-23 00:25:24,008] obs_specs: {}
+[2024-05-23 00:25:24,008] agent_specs: {'batch_stage': False}
+[2024-05-23 00:25:24,008] skip_land_use: False
+[2024-05-23 00:25:24,009] skip_road: True
+[2024-05-23 00:25:24,009] road_ratio: 0.0
+[2024-05-23 00:25:24,009] gamma: 1.0
+[2024-05-23 00:25:24,009] tau: 0.0
+[2024-05-23 00:25:24,009] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 16, 'num_gcn_layers': 2, 'num_edge_fc_layers': 1, 'max_num_nodes': 1000, 'max_num_edges': 3000, 'num_attention_heads': 1}
+[2024-05-23 00:25:24,009] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-05-23 00:25:24,009] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-05-23 00:25:24,009] lr: 0.0004
+[2024-05-23 00:25:24,009] weightdecay: 0.0
+[2024-05-23 00:25:24,009] eps: 1e-05
+[2024-05-23 00:25:24,009] value_pred_coef: 0.5
+[2024-05-23 00:25:24,009] entropy_coef: 0.01
+[2024-05-23 00:25:24,009] clip_epsilon: 0.2
+[2024-05-23 00:25:24,009] max_num_iterations: 1000
+[2024-05-23 00:25:24,009] num_episodes_per_iteration: 500
+[2024-05-23 00:25:24,009] max_sequence_length: 50
+[2024-05-23 00:25:24,010] num_optim_epoch: 4
+[2024-05-23 00:25:24,010] mini_batch_size: 256
+[2024-05-23 00:25:24,010] save_model_interval: 10
+[2024-05-23 00:25:33,154] id: hlg
+[2024-05-23 00:25:33,154] seed: 111
+[2024-05-23 00:25:33,154] objectives_plan: objectives_hlg
+[2024-05-23 00:25:33,154] init_plan: init_plan_hlg
+[2024-05-23 00:25:33,154] env_specs: {}
+[2024-05-23 00:25:33,154] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 4.0, 'greenness_weight': 1.0}
+[2024-05-23 00:25:33,154] obs_specs: {}
+[2024-05-23 00:25:33,154] agent_specs: {'batch_stage': False}
+[2024-05-23 00:25:33,154] skip_land_use: False
+[2024-05-23 00:25:33,154] skip_road: True
+[2024-05-23 00:25:33,155] road_ratio: 0.0
+[2024-05-23 00:25:33,155] gamma: 1.0
+[2024-05-23 00:25:33,155] tau: 0.0
+[2024-05-23 00:25:33,155] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 16, 'num_gcn_layers': 2, 'num_edge_fc_layers': 1, 'max_num_nodes': 1000, 'max_num_edges': 3000, 'num_attention_heads': 1}
+[2024-05-23 00:25:33,155] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-05-23 00:25:33,155] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-05-23 00:25:33,155] lr: 0.0004
+[2024-05-23 00:25:33,155] weightdecay: 0.0
+[2024-05-23 00:25:33,155] eps: 1e-05
+[2024-05-23 00:25:33,155] value_pred_coef: 0.5
+[2024-05-23 00:25:33,155] entropy_coef: 0.01
+[2024-05-23 00:25:33,155] clip_epsilon: 0.2
+[2024-05-23 00:25:33,155] max_num_iterations: 1000
+[2024-05-23 00:25:33,155] num_episodes_per_iteration: 500
+[2024-05-23 00:25:33,155] max_sequence_length: 50
+[2024-05-23 00:25:33,155] num_optim_epoch: 4
+[2024-05-23 00:25:33,156] mini_batch_size: 256
+[2024-05-23 00:25:33,156] save_model_interval: 10
+[2024-05-23 00:26:06,199] id: hlg
+[2024-05-23 00:26:06,200] seed: 111
+[2024-05-23 00:26:06,200] objectives_plan: objectives_hlg
+[2024-05-23 00:26:06,200] init_plan: init_plan_hlg
+[2024-05-23 00:26:06,200] env_specs: {}
+[2024-05-23 00:26:06,200] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 4.0, 'greenness_weight': 1.0}
+[2024-05-23 00:26:06,200] obs_specs: {}
+[2024-05-23 00:26:06,200] agent_specs: {'batch_stage': False}
+[2024-05-23 00:26:06,200] skip_land_use: False
+[2024-05-23 00:26:06,200] skip_road: True
+[2024-05-23 00:26:06,200] road_ratio: 0.0
+[2024-05-23 00:26:06,200] gamma: 1.0
+[2024-05-23 00:26:06,200] tau: 0.0
+[2024-05-23 00:26:06,200] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 16, 'num_gcn_layers': 2, 'num_edge_fc_layers': 1, 'max_num_nodes': 1000, 'max_num_edges': 3000, 'num_attention_heads': 1}
+[2024-05-23 00:26:06,201] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-05-23 00:26:06,201] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-05-23 00:26:06,201] lr: 0.0004
+[2024-05-23 00:26:06,201] weightdecay: 0.0
+[2024-05-23 00:26:06,201] eps: 1e-05
+[2024-05-23 00:26:06,201] value_pred_coef: 0.5
+[2024-05-23 00:26:06,201] entropy_coef: 0.01
+[2024-05-23 00:26:06,201] clip_epsilon: 0.2
+[2024-05-23 00:26:06,201] max_num_iterations: 1000
+[2024-05-23 00:26:06,201] num_episodes_per_iteration: 500
+[2024-05-23 00:26:06,201] max_sequence_length: 50
+[2024-05-23 00:26:06,201] num_optim_epoch: 4
+[2024-05-23 00:26:06,201] mini_batch_size: 256
+[2024-05-23 00:26:06,201] save_model_interval: 10
+[2024-05-23 00:27:42,234] id: hlg
+[2024-05-23 00:27:42,234] seed: 111
+[2024-05-23 00:27:42,234] objectives_plan: objectives_hlg
+[2024-05-23 00:27:42,234] init_plan: init_plan_hlg
+[2024-05-23 00:27:42,234] env_specs: {}
+[2024-05-23 00:27:42,234] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 4.0, 'greenness_weight': 1.0}
+[2024-05-23 00:27:42,234] obs_specs: {}
+[2024-05-23 00:27:42,234] agent_specs: {'batch_stage': False}
+[2024-05-23 00:27:42,234] skip_land_use: False
+[2024-05-23 00:27:42,234] skip_road: True
+[2024-05-23 00:27:42,234] road_ratio: 0.0
+[2024-05-23 00:27:42,234] gamma: 1.0
+[2024-05-23 00:27:42,234] tau: 0.0
+[2024-05-23 00:27:42,234] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 16, 'num_gcn_layers': 2, 'num_edge_fc_layers': 1, 'max_num_nodes': 1000, 'max_num_edges': 3000, 'num_attention_heads': 1}
+[2024-05-23 00:27:42,234] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-05-23 00:27:42,234] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-05-23 00:27:42,234] lr: 0.0004
+[2024-05-23 00:27:42,235] weightdecay: 0.0
+[2024-05-23 00:27:42,235] eps: 1e-05
+[2024-05-23 00:27:42,235] value_pred_coef: 0.5
+[2024-05-23 00:27:42,235] entropy_coef: 0.01
+[2024-05-23 00:27:42,235] clip_epsilon: 0.2
+[2024-05-23 00:27:42,235] max_num_iterations: 1000
+[2024-05-23 00:27:42,235] num_episodes_per_iteration: 500
+[2024-05-23 00:27:42,235] max_sequence_length: 50
+[2024-05-23 00:27:42,235] num_optim_epoch: 4
+[2024-05-23 00:27:42,235] mini_batch_size: 256
+[2024-05-23 00:27:42,235] save_model_interval: 10
+[2024-05-23 00:29:00,135] id: hlg
+[2024-05-23 00:29:00,135] seed: 111
+[2024-05-23 00:29:00,135] objectives_plan: objectives_hlg
+[2024-05-23 00:29:00,135] init_plan: init_plan_hlg
+[2024-05-23 00:29:00,135] env_specs: {}
+[2024-05-23 00:29:00,135] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 4.0, 'greenness_weight': 1.0}
+[2024-05-23 00:29:00,135] obs_specs: {}
+[2024-05-23 00:29:00,135] agent_specs: {'batch_stage': False}
+[2024-05-23 00:29:00,135] skip_land_use: False
+[2024-05-23 00:29:00,135] skip_road: True
+[2024-05-23 00:29:00,135] road_ratio: 0.0
+[2024-05-23 00:29:00,135] gamma: 1.0
+[2024-05-23 00:29:00,136] tau: 0.0
+[2024-05-23 00:29:00,136] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 16, 'num_gcn_layers': 2, 'num_edge_fc_layers': 1, 'max_num_nodes': 1000, 'max_num_edges': 3000, 'num_attention_heads': 1}
+[2024-05-23 00:29:00,136] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-05-23 00:29:00,136] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-05-23 00:29:00,136] lr: 0.0004
+[2024-05-23 00:29:00,136] weightdecay: 0.0
+[2024-05-23 00:29:00,136] eps: 1e-05
+[2024-05-23 00:29:00,136] value_pred_coef: 0.5
+[2024-05-23 00:29:00,136] entropy_coef: 0.01
+[2024-05-23 00:29:00,136] clip_epsilon: 0.2
+[2024-05-23 00:29:00,136] max_num_iterations: 1000
+[2024-05-23 00:29:00,136] num_episodes_per_iteration: 500
+[2024-05-23 00:29:00,136] max_sequence_length: 50
+[2024-05-23 00:29:00,136] num_optim_epoch: 4
+[2024-05-23 00:29:00,136] mini_batch_size: 256
+[2024-05-23 00:29:00,136] save_model_interval: 10
+[2024-05-23 00:34:18,756] 0	T_sample 208.38	T_update 105.60	T_eval 3.67	ETA 3 days, 16:08:54	train_R_eps 3.02	eval_R_eps 2.28	hlg
+[2024-05-23 00:34:18,759] save best checkpoint with rewards 2.28!
+[2024-05-23 00:39:23,529] 1	T_sample 217.64	T_update 84.33	T_eval 2.62	ETA 3 days, 12:26:20	train_R_eps 3.03	eval_R_eps 2.12	hlg
+[2024-05-23 00:44:07,267] 2	T_sample 196.96	T_update 83.59	T_eval 3.03	ETA 3 days, 6:32:06	train_R_eps 3.02	eval_R_eps 2.63	hlg
+[2024-05-23 00:44:07,270] save best checkpoint with rewards 2.63!
+[2024-05-23 00:48:54,377] 3	T_sample 198.90	T_update 84.64	T_eval 3.39	ETA 3 days, 7:23:06	train_R_eps 3.04	eval_R_eps 2.93	hlg
+[2024-05-23 00:48:54,382] save best checkpoint with rewards 2.93!
+[2024-05-23 00:53:43,696] 4	T_sample 200.92	T_update 84.88	T_eval 3.34	ETA 3 days, 7:54:59	train_R_eps 3.03	eval_R_eps 2.78	hlg
+[2024-05-23 00:58:28,373] 5	T_sample 196.79	T_update 84.28	T_eval 3.46	ETA 3 days, 6:33:43	train_R_eps 3.06	eval_R_eps 3.05	hlg
+[2024-05-23 00:58:28,377] save best checkpoint with rewards 3.05!
+[2024-05-23 01:03:16,732] 6	T_sample 200.63	T_update 84.36	T_eval 3.16	ETA 3 days, 7:28:55	train_R_eps 3.05	eval_R_eps 2.82	hlg
+[2024-05-23 01:08:13,195] 7	T_sample 209.55	T_update 83.45	T_eval 3.27	ETA 3 days, 9:38:21	train_R_eps 3.07	eval_R_eps 2.98	hlg
+[2024-05-23 01:13:01,056] 8	T_sample 200.12	T_update 84.07	T_eval 3.47	ETA 3 days, 7:11:09	train_R_eps 3.06	eval_R_eps 3.04	hlg
+[2024-05-23 01:17:46,566] 9	T_sample 200.59	T_update 81.52	T_eval 3.22	ETA 3 days, 6:27:53	train_R_eps 3.05	eval_R_eps 3.21	hlg
+[2024-05-23 01:17:46,579] save best checkpoint with rewards 3.21!
+[2024-05-23 01:22:32,958] 10	T_sample 200.63	T_update 82.19	T_eval 3.37	ETA 3 days, 6:37:24	train_R_eps 3.05	eval_R_eps 3.01	hlg
+[2024-05-23 01:27:23,645] 11	T_sample 204.01	T_update 83.43	T_eval 3.10	ETA 3 days, 7:44:10	train_R_eps 3.06	eval_R_eps 2.89	hlg
+[2024-05-23 01:32:16,979] 12	T_sample 205.99	T_update 84.16	T_eval 3.01	ETA 3 days, 8:22:38	train_R_eps 3.07	eval_R_eps 3.13	hlg
+[2024-05-23 01:37:06,793] 13	T_sample 203.86	T_update 82.70	T_eval 3.10	ETA 3 days, 7:20:00	train_R_eps 3.06	eval_R_eps 2.97	hlg
+[2024-05-23 01:41:58,418] 14	T_sample 205.31	T_update 83.19	T_eval 2.96	ETA 3 days, 7:44:49	train_R_eps 3.06	eval_R_eps 3.14	hlg
+[2024-05-23 01:46:52,135] 15	T_sample 206.26	T_update 83.75	T_eval 3.52	ETA 3 days, 8:13:54	train_R_eps 3.07	eval_R_eps 3.11	hlg
+[2024-05-23 01:51:41,620] 16	T_sample 203.84	T_update 82.28	T_eval 3.20	ETA 3 days, 6:59:56	train_R_eps 3.07	eval_R_eps 3.24	hlg
+[2024-05-23 01:51:41,625] save best checkpoint with rewards 3.24!
+[2024-05-23 01:56:31,897] 17	T_sample 203.41	T_update 83.33	T_eval 3.35	ETA 3 days, 7:07:48	train_R_eps 3.07	eval_R_eps 3.15	hlg
+[2024-05-23 02:01:19,086] 18	T_sample 200.38	T_update 83.50	T_eval 3.15	ETA 3 days, 6:12:56	train_R_eps 3.07	eval_R_eps 3.03	hlg
+[2024-05-23 02:06:09,071] 19	T_sample 204.64	T_update 81.85	T_eval 3.33	ETA 3 days, 6:53:40	train_R_eps 3.07	eval_R_eps 3.15	hlg
+[2024-05-23 02:10:59,287] 20	T_sample 204.33	T_update 82.50	T_eval 3.22	ETA 3 days, 6:52:35	train_R_eps 3.05	eval_R_eps 3.02	hlg
+[2024-05-23 02:15:47,730] 21	T_sample 202.97	T_update 82.13	T_eval 3.18	ETA 3 days, 6:18:55	train_R_eps 3.06	eval_R_eps 3.06	hlg
+[2024-05-23 02:20:40,754] 22	T_sample 207.00	T_update 82.42	T_eval 3.44	ETA 3 days, 7:28:41	train_R_eps 3.06	eval_R_eps 3.20	hlg
+[2024-05-23 02:25:27,577] 23	T_sample 201.18	T_update 82.01	T_eval 3.46	ETA 3 days, 5:42:59	train_R_eps 3.07	eval_R_eps 3.49	hlg
+[2024-05-23 02:25:27,582] save best checkpoint with rewards 3.49!
+[2024-05-23 02:30:22,934] 24	T_sample 209.43	T_update 82.41	T_eval 3.32	ETA 3 days, 7:56:22	train_R_eps 3.07	eval_R_eps 3.33	hlg
+[2024-05-23 02:35:13,129] 25	T_sample 205.73	T_update 81.06	T_eval 3.25	ETA 3 days, 6:28:21	train_R_eps 3.08	eval_R_eps 3.23	hlg
+[2024-05-23 02:40:05,177] 26	T_sample 205.68	T_update 82.89	T_eval 3.32	ETA 3 days, 6:53:35	train_R_eps 3.06	eval_R_eps 2.92	hlg
+[2024-05-23 02:44:55,234] 27	T_sample 204.21	T_update 82.51	T_eval 3.18	ETA 3 days, 6:16:19	train_R_eps 3.06	eval_R_eps 2.93	hlg
+[2024-05-23 02:49:51,663] 28	T_sample 209.25	T_update 83.62	T_eval 3.37	ETA 3 days, 7:54:12	train_R_eps 3.05	eval_R_eps 3.01	hlg
+[2024-05-23 02:54:41,390] 29	T_sample 204.77	T_update 81.27	T_eval 3.53	ETA 3 days, 6:01:19	train_R_eps 3.07	eval_R_eps 2.90	hlg
+[2024-05-23 02:59:29,398] 30	T_sample 201.33	T_update 82.93	T_eval 3.54	ETA 3 days, 5:27:55	train_R_eps 3.04	eval_R_eps 2.96	hlg
+[2024-05-23 03:04:15,503] 31	T_sample 200.75	T_update 81.85	T_eval 3.33	ETA 3 days, 4:53:01	train_R_eps 3.05	eval_R_eps 3.14	hlg
+[2024-05-23 03:09:04,877] 32	T_sample 203.68	T_update 82.08	T_eval 3.45	ETA 3 days, 5:41:09	train_R_eps 3.05	eval_R_eps 2.95	hlg
+[2024-05-23 03:13:55,255] 33	T_sample 204.65	T_update 82.47	T_eval 3.09	ETA 3 days, 5:52:20	train_R_eps 3.04	eval_R_eps 2.73	hlg
+[2024-05-23 03:18:42,384] 34	T_sample 201.84	T_update 82.11	T_eval 3.02	ETA 3 days, 4:55:21	train_R_eps 3.03	eval_R_eps 2.60	hlg
+[2024-05-23 03:23:28,814] 35	T_sample 201.06	T_update 82.15	T_eval 3.06	ETA 3 days, 4:39:27	train_R_eps 3.04	eval_R_eps 2.90	hlg
+[2024-05-23 03:28:12,694] 36	T_sample 198.59	T_update 81.82	T_eval 3.30	ETA 3 days, 3:53:34	train_R_eps 3.03	eval_R_eps 3.06	hlg
+[2024-05-23 03:32:58,193] 37	T_sample 198.55	T_update 83.62	T_eval 3.15	ETA 3 days, 4:14:39	train_R_eps 3.03	eval_R_eps 2.91	hlg
+[2024-05-23 03:37:48,309] 38	T_sample 203.59	T_update 83.03	T_eval 3.32	ETA 3 days, 5:23:54	train_R_eps 3.04	eval_R_eps 2.92	hlg
+[2024-05-23 03:42:40,249] 39	T_sample 203.97	T_update 84.21	T_eval 3.58	ETA 3 days, 5:48:08	train_R_eps 3.03	eval_R_eps 2.95	hlg
+[2024-05-23 03:47:25,041] 40	T_sample 199.25	T_update 82.09	T_eval 3.27	ETA 3 days, 3:49:07	train_R_eps 3.04	eval_R_eps 2.91	hlg
+[2024-05-23 03:52:13,723] 41	T_sample 203.37	T_update 81.82	T_eval 3.33	ETA 3 days, 4:46:40	train_R_eps 3.04	eval_R_eps 2.96	hlg
+[2024-05-23 03:57:04,290] 42	T_sample 204.83	T_update 82.31	T_eval 3.23	ETA 3 days, 5:11:21	train_R_eps 3.02	eval_R_eps 2.73	hlg
+[2024-05-23 04:01:57,999] 43	T_sample 208.53	T_update 81.75	T_eval 3.26	ETA 3 days, 5:57:11	train_R_eps 3.02	eval_R_eps 3.18	hlg
+[2024-05-23 04:06:53,863] 44	T_sample 210.60	T_update 81.91	T_eval 3.19	ETA 3 days, 6:26:28	train_R_eps 3.03	eval_R_eps 3.11	hlg
+[2024-05-23 04:11:49,390] 45	T_sample 210.97	T_update 81.11	T_eval 3.28	ETA 3 days, 6:16:17	train_R_eps 3.04	eval_R_eps 2.85	hlg
+[2024-05-23 04:16:41,328] 46	T_sample 204.60	T_update 83.77	T_eval 3.41	ETA 3 days, 5:14:21	train_R_eps 3.03	eval_R_eps 2.92	hlg
+[2024-05-23 04:21:47,962] 47	T_sample 218.33	T_update 84.78	T_eval 3.36	ETA 3 days, 9:02:40	train_R_eps 3.02	eval_R_eps 3.00	hlg
+[2024-05-23 04:26:50,657] 48	T_sample 215.70	T_update 83.70	T_eval 3.13	ETA 3 days, 7:55:10	train_R_eps 3.03	eval_R_eps 2.93	hlg
+[2024-05-23 04:31:48,288] 49	T_sample 211.08	T_update 83.30	T_eval 3.09	ETA 3 days, 6:29:53	train_R_eps 3.02	eval_R_eps 3.07	hlg
+[2024-05-23 04:36:43,356] 50	T_sample 209.56	T_update 82.03	T_eval 3.31	ETA 3 days, 5:44:19	train_R_eps 3.03	eval_R_eps 2.96	hlg
+[2024-05-23 04:41:41,654] 51	T_sample 211.00	T_update 83.74	T_eval 3.40	ETA 3 days, 6:30:44	train_R_eps 3.02	eval_R_eps 2.78	hlg
+[2024-05-23 04:46:37,122] 52	T_sample 209.20	T_update 82.74	T_eval 3.36	ETA 3 days, 5:40:47	train_R_eps 3.04	eval_R_eps 3.09	hlg
+[2024-05-23 04:51:44,391] 53	T_sample 218.69	T_update 85.02	T_eval 3.39	ETA 3 days, 8:42:00	train_R_eps 3.03	eval_R_eps 2.85	hlg
+[2024-05-23 04:56:48,541] 54	T_sample 218.42	T_update 82.30	T_eval 3.27	ETA 3 days, 7:47:49	train_R_eps 3.03	eval_R_eps 2.99	hlg
+[2024-05-23 05:01:59,097] 55	T_sample 220.29	T_update 86.67	T_eval 3.40	ETA 3 days, 9:23:06	train_R_eps 3.03	eval_R_eps 3.04	hlg
+[2024-05-23 05:07:03,335] 56	T_sample 217.66	T_update 83.18	T_eval 3.24	ETA 3 days, 7:39:15	train_R_eps 3.03	eval_R_eps 3.10	hlg
+[2024-05-23 05:12:15,185] 57	T_sample 223.95	T_update 84.54	T_eval 3.20	ETA 3 days, 9:33:30	train_R_eps 3.03	eval_R_eps 3.06	hlg
+[2024-05-23 05:17:18,447] 58	T_sample 216.80	T_update 82.92	T_eval 3.38	ETA 3 days, 7:13:39	train_R_eps 3.04	eval_R_eps 3.11	hlg
+[2024-05-23 05:22:23,732] 59	T_sample 216.57	T_update 85.07	T_eval 3.47	ETA 3 days, 7:40:00	train_R_eps 3.03	eval_R_eps 3.04	hlg
+[2024-05-23 05:27:23,479] 60	T_sample 211.79	T_update 84.19	T_eval 3.59	ETA 3 days, 6:08:19	train_R_eps 3.04	eval_R_eps 2.98	hlg
+[2024-05-23 05:32:33,205] 61	T_sample 223.68	T_update 82.70	T_eval 3.18	ETA 3 days, 8:39:27	train_R_eps 3.03	eval_R_eps 3.22	hlg
+[2024-05-23 05:37:13,566] 62	T_sample 192.70	T_update 84.11	T_eval 3.37	ETA 3 days, 0:55:27	train_R_eps 3.03	eval_R_eps 3.25	hlg
+[2024-05-23 05:41:52,384] 63	T_sample 193.10	T_update 82.31	T_eval 3.24	ETA 3 days, 0:27:02	train_R_eps 3.03	eval_R_eps 2.90	hlg
+[2024-05-23 05:46:33,543] 64	T_sample 192.57	T_update 85.40	T_eval 3.04	ETA 3 days, 0:59:02	train_R_eps 3.04	eval_R_eps 2.69	hlg
+[2024-05-23 05:51:15,333] 65	T_sample 193.46	T_update 85.14	T_eval 3.03	ETA 3 days, 1:03:56	train_R_eps 3.03	eval_R_eps 2.50	hlg
+[2024-05-23 05:55:53,630] 66	T_sample 190.49	T_update 84.54	T_eval 3.10	ETA 3 days, 0:04:52	train_R_eps 3.04	eval_R_eps 2.66	hlg
+[2024-05-23 06:00:30,857] 67	T_sample 192.17	T_update 81.71	T_eval 3.18	ETA 2 days, 23:43:43	train_R_eps 3.04	eval_R_eps 2.94	hlg
+[2024-05-23 06:05:07,624] 68	T_sample 189.64	T_update 83.53	T_eval 3.43	ETA 2 days, 23:31:47	train_R_eps 3.03	eval_R_eps 3.07	hlg
+[2024-05-23 06:09:39,716] 69	T_sample 187.56	T_update 80.97	T_eval 3.39	ETA 2 days, 22:14:48	train_R_eps 3.04	eval_R_eps 3.05	hlg
+[2024-05-23 06:14:14,468] 70	T_sample 190.04	T_update 81.10	T_eval 3.44	ETA 2 days, 22:51:20	train_R_eps 3.05	eval_R_eps 2.86	hlg
+[2024-05-23 06:18:50,946] 71	T_sample 189.46	T_update 83.48	T_eval 3.37	ETA 2 days, 23:13:35	train_R_eps 3.03	eval_R_eps 2.88	hlg
+[2024-05-23 06:23:24,277] 72	T_sample 186.85	T_update 83.03	T_eval 3.28	ETA 2 days, 22:20:19	train_R_eps 3.04	eval_R_eps 3.24	hlg
+[2024-05-23 06:28:01,238] 73	T_sample 190.67	T_update 82.84	T_eval 3.29	ETA 2 days, 23:11:53	train_R_eps 3.04	eval_R_eps 2.80	hlg
+[2024-05-23 06:32:40,307] 74	T_sample 191.85	T_update 83.79	T_eval 3.26	ETA 2 days, 23:39:38	train_R_eps 3.05	eval_R_eps 3.28	hlg
+[2024-05-23 06:37:15,128] 75	T_sample 189.45	T_update 81.95	T_eval 3.26	ETA 2 days, 22:29:41	train_R_eps 3.04	eval_R_eps 3.03	hlg
+[2024-05-23 06:41:50,463] 76	T_sample 190.94	T_update 80.97	T_eval 3.25	ETA 2 days, 22:32:59	train_R_eps 3.04	eval_R_eps 2.84	hlg
+[2024-05-23 06:46:26,328] 77	T_sample 188.58	T_update 83.60	T_eval 3.51	ETA 2 days, 22:36:26	train_R_eps 3.05	eval_R_eps 3.13	hlg
+[2024-05-23 06:51:02,046] 78	T_sample 188.78	T_update 83.56	T_eval 3.20	ETA 2 days, 22:29:35	train_R_eps 3.04	eval_R_eps 3.02	hlg
+[2024-05-23 06:55:35,168] 79	T_sample 188.84	T_update 80.88	T_eval 3.24	ETA 2 days, 21:45:21	train_R_eps 3.04	eval_R_eps 3.11	hlg
+[2024-05-23 07:00:10,654] 80	T_sample 192.37	T_update 79.58	T_eval 3.35	ETA 2 days, 22:16:51	train_R_eps 3.05	eval_R_eps 3.29	hlg
+[2024-05-23 07:04:49,421] 81	T_sample 190.67	T_update 84.62	T_eval 3.30	ETA 2 days, 23:02:32	train_R_eps 3.06	eval_R_eps 3.18	hlg
+[2024-05-23 07:09:20,787] 82	T_sample 188.40	T_update 79.36	T_eval 3.44	ETA 2 days, 21:04:50	train_R_eps 3.06	eval_R_eps 3.28	hlg
+[2024-05-23 07:13:58,190] 83	T_sample 190.90	T_update 83.00	T_eval 3.33	ETA 2 days, 22:32:24	train_R_eps 3.05	eval_R_eps 3.19	hlg
+[2024-05-23 07:18:31,497] 84	T_sample 190.51	T_update 79.43	T_eval 3.20	ETA 2 days, 21:25:19	train_R_eps 3.05	eval_R_eps 3.49	hlg
+[2024-05-23 07:23:12,056] 85	T_sample 193.46	T_update 83.65	T_eval 3.26	ETA 2 days, 23:10:56	train_R_eps 3.04	eval_R_eps 3.36	hlg
+[2024-05-23 07:27:46,165] 86	T_sample 188.98	T_update 81.73	T_eval 3.22	ETA 2 days, 21:28:25	train_R_eps 3.04	eval_R_eps 3.25	hlg
+[2024-05-23 07:32:20,355] 87	T_sample 190.26	T_update 80.50	T_eval 3.26	ETA 2 days, 21:25:09	train_R_eps 3.05	eval_R_eps 3.04	hlg
+[2024-05-23 07:36:57,642] 88	T_sample 191.16	T_update 82.70	T_eval 3.27	ETA 2 days, 22:07:50	train_R_eps 3.05	eval_R_eps 3.26	hlg
+[2024-05-23 07:41:42,504] 89	T_sample 199.83	T_update 81.63	T_eval 3.24	ETA 2 days, 23:57:58	train_R_eps 3.06	eval_R_eps 3.08	hlg
+[2024-05-23 07:46:25,343] 90	T_sample 197.14	T_update 82.39	T_eval 3.14	ETA 2 days, 23:22:26	train_R_eps 3.04	eval_R_eps 3.04	hlg
+[2024-05-23 07:51:05,717] 91	T_sample 194.71	T_update 82.29	T_eval 3.22	ETA 2 days, 22:40:35	train_R_eps 3.05	eval_R_eps 3.05	hlg
+[2024-05-23 07:55:48,956] 92	T_sample 195.83	T_update 83.93	T_eval 3.29	ETA 2 days, 23:18:51	train_R_eps 3.05	eval_R_eps 3.42	hlg
+[2024-05-23 08:00:22,194] 93	T_sample 188.61	T_update 81.18	T_eval 3.28	ETA 2 days, 20:43:22	train_R_eps 3.06	eval_R_eps 2.99	hlg
+[2024-05-23 08:04:56,760] 94	T_sample 190.01	T_update 80.93	T_eval 3.45	ETA 2 days, 20:58:46	train_R_eps 3.04	eval_R_eps 3.13	hlg
+[2024-05-23 08:09:33,113] 95	T_sample 191.47	T_update 81.38	T_eval 3.34	ETA 2 days, 21:21:20	train_R_eps 3.04	eval_R_eps 3.24	hlg
+[2024-05-23 08:14:13,107] 96	T_sample 193.26	T_update 83.26	T_eval 3.31	ETA 2 days, 22:11:24	train_R_eps 3.05	eval_R_eps 3.41	hlg
+[2024-05-23 08:18:51,726] 97	T_sample 189.63	T_update 85.56	T_eval 3.27	ETA 2 days, 21:46:15	train_R_eps 3.03	eval_R_eps 3.23	hlg
+[2024-05-23 08:23:28,567] 98	T_sample 189.29	T_update 84.07	T_eval 3.31	ETA 2 days, 21:14:36	train_R_eps 3.04	eval_R_eps 3.40	hlg
+[2024-05-23 08:28:11,303] 99	T_sample 194.09	T_update 85.12	T_eval 3.36	ETA 2 days, 22:38:26	train_R_eps 3.04	eval_R_eps 3.37	hlg
+[2024-05-23 08:32:49,748] 100	T_sample 191.75	T_update 83.18	T_eval 3.35	ETA 2 days, 21:29:27	train_R_eps 3.04	eval_R_eps 3.17	hlg
+[2024-05-23 08:37:27,456] 101	T_sample 191.69	T_update 82.64	T_eval 3.19	ETA 2 days, 21:13:36	train_R_eps 3.03	eval_R_eps 3.19	hlg
+[2024-05-23 08:42:04,065] 102	T_sample 190.90	T_update 82.35	T_eval 3.20	ETA 2 days, 20:52:54	train_R_eps 3.05	eval_R_eps 3.27	hlg
+[2024-05-23 08:46:45,817] 103	T_sample 194.50	T_update 83.72	T_eval 3.36	ETA 2 days, 22:05:01	train_R_eps 3.03	eval_R_eps 3.26	hlg
+[2024-05-23 08:51:27,765] 104	T_sample 194.46	T_update 84.06	T_eval 3.27	ETA 2 days, 22:03:14	train_R_eps 3.03	eval_R_eps 3.19	hlg
+[2024-05-23 08:56:09,652] 105	T_sample 194.71	T_update 83.66	T_eval 3.34	ETA 2 days, 21:57:29	train_R_eps 3.04	eval_R_eps 3.49	hlg
+[2024-05-23 09:00:46,189] 106	T_sample 189.40	T_update 83.74	T_eval 3.23	ETA 2 days, 20:33:12	train_R_eps 3.03	eval_R_eps 3.43	hlg
+[2024-05-23 09:05:19,724] 107	T_sample 188.70	T_update 81.25	T_eval 3.41	ETA 2 days, 19:44:05	train_R_eps 3.05	eval_R_eps 3.40	hlg
+[2024-05-23 09:09:53,523] 108	T_sample 190.56	T_update 79.80	T_eval 3.27	ETA 2 days, 19:43:25	train_R_eps 3.05	eval_R_eps 3.21	hlg
+[2024-05-23 09:14:30,824] 109	T_sample 193.99	T_update 79.94	T_eval 3.21	ETA 2 days, 20:30:51	train_R_eps 3.04	eval_R_eps 3.19	hlg
+[2024-05-23 09:19:05,433] 110	T_sample 189.05	T_update 82.04	T_eval 3.34	ETA 2 days, 19:46:10	train_R_eps 3.04	eval_R_eps 3.37	hlg
+[2024-05-23 09:23:39,654] 111	T_sample 188.00	T_update 82.86	T_eval 3.18	ETA 2 days, 19:35:54	train_R_eps 3.04	eval_R_eps 3.35	hlg
+[2024-05-23 09:28:13,186] 112	T_sample 188.37	T_update 81.83	T_eval 3.16	ETA 2 days, 19:21:15	train_R_eps 3.05	eval_R_eps 3.31	hlg
+[2024-05-23 09:32:46,127] 113	T_sample 187.58	T_update 81.95	T_eval 3.25	ETA 2 days, 19:07:58	train_R_eps 3.05	eval_R_eps 3.35	hlg
+[2024-05-23 09:37:18,677] 114	T_sample 187.96	T_update 81.19	T_eval 3.23	ETA 2 days, 18:57:36	train_R_eps 3.05	eval_R_eps 3.17	hlg
+[2024-05-23 09:41:55,015] 115	T_sample 190.15	T_update 82.63	T_eval 3.39	ETA 2 days, 19:48:51	train_R_eps 3.05	eval_R_eps 3.04	hlg
+[2024-05-23 09:46:31,760] 116	T_sample 188.99	T_update 84.26	T_eval 3.33	ETA 2 days, 19:50:17	train_R_eps 3.04	eval_R_eps 3.23	hlg
+[2024-05-23 09:51:06,429] 117	T_sample 190.05	T_update 81.08	T_eval 3.36	ETA 2 days, 19:14:54	train_R_eps 3.04	eval_R_eps 3.23	hlg
+[2024-05-23 09:55:47,106] 118	T_sample 192.78	T_update 84.32	T_eval 3.40	ETA 2 days, 20:38:41	train_R_eps 3.05	eval_R_eps 3.18	hlg
+[2024-05-23 10:00:30,280] 119	T_sample 194.81	T_update 84.79	T_eval 3.40	ETA 2 days, 21:10:37	train_R_eps 3.05	eval_R_eps 3.04	hlg
+[2024-05-23 10:05:18,571] 120	T_sample 201.82	T_update 82.70	T_eval 3.60	ETA 2 days, 22:20:58	train_R_eps 3.04	eval_R_eps 3.12	hlg
+[2024-05-23 10:10:06,531] 121	T_sample 201.75	T_update 82.68	T_eval 3.37	ETA 2 days, 22:11:29	train_R_eps 3.03	eval_R_eps 3.23	hlg
+[2024-05-23 10:14:53,880] 122	T_sample 200.35	T_update 83.24	T_eval 3.58	ETA 2 days, 21:57:27	train_R_eps 3.06	eval_R_eps 3.19	hlg
+[2024-05-23 10:19:43,965] 123	T_sample 204.81	T_update 81.66	T_eval 3.45	ETA 2 days, 22:32:48	train_R_eps 3.05	eval_R_eps 3.31	hlg
+[2024-05-23 10:24:33,186] 124	T_sample 202.77	T_update 82.90	T_eval 3.38	ETA 2 days, 22:15:18	train_R_eps 3.05	eval_R_eps 3.17	hlg
+[2024-05-23 10:29:23,976] 125	T_sample 205.24	T_update 81.96	T_eval 3.43	ETA 2 days, 22:33:26	train_R_eps 3.05	eval_R_eps 3.15	hlg
+[2024-05-23 10:33:56,517] id: hlg
+[2024-05-23 10:33:56,517] seed: 111
+[2024-05-23 10:33:56,517] objectives_plan: objectives_hlg
+[2024-05-23 10:33:56,517] init_plan: init_plan_hlg
+[2024-05-23 10:33:56,517] env_specs: {}
+[2024-05-23 10:33:56,518] reward_specs: {'road_network_weight': 0.0, 'life_circle_weight': 4.0, 'greenness_weight': 1.0}
+[2024-05-23 10:33:56,518] obs_specs: {}
+[2024-05-23 10:33:56,518] agent_specs: {'batch_stage': False}
+[2024-05-23 10:33:56,518] skip_land_use: False
+[2024-05-23 10:33:56,518] skip_road: True
+[2024-05-23 10:33:56,518] road_ratio: 0.0
+[2024-05-23 10:33:56,518] gamma: 1.0
+[2024-05-23 10:33:56,518] tau: 0.0
+[2024-05-23 10:33:56,518] state_encoder_specs: {'state_encoder_hidden_size': [64, 16], 'gcn_node_dim': 16, 'num_gcn_layers': 2, 'num_edge_fc_layers': 1, 'max_num_nodes': 1000, 'max_num_edges': 3000, 'num_attention_heads': 1}
+[2024-05-23 10:33:56,518] policy_specs: {'policy_land_use_head_hidden_size': [32, 1], 'policy_road_head_hidden_size': [32, 1]}
+[2024-05-23 10:33:56,518] value_specs: {'value_head_hidden_size': [32, 32, 1]}
+[2024-05-23 10:33:56,518] lr: 0.0004
+[2024-05-23 10:33:56,518] weightdecay: 0.0
+[2024-05-23 10:33:56,518] eps: 1e-05
+[2024-05-23 10:33:56,518] value_pred_coef: 0.5
+[2024-05-23 10:33:56,518] entropy_coef: 0.01
+[2024-05-23 10:33:56,518] clip_epsilon: 0.2
+[2024-05-23 10:33:56,519] max_num_iterations: 1000
+[2024-05-23 10:33:56,519] num_episodes_per_iteration: 500
+[2024-05-23 10:33:56,519] max_sequence_length: 50
+[2024-05-23 10:33:56,519] num_optim_epoch: 4
+[2024-05-23 10:33:56,519] mini_batch_size: 256
+[2024-05-23 10:33:56,519] save_model_interval: 10
